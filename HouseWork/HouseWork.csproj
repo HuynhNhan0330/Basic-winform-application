@@ -1,0 +1,382 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{402EFDC1-7553-4362-B9CD-820ED58CB377}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>HouseWork</RootNamespace>
+    <AssemblyName>HouseWork</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmHomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmHomePage.Designer.cs">
+      <DependentUpon>FrmHomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UCAccount.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCAccount.Designer.cs">
+      <DependentUpon>UCAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCChatBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCChatBox.Designer.cs">
+      <DependentUpon>UCChatBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCClean.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCClean.Designer.cs">
+      <DependentUpon>UCClean.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCContact.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCContact.Designer.cs">
+      <DependentUpon>UCContact.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCCook.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCCook.Designer.cs">
+      <DependentUpon>UCCook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCDiscount.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCDiscount.Designer.cs">
+      <DependentUpon>UCDiscount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCHome.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCHome.Designer.cs">
+      <DependentUpon>UCHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCLaundry.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCLaundry.Designer.cs">
+      <DependentUpon>UCLaundry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCLogin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCLogin.Designer.cs">
+      <DependentUpon>UCLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCMessageBot.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCMessageBot.Designer.cs">
+      <DependentUpon>UCMessageBot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCMessageUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCMessageUser.Designer.cs">
+      <DependentUpon>UCMessageUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCRegister.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCRegister.Designer.cs">
+      <DependentUpon>UCRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCService.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCService.Designer.cs">
+      <DependentUpon>UCService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCDonate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCDonate.Designer.cs">
+      <DependentUpon>UCDonate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utils.cs" />
+    <EmbeddedResource Include="FrmHomePage.resx">
+      <DependentUpon>FrmHomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UCAccount.resx">
+      <DependentUpon>UCAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCChatBox.resx">
+      <DependentUpon>UCChatBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCClean.resx">
+      <DependentUpon>UCClean.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCContact.resx">
+      <DependentUpon>UCContact.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCCook.resx">
+      <DependentUpon>UCCook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCDiscount.resx">
+      <DependentUpon>UCDiscount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCHome.resx">
+      <DependentUpon>UCHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCLaundry.resx">
+      <DependentUpon>UCLaundry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCLogin.resx">
+      <DependentUpon>UCLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCMessageBot.resx">
+      <DependentUpon>UCMessageBot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCMessageUser.resx">
+      <DependentUpon>UCMessageUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCRegister.resx">
+      <DependentUpon>UCRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCService.resx">
+      <DependentUpon>UCService.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCDonate.resx">
+      <DependentUpon>UCDonate.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HomeIcon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NotifitionIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EmailMessageIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DiscountIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WorkingIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CloseIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HomeImage1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HomeImage2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HomeImg1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HomeImg2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HomeImg3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LikeIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HeartIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FBIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\workerIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WorkerIcon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LikeIcon2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DonateIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QRrr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconMomo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\momo_icon_square_pinkbg%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon-Vietcombank.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OfferBoxIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AccountIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LoginIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RegisterIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PasswordIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GmailIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PhoneIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AccountIcon2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CleanIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CookIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LaundryIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CookIcon2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\money_925065.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diversity.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shield.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EditIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\House50m2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\House150m2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\House450m2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Laundry5kg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Laundry10kg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Laundry15kg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cook2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cook3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cook6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CaiTienIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TienLoiIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChatLuongIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TanLongIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Phone_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ContactImg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\support-team-icon-1200x530.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChatBotIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SendIcon1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
