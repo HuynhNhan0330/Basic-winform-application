@@ -117,7 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="richTextBox1.Text" xml:space="preserve">
-    <value>Không chỉ muốn giúp bạn chăm sóc gia đình từ những dịch vụ dọn dẹp nhà, vệ sinh máy lạnh, nấu ăn gia đình, giặt ủi,... chúng tôi đang nỗ lực trở thành công ty hàng đầu Việt Nam và vươn ra thị trường Đông Nam Á, cung cấp nhiều hơn những dịch vụ tiện ích gia đình.</value>
+  <data name="label3.Text" xml:space="preserve">
+    <value>HomeMaket là doanh nghiệp tiên phong trong việc ứng dụng công nghệ vào ngành giúp việc nhà ở Việt Nam. Chúng tôi cung cấp đa dịch vụ tiện ích như: dọn dẹp nhà, vệ sinh máy lạnh, đi chợ,… tại Đông Nam Á. Thông qua ứng dụng đặt lịch dành cho khách hàng bTaskee và ứng dụng nhận việc của cộng tác viên bTaskee Partner, khách hàng và cộng tác viên có thể chủ động đăng và nhận việc trực tiếp trên ứng dụng. Hiện tại, HomeMaket cung cấp các dịch vụ tiện ích cho nhiều hộ gia đình ở khắp 10 tỉnh thành phố lớn tại Việt Nam: Hà Nội, Hải Phòng, Đà Nẵng, Hội An, Nha Trang, Đà Lạt, Bình Dương, Biên Hòa, TP.HCM và Cần Thơ. Ngoài ra, HomeMaket đang mở rộng ra thị trường nước ngoài với dịch vụ chính là giúp việc nhà theo giờ tại Thái Lan và Malaysia.</value>
   </data>
 </root>

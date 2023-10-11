@@ -46,14 +46,45 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Card.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Card.Designer.cs">
+      <DependentUpon>Card.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMessageBox.Designer.cs">
+      <DependentUpon>FrmMessageBox.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmHomePage.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmHomePage.Designer.cs">
       <DependentUpon>FrmHomePage.cs</DependentUpon>
     </Compile>
+    <Compile Include="LogoContactUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LogoContactUC.Designer.cs">
+      <DependentUpon>LogoContactUC.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RoundedButtonService.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RoundedButtonService.Designer.cs">
+      <DependentUpon>RoundedButtonService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RoundedRectangle.cs" />
+    <Compile Include="RoundedButtonMenu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RoundedButtonMenu.Designer.cs">
+      <DependentUpon>RoundedButtonMenu.cs</DependentUpon>
+    </Compile>
     <Compile Include="UCAccount.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -132,15 +163,18 @@
     <Compile Include="UCService.Designer.cs">
       <DependentUpon>UCService.cs</DependentUpon>
     </Compile>
-    <Compile Include="UCDonate.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UCDonate.Designer.cs">
-      <DependentUpon>UCDonate.cs</DependentUpon>
-    </Compile>
     <Compile Include="Utils.cs" />
+    <EmbeddedResource Include="Card.resx">
+      <DependentUpon>Card.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMessageBox.resx">
+      <DependentUpon>FrmMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmHomePage.resx">
       <DependentUpon>FrmHomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogoContactUC.resx">
+      <DependentUpon>LogoContactUC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -152,6 +186,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="RoundedButtonMenu.resx">
+      <DependentUpon>RoundedButtonMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RoundedButtonService.resx">
+      <DependentUpon>RoundedButtonService.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UCAccount.resx">
       <DependentUpon>UCAccount.cs</DependentUpon>
     </EmbeddedResource>
@@ -190,9 +230,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UCService.resx">
       <DependentUpon>UCService.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UCDonate.resx">
-      <DependentUpon>UCDonate.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -377,6 +414,129 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\SendIcon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogoHome.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logoutIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Home3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cooking.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\laundry-machine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cleaning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chat_bot_img.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\botImg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\YTBlogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TiktokLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InsLogo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InsLogo_preview_rev_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InsLogo2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cook2_preview_rev_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cook3_preview_rev_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cook6_preview_rev_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Laundry5kg_preview_rev_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Laundry10kg_preview_rev_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Laundry15kg_preview_rev_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\House50m2_preview_rev_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\House150m2_preview_rev_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\House450m2_preview_rev_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CloseIcon2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ErrorIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChatIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ExclamationIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QuestionIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InformationIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LoginIcon2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DiscountImg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LoginImg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AccountImg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CatAvatar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DiscountImg2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\google.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GoogleIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GoogleIcon2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\facebook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FacebookIcon2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RegisterImg.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

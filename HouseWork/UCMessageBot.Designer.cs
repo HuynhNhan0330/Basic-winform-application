@@ -30,9 +30,7 @@
         {
             this.pibAvatarBot = new System.Windows.Forms.PictureBox();
             this.lbText = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pibAvatarBot)).BeginInit();
-            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // pibAvatarBot
@@ -48,39 +46,31 @@
             // lbText
             // 
             this.lbText.AutoSize = true;
-            this.lbText.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(134)))), ((int)(((byte)(222)))));
+            this.lbText.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(188)))), ((int)(((byte)(215)))));
             this.lbText.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.lbText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbText.ForeColor = System.Drawing.Color.White;
-            this.lbText.Location = new System.Drawing.Point(65, 22);
+            this.lbText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(31)))));
+            this.lbText.Location = new System.Drawing.Point(65, 18);
             this.lbText.MaximumSize = new System.Drawing.Size(280, 0);
             this.lbText.Name = "lbText";
-            this.lbText.Size = new System.Drawing.Size(132, 22);
+            this.lbText.Padding = new System.Windows.Forms.Padding(3);
+            this.lbText.Size = new System.Drawing.Size(138, 28);
             this.lbText.TabIndex = 1;
             this.lbText.Text = "Tôi yêu bạn ❤️";
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.pibAvatarBot);
-            this.panel1.Controls.Add(this.lbText);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(350, 75);
-            this.panel1.TabIndex = 2;
+            this.lbText.Paint += new System.Windows.Forms.PaintEventHandler(this.lbText_Paint);
             // 
             // UCMessageBot
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.lbText);
+            this.Controls.Add(this.pibAvatarBot);
             this.Name = "UCMessageBot";
             this.Size = new System.Drawing.Size(350, 75);
             ((System.ComponentModel.ISupportInitialize)(this.pibAvatarBot)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -88,6 +78,5 @@
 
         private System.Windows.Forms.PictureBox pibAvatarBot;
         private System.Windows.Forms.Label lbText;
-        private System.Windows.Forms.Panel panel1;
     }
 }

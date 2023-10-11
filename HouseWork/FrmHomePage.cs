@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Security.Claims;
 using System.Text;
@@ -13,47 +14,55 @@ namespace HouseWork
 {
     public partial class FrmHomePage : Form
     {
+        public bool isLogin {  get; set; }
+
         public FrmHomePage()
         {
             InitializeComponent();
-            changePageLeftMain(new UCHome());
-            changePageRightMain(new UCAccount());
+            changePageMain(new UCHome());
+            this.isLogin = false;
+
+            btnrAccount.Visible = false;
+            btnrLogout.Visible = false;
         }
 
-        private void changeSelectedLeftMenu(object sender)
+        private void activeButton(UserControl UC)
         {
-            Control ctl = sender as Control;
-            if (ctl.Parent.Name != "pnLeftMenu")
+            UC.BackColor = Color.FromArgb(237, 238, 253);
+            UC.ForeColor = Color.FromArgb(52, 53, 91);
+        }
+
+        private void deactivateButton(UserControl UC)
+        {
+            UC.BackColor = Color.Transparent;
+            UC.ForeColor = Color.FromArgb(30, 30, 31);
+        }
+
+        private void deactivateAllButton()
+        {
+            foreach(UserControl uc in this.pnLeftMenu.Controls)
             {
-                ctl = ctl.Parent;
+                deactivateButton(uc);
             }
 
-            pnSelectedLeftMenu.Width = ctl.Width;
-            pnSelectedLeftMenu.Left = ctl.Left;
-        }
-
-        private void changeSelectedRightMenu(object sender)
-        {
-            Control ctl = sender as Control;
-            if (ctl.Parent.Name != "pnRightMenu")
+            foreach (UserControl uc in this.pnRightMenu.Controls)
             {
-                ctl = ctl.Parent;
+                deactivateButton(uc);
             }
-
-            pnSelectedRightMenu.Width = ctl.Width;
-            pnSelectedRightMenu.Left = ctl.Left;
         }
 
-        private void changePageLeftMain(UserControl UC)
+        private void changePageMain(UserControl UC)
         {
-            pnLeftMain.Controls.Clear();
-            pnLeftMain.Controls.Add(UC);
+            pnMain.Controls.Clear();
+            pnMain.Controls.Add(UC);
         }
 
-        private void changePageRightMain(UserControl UC)
+        public void resetButtonOfRightMenu()
         {
-            pnRightMain.Controls.Clear();
-            pnRightMain.Controls.Add(UC);
+            btnrAccount.Visible = !btnrAccount.Visible;
+            btnrLogout.Visible = !btnrLogout.Visible;
+            btnrLogin.Visible = !btnrLogin.Visible;
+            btnrRegister.Visible = !btnrRegister.Visible;
         }
 
         private void IcClose_Click(object sender, EventArgs e)
@@ -61,52 +70,91 @@ namespace HouseWork
             this.Close();
         }
 
-        private void pnHome_Click(object sender, EventArgs e)
+        private void FrmHomePage_Load(object sender, EventArgs e)
         {
-            changeSelectedLeftMenu(sender);
-            changePageLeftMain(new UCHome());
+            this.btnrHome.text = "Trang chủ";
+
+            this.btnrService.img = Properties.Resources.NotifitionIcon;
+            this.btnrService.text = "Dịch vụ";
+
+            this.btnrContact.img = Properties.Resources.EmailMessageIcon;
+            this.btnrContact.text = "Liên hệ";
+
+            this.btnrDiscount.img = Properties.Resources.DiscountIcon;
+            this.btnrDiscount.text = "Giảm giá";
+
+            this.btnrAccount.img = Properties.Resources.AccountIcon;
+            this.btnrAccount.text = "Tài khoản";
+
+            this.btnrLogout.img = Properties.Resources.logoutIcon;
+            this.btnrLogout.text = "Đăng xuất";
+
+            this.btnrLogin.text = "Đăng nhập";
+
+            this.btnrRegister.text = "Đăng ký";
+
+            GraphicsPath path = RoundedRectangle.Create(this.Width, this.Height, 5);
+            this.Region = new Region(path);
         }
 
-        private void pnService_Click(object sender, EventArgs e)
+        private void btnrHome_Click(object sender, EventArgs e)
         {
-            changeSelectedLeftMenu(sender);
-            changePageLeftMain(new UCService());
+            deactivateAllButton();
+            activeButton(this.btnrHome);
+            changePageMain(new UCHome());
         }
 
-        private void pnContact_Click(object sender, EventArgs e)
+        private void btnrService_Click(object sender, EventArgs e)
         {
-            changeSelectedLeftMenu(sender);
-            changePageLeftMain(new UCContact());
+            deactivateAllButton();
+            activeButton(this.btnrService);
+            changePageMain(new UCService());
         }
 
-        private void pnDiscount_Click(object sender, EventArgs e)
+        private void btnrContact_Click(object sender, EventArgs e)
         {
-            changeSelectedLeftMenu(sender);
-            changePageLeftMain(new UCDiscount());
+            deactivateAllButton();
+            activeButton(this.btnrContact);
+            changePageMain(new UCContact());
         }
 
-        private void pnDonate_Click(object sender, EventArgs e)
+        private void btnrDiscount_Click(object sender, EventArgs e)
         {
-            changeSelectedLeftMenu(sender);
-            changePageLeftMain(new UCDonate());
+            deactivateAllButton();
+            activeButton(this.btnrDiscount);
+            changePageMain(new UCDiscount());
         }
 
-        private void pnAccount_Click(object sender, EventArgs e)
+        public void btnrAccount_Click(object sender, EventArgs e)
         {
-            changeSelectedRightMenu(sender);
-            changePageRightMain(new UCAccount());
+            deactivateAllButton();
+            activeButton(this.btnrAccount);
+            changePageMain(new UCAccount());
         }
 
-        private void pnLogin_Click(object sender, EventArgs e)
+        private void btnrLogout_Click(object sender, EventArgs e)
         {
-            changeSelectedRightMenu(sender);
-            changePageRightMain(new UCLogin());
+            Form frmms = new FrmMessageBox("Bạn chắc chắn muốn đăng xuất?", "Đăng xuất", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            
+            if (frmms.ShowDialog() == DialogResult.Yes)
+            {
+                resetButtonOfRightMenu();
+                btnrLogin_Click(sender, e);
+            }
         }
 
-        private void pnRegister_Click(object sender, EventArgs e)
+        private void btnrLogin_Click(object sender, EventArgs e)
         {
-            changeSelectedRightMenu(sender);
-            changePageRightMain(new UCRegister());
+            deactivateAllButton();
+            activeButton(this.btnrLogin);
+            changePageMain(new UCLogin());
+        }
+
+        private void btnrRegister_Click(object sender, EventArgs e)
+        {
+            deactivateAllButton();
+            activeButton(this.btnrRegister);
+            changePageMain(new UCRegister());
         }
     }
 }

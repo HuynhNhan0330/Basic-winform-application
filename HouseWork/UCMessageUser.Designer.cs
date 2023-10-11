@@ -29,54 +29,41 @@
         private void InitializeComponent()
         {
             this.lbText = new System.Windows.Forms.Label();
-            this.pnuc = new System.Windows.Forms.Panel();
-            this.pnuc.SuspendLayout();
             this.SuspendLayout();
             // 
             // lbText
             // 
             this.lbText.AutoSize = true;
-            this.lbText.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(134)))), ((int)(((byte)(222)))));
+            this.lbText.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(188)))), ((int)(((byte)(215)))));
             this.lbText.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.lbText.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lbText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbText.ForeColor = System.Drawing.Color.White;
-            this.lbText.Location = new System.Drawing.Point(30, 5);
+            this.lbText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(31)))));
+            this.lbText.Location = new System.Drawing.Point(38, 3);
             this.lbText.MaximumSize = new System.Drawing.Size(315, 0);
             this.lbText.Name = "lbText";
-            this.lbText.Size = new System.Drawing.Size(306, 66);
+            this.lbText.Padding = new System.Windows.Forms.Padding(3);
+            this.lbText.Size = new System.Drawing.Size(312, 72);
             this.lbText.TabIndex = 2;
             this.lbText.Text = " This is a sample text message. This is a sample text message. This is a sample t" +
     "ext message. ";
-            // 
-            // pnuc
-            // 
-            this.pnuc.BackColor = System.Drawing.Color.Transparent;
-            this.pnuc.Controls.Add(this.lbText);
-            this.pnuc.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnuc.Location = new System.Drawing.Point(0, 0);
-            this.pnuc.Margin = new System.Windows.Forms.Padding(0);
-            this.pnuc.Name = "pnuc";
-            this.pnuc.Size = new System.Drawing.Size(350, 75);
-            this.pnuc.TabIndex = 3;
+            this.lbText.Paint += new System.Windows.Forms.PaintEventHandler(this.lbText_Paint);
             // 
             // UCMessageUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
-            this.Controls.Add(this.pnuc);
+            this.Controls.Add(this.lbText);
             this.Name = "UCMessageUser";
             this.Size = new System.Drawing.Size(350, 75);
-            this.pnuc.ResumeLayout(false);
-            this.pnuc.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.Label lbText;
-        private System.Windows.Forms.Panel pnuc;
     }
 }

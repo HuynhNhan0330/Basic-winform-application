@@ -117,4 +117,89 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnrDiscount.img" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        DAAACwwBP0AiyAAAAWJJREFUWEft1rtLw1AYxuF4AwcRdBC8UG/gpIuiqxac3NwEF8FFwUUQ3MTRf0E3
+        d11EBxFUnJy6iqIo4uQkiBcQL7+3ptDhfGlqEqfzwgPNd07O+ZKmJYFPgvRgEQvoVuE/s4w3fIf0WbXM
+        04htaNNddKILO2FNY5qTSTpwji9soBal1GAVnyggh1QzjHs8Y1oFI1N4wiPGVUgjs3jFNQZVqJABXOAd
+        8yr8NXXQrdZ3e4gWxE0z9qBzN9GAqtKKI5QWqEe1Kb+AM7QhVoZwA93CORUSZgYv0DM0okJUJqAH7QFj
+        KqSUUWhNra09zOzjDu3Fo3SjNW9xUDwycozT34+Z5CRkxjcQp4FeTBo0FpXEDeTxAf22XTQW9RecuIE1
+        aCPX1YvGNMdK4gbWoU2saExzrPgGfAO+Ad9AxQa2oEWiXMLKFVznlNMrnpkmLEHv+C4r6IOVfmiO61zR
+        2trDJ0wQ/AA/FKA+o3YjXAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="btnrContact.img" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        DAAACwwBP0AiyAAAAWJJREFUWEft1rtLw1AYxuF4AwcRdBC8UG/gpIuiqxac3NwEF8FFwUUQ3MTRf0E3
+        d11EBxFUnJy6iqIo4uQkiBcQL7+3ptDhfGlqEqfzwgPNd07O+ZKmJYFPgvRgEQvoVuE/s4w3fIf0WbXM
+        04htaNNddKILO2FNY5qTSTpwji9soBal1GAVnyggh1QzjHs8Y1oFI1N4wiPGVUgjs3jFNQZVqJABXOAd
+        8yr8NXXQrdZ3e4gWxE0z9qBzN9GAqtKKI5QWqEe1Kb+AM7QhVoZwA93CORUSZgYv0DM0okJUJqAH7QFj
+        KqSUUWhNra09zOzjDu3Fo3SjNW9xUDwycozT34+Z5CRkxjcQp4FeTBo0FpXEDeTxAf22XTQW9RecuIE1
+        aCPX1YvGNMdK4gbWoU2saExzrPgGfAO+Ad9AxQa2oEWiXMLKFVznlNMrnpkmLEHv+C4r6IOVfmiO61zR
+        2trDJ0wQ/AA/FKA+o3YjXAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="btnrService.img" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        DAAACwwBP0AiyAAAAWJJREFUWEft1rtLw1AYxuF4AwcRdBC8UG/gpIuiqxac3NwEF8FFwUUQ3MTRf0E3
+        d11EBxFUnJy6iqIo4uQkiBcQL7+3ptDhfGlqEqfzwgPNd07O+ZKmJYFPgvRgEQvoVuE/s4w3fIf0WbXM
+        04htaNNddKILO2FNY5qTSTpwji9soBal1GAVnyggh1QzjHs8Y1oFI1N4wiPGVUgjs3jFNQZVqJABXOAd
+        8yr8NXXQrdZ3e4gWxE0z9qBzN9GAqtKKI5QWqEe1Kb+AM7QhVoZwA93CORUSZgYv0DM0okJUJqAH7QFj
+        KqSUUWhNra09zOzjDu3Fo3SjNW9xUDwycozT34+Z5CRkxjcQp4FeTBo0FpXEDeTxAf22XTQW9RecuIE1
+        aCPX1YvGNMdK4gbWoU2saExzrPgGfAO+Ad9AxQa2oEWiXMLKFVznlNMrnpkmLEHv+C4r6IOVfmiO61zR
+        2trDJ0wQ/AA/FKA+o3YjXAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="btnrHome.img" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        DAAACwwBP0AiyAAAAWJJREFUWEft1rtLw1AYxuF4AwcRdBC8UG/gpIuiqxac3NwEF8FFwUUQ3MTRf0E3
+        d11EBxFUnJy6iqIo4uQkiBcQL7+3ptDhfGlqEqfzwgPNd07O+ZKmJYFPgvRgEQvoVuE/s4w3fIf0WbXM
+        04htaNNddKILO2FNY5qTSTpwji9soBal1GAVnyggh1QzjHs8Y1oFI1N4wiPGVUgjs3jFNQZVqJABXOAd
+        8yr8NXXQrdZ3e4gWxE0z9qBzN9GAqtKKI5QWqEe1Kb+AM7QhVoZwA93CORUSZgYv0DM0okJUJqAH7QFj
+        KqSUUWhNra09zOzjDu3Fo3SjNW9xUDwycozT34+Z5CRkxjcQp4FeTBo0FpXEDeTxAf22XTQW9RecuIE1
+        aCPX1YvGNMdK4gbWoU2saExzrPgGfAO+Ad9AxQa2oEWiXMLKFVznlNMrnpkmLEHv+C4r6IOVfmiO61zR
+        2trDJ0wQ/AA/FKA+o3YjXAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="btnrLogout.img" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        DAAACwwBP0AiyAAAAWJJREFUWEft1rtLw1AYxuF4AwcRdBC8UG/gpIuiqxac3NwEF8FFwUUQ3MTRf0E3
+        d11EBxFUnJy6iqIo4uQkiBcQL7+3ptDhfGlqEqfzwgPNd07O+ZKmJYFPgvRgEQvoVuE/s4w3fIf0WbXM
+        04htaNNddKILO2FNY5qTSTpwji9soBal1GAVnyggh1QzjHs8Y1oFI1N4wiPGVUgjs3jFNQZVqJABXOAd
+        8yr8NXXQrdZ3e4gWxE0z9qBzN9GAqtKKI5QWqEe1Kb+AM7QhVoZwA93CORUSZgYv0DM0okJUJqAH7QFj
+        KqSUUWhNra09zOzjDu3Fo3SjNW9xUDwycozT34+Z5CRkxjcQp4FeTBo0FpXEDeTxAf22XTQW9RecuIE1
+        aCPX1YvGNMdK4gbWoU2saExzrPgGfAO+Ad9AxQa2oEWiXMLKFVznlNMrnpkmLEHv+C4r6IOVfmiO61zR
+        2trDJ0wQ/AA/FKA+o3YjXAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="btnrAccount.img" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        DAAACwwBP0AiyAAAAWJJREFUWEft1rtLw1AYxuF4AwcRdBC8UG/gpIuiqxac3NwEF8FFwUUQ3MTRf0E3
+        d11EBxFUnJy6iqIo4uQkiBcQL7+3ptDhfGlqEqfzwgPNd07O+ZKmJYFPgvRgEQvoVuE/s4w3fIf0WbXM
+        04htaNNddKILO2FNY5qTSTpwji9soBal1GAVnyggh1QzjHs8Y1oFI1N4wiPGVUgjs3jFNQZVqJABXOAd
+        8yr8NXXQrdZ3e4gWxE0z9qBzN9GAqtKKI5QWqEe1Kb+AM7QhVoZwA93CORUSZgYv0DM0okJUJqAH7QFj
+        KqSUUWhNra09zOzjDu3Fo3SjNW9xUDwycozT34+Z5CRkxjcQp4FeTBo0FpXEDeTxAf22XTQW9RecuIE1
+        aCPX1YvGNMdK4gbWoU2saExzrPgGfAO+Ad9AxQa2oEWiXMLKFVznlNMrnpkmLEHv+C4r6IOVfmiO61zR
+        2trDJ0wQ/AA/FKA+o3YjXAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="roundedUC1.img" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        DAAACwwBP0AiyAAAAWJJREFUWEft1rtLw1AYxuF4AwcRdBC8UG/gpIuiqxac3NwEF8FFwUUQ3MTRf0E3
+        d11EBxFUnJy6iqIo4uQkiBcQL7+3ptDhfGlqEqfzwgPNd07O+ZKmJYFPgvRgEQvoVuE/s4w3fIf0WbXM
+        04htaNNddKILO2FNY5qTSTpwji9soBal1GAVnyggh1QzjHs8Y1oFI1N4wiPGVUgjs3jFNQZVqJABXOAd
+        8yr8NXXQrdZ3e4gWxE0z9qBzN9GAqtKKI5QWqEe1Kb+AM7QhVoZwA93CORUSZgYv0DM0okJUJqAH7QFj
+        KqSUUWhNra09zOzjDu3Fo3SjNW9xUDwycozT34+Z5CRkxjcQp4FeTBo0FpXEDeTxAf22XTQW9RecuIE1
+        aCPX1YvGNMdK4gbWoU2saExzrPgGfAO+Ad9AxQa2oEWiXMLKFVznlNMrnpkmLEHv+C4r6IOVfmiO61zR
+        2trDJ0wQ/AA/FKA+o3YjXAAAAABJRU5ErkJggg==
+</value>
+  </data>
 </root>
