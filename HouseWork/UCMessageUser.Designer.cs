@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.lbText = new System.Windows.Forms.Label();
+            this.pcbAvatar = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbAvatar)).BeginInit();
             this.SuspendLayout();
             // 
             // lbText
@@ -39,7 +41,7 @@
             this.lbText.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lbText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(31)))));
-            this.lbText.Location = new System.Drawing.Point(38, 3);
+            this.lbText.Location = new System.Drawing.Point(47, 7);
             this.lbText.MaximumSize = new System.Drawing.Size(315, 0);
             this.lbText.Name = "lbText";
             this.lbText.Padding = new System.Windows.Forms.Padding(3);
@@ -49,14 +51,26 @@
     "ext message. ";
             this.lbText.Paint += new System.Windows.Forms.PaintEventHandler(this.lbText_Paint);
             // 
+            // pcbAvatar
+            // 
+            this.pcbAvatar.BackgroundImage = global::HouseWork.Properties.Resources.CatAvatar;
+            this.pcbAvatar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pcbAvatar.Location = new System.Drawing.Point(368, 0);
+            this.pcbAvatar.Name = "pcbAvatar";
+            this.pcbAvatar.Size = new System.Drawing.Size(52, 52);
+            this.pcbAvatar.TabIndex = 3;
+            this.pcbAvatar.TabStop = false;
+            // 
             // UCMessageUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
+            this.Controls.Add(this.pcbAvatar);
             this.Controls.Add(this.lbText);
             this.Name = "UCMessageUser";
-            this.Size = new System.Drawing.Size(350, 75);
+            this.Size = new System.Drawing.Size(420, 105);
+            ((System.ComponentModel.ISupportInitialize)(this.pcbAvatar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -65,5 +79,6 @@
         #endregion
 
         private System.Windows.Forms.Label lbText;
+        private System.Windows.Forms.PictureBox pcbAvatar;
     }
 }

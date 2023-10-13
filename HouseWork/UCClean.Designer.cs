@@ -28,52 +28,55 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.label5 = new System.Windows.Forms.Label();
+            this.rbtn3 = new System.Windows.Forms.RadioButton();
+            this.lb3 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.radiobtnAccept = new System.Windows.Forms.RadioButton();
+            this.lb1 = new System.Windows.Forms.Label();
+            this.rbtn1 = new System.Windows.Forms.RadioButton();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.radiobtnNo = new System.Windows.Forms.RadioButton();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.card3 = new HouseWork.Card();
-            this.card2 = new HouseWork.Card();
-            this.card1 = new HouseWork.Card();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.lb2 = new System.Windows.Forms.Label();
+            this.rbtn2 = new System.Windows.Forms.RadioButton();
+            this.pcb2 = new System.Windows.Forms.PictureBox();
+            this.pcb1 = new System.Windows.Forms.PictureBox();
+            this.pcb3 = new System.Windows.Forms.PictureBox();
+            this.btn2 = new HouseWork.Card();
+            this.btn1 = new HouseWork.Card();
+            this.btn3 = new HouseWork.Card();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb3)).BeginInit();
             this.SuspendLayout();
             // 
-            // radioButton4
+            // rbtn3
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton4.Location = new System.Drawing.Point(800, 36);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(153, 33);
-            this.radioButton4.TabIndex = 29;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "300-500m2";
-            this.radioButton4.UseVisualStyleBackColor = true;
+            this.rbtn3.AutoSize = true;
+            this.rbtn3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.rbtn3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbtn3.Location = new System.Drawing.Point(800, 36);
+            this.rbtn3.Name = "rbtn3";
+            this.rbtn3.Size = new System.Drawing.Size(153, 33);
+            this.rbtn3.TabIndex = 29;
+            this.rbtn3.TabStop = true;
+            this.rbtn3.Text = "300-500m2";
+            this.rbtn3.UseVisualStyleBackColor = true;
             // 
-            // label5
+            // lb3
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(810, 83);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(165, 25);
-            this.label5.TabIndex = 31;
-            this.label5.Text = "(6 người - 3 tiếng)";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
+            this.lb3.AutoSize = true;
+            this.lb3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lb3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb3.Location = new System.Drawing.Point(810, 83);
+            this.lb3.Name = "lb3";
+            this.lb3.Size = new System.Drawing.Size(165, 25);
+            this.lb3.TabIndex = 31;
+            this.lb3.Text = "(6 người - 3 tiếng)";
+            this.lb3.Click += new System.EventHandler(this.lb3_Click);
             // 
             // label7
             // 
             this.label7.AutoSize = true;
+            this.label7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(795, 138);
             this.label7.Name = "label7";
@@ -85,117 +88,139 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(45, 138);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(257, 29);
             this.label1.TabIndex = 37;
             this.label1.Text = "100.000 - 250.000 VNĐ";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // label2
+            // lb1
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(60, 83);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(165, 25);
-            this.label2.TabIndex = 36;
-            this.label2.Text = "(2 người - 2 tiếng)";
+            this.lb1.AutoSize = true;
+            this.lb1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lb1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb1.Location = new System.Drawing.Point(60, 83);
+            this.lb1.Name = "lb1";
+            this.lb1.Size = new System.Drawing.Size(165, 25);
+            this.lb1.TabIndex = 36;
+            this.lb1.Text = "(2 người - 2 tiếng)";
+            this.lb1.Click += new System.EventHandler(this.lb1_Click);
             // 
-            // radiobtnAccept
+            // rbtn1
             // 
-            this.radiobtnAccept.AutoSize = true;
-            this.radiobtnAccept.Checked = true;
-            this.radiobtnAccept.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radiobtnAccept.Location = new System.Drawing.Point(50, 36);
-            this.radiobtnAccept.Name = "radiobtnAccept";
-            this.radiobtnAccept.Size = new System.Drawing.Size(162, 33);
-            this.radiobtnAccept.TabIndex = 34;
-            this.radiobtnAccept.TabStop = true;
-            this.radiobtnAccept.Text = "Dưới 100m2";
-            this.radiobtnAccept.UseVisualStyleBackColor = true;
+            this.rbtn1.AutoSize = true;
+            this.rbtn1.Checked = true;
+            this.rbtn1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.rbtn1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbtn1.Location = new System.Drawing.Point(50, 36);
+            this.rbtn1.Name = "rbtn1";
+            this.rbtn1.Size = new System.Drawing.Size(162, 33);
+            this.rbtn1.TabIndex = 34;
+            this.rbtn1.TabStop = true;
+            this.rbtn1.Text = "Dưới 100m2";
+            this.rbtn1.UseVisualStyleBackColor = true;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(420, 138);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(257, 29);
             this.label3.TabIndex = 42;
             this.label3.Text = "300.000 - 500.000 VNĐ";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
-            // label4
+            // lb2
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(435, 83);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(165, 25);
-            this.label4.TabIndex = 41;
-            this.label4.Text = "(4 người - 3 tiếng)";
+            this.lb2.AutoSize = true;
+            this.lb2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lb2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb2.Location = new System.Drawing.Point(435, 83);
+            this.lb2.Name = "lb2";
+            this.lb2.Size = new System.Drawing.Size(165, 25);
+            this.lb2.TabIndex = 41;
+            this.lb2.Text = "(4 người - 3 tiếng)";
+            this.lb2.Click += new System.EventHandler(this.lb2_Click);
             // 
-            // radiobtnNo
+            // rbtn2
             // 
-            this.radiobtnNo.AutoSize = true;
-            this.radiobtnNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radiobtnNo.Location = new System.Drawing.Point(425, 36);
-            this.radiobtnNo.Name = "radiobtnNo";
-            this.radiobtnNo.Size = new System.Drawing.Size(153, 33);
-            this.radiobtnNo.TabIndex = 39;
-            this.radiobtnNo.Text = "100-200m2";
-            this.radiobtnNo.UseVisualStyleBackColor = true;
+            this.rbtn2.AutoSize = true;
+            this.rbtn2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.rbtn2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbtn2.Location = new System.Drawing.Point(425, 36);
+            this.rbtn2.Name = "rbtn2";
+            this.rbtn2.Size = new System.Drawing.Size(153, 33);
+            this.rbtn2.TabIndex = 39;
+            this.rbtn2.Text = "100-200m2";
+            this.rbtn2.UseVisualStyleBackColor = true;
             // 
-            // pictureBox2
+            // pcb2
             // 
-            this.pictureBox2.BackgroundImage = global::HouseWork.Properties.Resources.House150m2_preview_rev_1;
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(415, 195);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(275, 275);
-            this.pictureBox2.TabIndex = 40;
-            this.pictureBox2.TabStop = false;
+            this.pcb2.BackgroundImage = global::HouseWork.Properties.Resources.House150m2_preview_rev_1;
+            this.pcb2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pcb2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pcb2.Location = new System.Drawing.Point(415, 195);
+            this.pcb2.Name = "pcb2";
+            this.pcb2.Size = new System.Drawing.Size(275, 275);
+            this.pcb2.TabIndex = 40;
+            this.pcb2.TabStop = false;
+            this.pcb2.Click += new System.EventHandler(this.pcb2_Click);
             // 
-            // pictureBox1
+            // pcb1
             // 
-            this.pictureBox1.BackgroundImage = global::HouseWork.Properties.Resources.House50m2_preview_rev_1;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(40, 195);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(275, 275);
-            this.pictureBox1.TabIndex = 35;
-            this.pictureBox1.TabStop = false;
+            this.pcb1.BackgroundImage = global::HouseWork.Properties.Resources.House50m2_preview_rev_1;
+            this.pcb1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pcb1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pcb1.Location = new System.Drawing.Point(40, 195);
+            this.pcb1.Name = "pcb1";
+            this.pcb1.Size = new System.Drawing.Size(275, 275);
+            this.pcb1.TabIndex = 35;
+            this.pcb1.TabStop = false;
+            this.pcb1.Click += new System.EventHandler(this.pcb1_Click);
             // 
-            // pictureBox3
+            // pcb3
             // 
-            this.pictureBox3.BackgroundImage = global::HouseWork.Properties.Resources.home4;
-            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox3.Location = new System.Drawing.Point(790, 195);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(275, 275);
-            this.pictureBox3.TabIndex = 30;
-            this.pictureBox3.TabStop = false;
+            this.pcb3.BackgroundImage = global::HouseWork.Properties.Resources.home4;
+            this.pcb3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pcb3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pcb3.Location = new System.Drawing.Point(790, 195);
+            this.pcb3.Name = "pcb3";
+            this.pcb3.Size = new System.Drawing.Size(275, 275);
+            this.pcb3.TabIndex = 30;
+            this.pcb3.TabStop = false;
+            this.pcb3.Click += new System.EventHandler(this.pcb3_Click);
             // 
-            // card3
+            // btn2
             // 
-            this.card3.Location = new System.Drawing.Point(375, 0);
-            this.card3.Name = "card3";
-            this.card3.Size = new System.Drawing.Size(350, 500);
-            this.card3.TabIndex = 38;
+            this.btn2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn2.Location = new System.Drawing.Point(375, 0);
+            this.btn2.Name = "btn2";
+            this.btn2.Size = new System.Drawing.Size(350, 500);
+            this.btn2.TabIndex = 38;
+            this.btn2.Click += new System.EventHandler(this.btn2_Click);
             // 
-            // card2
+            // btn1
             // 
-            this.card2.Location = new System.Drawing.Point(0, 0);
-            this.card2.Name = "card2";
-            this.card2.Size = new System.Drawing.Size(350, 500);
-            this.card2.TabIndex = 33;
+            this.btn1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn1.Location = new System.Drawing.Point(0, 0);
+            this.btn1.Name = "btn1";
+            this.btn1.Size = new System.Drawing.Size(350, 500);
+            this.btn1.TabIndex = 33;
+            this.btn1.Click += new System.EventHandler(this.btn1_Click);
             // 
-            // card1
+            // btn3
             // 
-            this.card1.Location = new System.Drawing.Point(750, 0);
-            this.card1.Name = "card1";
-            this.card1.Size = new System.Drawing.Size(350, 500);
-            this.card1.TabIndex = 1;
+            this.btn3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn3.Location = new System.Drawing.Point(750, 0);
+            this.btn3.Name = "btn3";
+            this.btn3.Size = new System.Drawing.Size(350, 500);
+            this.btn3.TabIndex = 1;
+            this.btn3.Click += new System.EventHandler(this.btn3_Click);
             // 
             // UCClean
             // 
@@ -203,46 +228,46 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(238)))), ((int)(((byte)(253)))));
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.radiobtnNo);
-            this.Controls.Add(this.card3);
+            this.Controls.Add(this.lb2);
+            this.Controls.Add(this.pcb2);
+            this.Controls.Add(this.rbtn2);
+            this.Controls.Add(this.btn2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.radiobtnAccept);
-            this.Controls.Add(this.card2);
+            this.Controls.Add(this.lb1);
+            this.Controls.Add(this.pcb1);
+            this.Controls.Add(this.rbtn1);
+            this.Controls.Add(this.btn1);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.radioButton4);
-            this.Controls.Add(this.card1);
+            this.Controls.Add(this.lb3);
+            this.Controls.Add(this.pcb3);
+            this.Controls.Add(this.rbtn3);
+            this.Controls.Add(this.btn3);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(31)))));
             this.Name = "UCClean";
             this.Size = new System.Drawing.Size(1100, 500);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private Card card1;
-        private System.Windows.Forms.RadioButton radioButton4;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Label label5;
+        private Card btn3;
+        private System.Windows.Forms.RadioButton rbtn3;
+        private System.Windows.Forms.PictureBox pcb3;
+        private System.Windows.Forms.Label lb3;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.RadioButton radiobtnAccept;
-        private Card card2;
+        private System.Windows.Forms.Label lb1;
+        private System.Windows.Forms.PictureBox pcb1;
+        private System.Windows.Forms.RadioButton rbtn1;
+        private Card btn1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.RadioButton radiobtnNo;
-        private Card card3;
+        private System.Windows.Forms.Label lb2;
+        private System.Windows.Forms.PictureBox pcb2;
+        private System.Windows.Forms.RadioButton rbtn2;
+        private Card btn2;
     }
 }

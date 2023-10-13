@@ -119,7 +119,7 @@ namespace HouseWork
                     //OK Button
                     btnAccept.Visible = true;
                     btnAccept.Location = new Point(xCenter, yCenter);
-                    btnAccept.Text = "Ok";
+                    btnAccept.Text = "Đồng ý";
                     btnAccept.DialogResult = DialogResult.OK;//Set DialogResult
 
                     //Set Default Button
@@ -130,13 +130,13 @@ namespace HouseWork
                     //Yes Button
                     btnAccept.Visible = true;
                     btnAccept.Location = new Point(xCenter - (btnAccept.Width / 2) - 5, yCenter);
-                    btnAccept.Text = "Yes";
+                    btnAccept.Text = "Có";
                     btnAccept.DialogResult = DialogResult.Yes;//Set DialogResult
 
                     //No Button
                     btnNo.Visible = true;
                     btnNo.Location = new Point(xCenter + (btnNo.Width / 2) + 5, yCenter);
-                    btnNo.Text = "No";
+                    btnNo.Text = "Không";
                     btnNo.DialogResult = DialogResult.No;//Set DialogResult
                     btnNo.BackColor = Color.IndianRed;
 

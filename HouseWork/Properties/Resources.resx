@@ -145,6 +145,9 @@
   <data name="House150m2_preview_rev_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\House150m2_preview_rev_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="HomeImgPage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HomeImgPage.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="shield" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\shield.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -153,12 +156,6 @@
   </data>
   <data name="House450m2_preview_rev_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\House450m2_preview_rev_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="LikeIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\LikeIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="SendIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SendIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="GoogleIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\GoogleIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -229,8 +226,8 @@
   <data name="TanLongIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TanLongIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="chat_bot_img" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\chat_bot_img.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="RegisterImg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RegisterImg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="FBIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\FBIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -261,6 +258,9 @@
   </data>
   <data name="cleaning" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cleaning.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsLogo2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\InsLogo2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="GmailIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\GmailIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -325,8 +325,8 @@
   <data name="CloseIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CloseIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="InsLogo2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\InsLogo2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="EmailMessageIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EmailMessageIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="CloseIcon2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CloseIcon2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -361,11 +361,14 @@
   <data name="laundry-machine" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\laundry-machine.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="facebook" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\facebook.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Cook3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cook3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="EmailMessageIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\EmailMessageIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="SendIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SendIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Laundry15kg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Laundry15kg.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -385,6 +388,9 @@
   <data name="cooking" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cooking.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="chat_bot_img" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\chat_bot_img.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="diversity" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\diversity.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -403,8 +409,8 @@
   <data name="ChatBotIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ChatBotIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="facebook" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\facebook.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="LikeIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LikeIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="QRrr" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\QRrr.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -412,7 +418,10 @@
   <data name="House450m2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\House450m2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="RegisterImg" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\RegisterImg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="HomeImgPage1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HomeImgPage1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HomeImgBackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HomeImgBackground.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

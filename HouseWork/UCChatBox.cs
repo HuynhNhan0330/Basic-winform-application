@@ -45,9 +45,9 @@ namespace HouseWork
             if (!(!isVerticalScroll && checkHeightControlsInChat()))
             {
                 isVerticalScroll = true;
-                msUser.updateLeftChat(3);
+                msUser.updateLeftControl(3);
             }
-            else msUser.updateLeftChat(20);
+            else msUser.updateLeftControl(20);
         }
 
         private void sendMessageBot()

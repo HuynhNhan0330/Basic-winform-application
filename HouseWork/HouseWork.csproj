@@ -538,5 +538,14 @@
   <ItemGroup>
     <None Include="Resources\RegisterImg.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HomeImgPage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HomeImgPage1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HomeImgBackground.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

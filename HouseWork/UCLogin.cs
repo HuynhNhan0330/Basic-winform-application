@@ -67,6 +67,9 @@ namespace HouseWork
             Form currentForm = this.ParentForm;
             ((FrmHomePage)currentForm).resetButtonOfRightMenu();
             ((FrmHomePage)currentForm).btnrAccount_Click(sender, e);
+        
+            FrmMessageBox ms = new FrmMessageBox("Đăng nhập thành công", "", MessageBoxButtons.OK, MessageBoxIcon.None);
+            ms.ShowDialog();
         }
 
         
