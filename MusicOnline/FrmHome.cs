@@ -18,6 +18,7 @@ namespace MusicOnline
     {
         private WMPLib.WindowsMediaPlayer player = new WMPLib.WindowsMediaPlayer();
         private ObservableCollection<Music> musics = new ObservableCollection<Music>();
+        private Music currentMusicSelected = null;
 
         public FrmHome()
         {
@@ -34,6 +35,58 @@ namespace MusicOnline
             player.URL = Path.GetFullPath(path);
             player.controls.play();
         }
+
+        #region Menu
+        private void activeButton(AButton abtn)
+        {
+            abtn.ForeColor = BaseColor.Trang;
+        }
+
+        private void deactiveButton(AButton abtn)
+        {
+            abtn.ForeColor = BaseColor.Xam;
+        }
+
+        private void deactiveAllButton()
+        {
+            abtnListMusic.Image = Properties.Resources.musicDeactiveIcon;
+            abtnLikeSong.Image = Properties.Resources.LikeSongDeActiveIcon;
+            abtnRecently.Image = Properties.Resources.recentlyDeactiveIcon;
+
+           foreach (AButton abtn in pnMenu.Controls)
+                deactiveButton(abtn);
+        }
+
+        private void abtnHover_MouseHover(object sender, EventArgs e)
+        {
+            (sender as AButton).BackgroundColor = BaseColor.DenNhat;
+        }
+
+        private void abtnListMusic_Click(object sender, EventArgs e)
+        {
+            deactiveAllButton();
+            AButton currentAbtn = (AButton)sender;
+            activeButton(currentAbtn);
+            currentAbtn.Image = Properties.Resources.musicActiveIcon;
+        }
+
+        private void abtnLikeSong_Click(object sender, EventArgs e)
+        {
+            deactiveAllButton();
+            AButton currentAbtn = (AButton)sender;
+            activeButton(currentAbtn);
+            currentAbtn.Image = Properties.Resources.LikeSongActiveIcon;
+        }
+
+        private void abtnRecently_Click(object sender, EventArgs e)
+        {
+            deactiveAllButton();
+            AButton currentAbtn = (AButton)sender;
+            activeButton(currentAbtn);
+            currentAbtn.Image = Properties.Resources.recentlyActiveIcon;
+        }
+
+        #endregion
 
         #region slider
 
@@ -132,6 +185,7 @@ namespace MusicOnline
                                 Title = element.GetProperty("title").GetString(),
                                 ArtistsNames = element.GetProperty("artistsNames").GetString(),
                                 Genre = element.GetProperty("genre").GetString(),
+                                Type = element.GetProperty("type").GetString(),
                                 Lyrics = element.GetProperty("lyrics").GetString()
                             };
 
@@ -209,6 +263,41 @@ namespace MusicOnline
         {
             LoadData();
             loadMusics();
+        }
+
+        private Music getMusicByTitle(string _title)
+        {
+            foreach (Music music in musics)
+            {
+                if (music.Title == _title)
+                    return music;
+            }
+
+            return null;
+        }
+
+
+        private void renderDetailMusic()
+        {
+            pibThumbnail.BackgroundImage = Helper.loadImagePath("../../CreateData/Image/" + currentMusicSelected.Title + ".jpg");
+
+            lbTitle.Text = currentMusicSelected.Title;
+            pnTitle.Height = lbTitle.Height + 15;
+
+            lbArtistsNames.Text = currentMusicSelected.ArtistsNames;
+            pnArtistsNames.Height = lbArtistsNames.Height + 10;
+
+            lbGenre.Text = currentMusicSelected.Genre;
+            pnGenre.Height = lbGenre.Height + 10;
+
+            lbType.Text = currentMusicSelected.Type;
+            pnType.Height = lbType.Height + 10;
+        }
+
+        public void setDetailMusic(string _title)
+        {
+            currentMusicSelected = getMusicByTitle(_title);
+            renderDetailMusic();
         }
     }
 }

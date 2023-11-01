@@ -13,7 +13,7 @@ namespace MusicOnline.Utils
         public static Color XanhLa = Color.FromArgb(24, 155, 70);
         public static Color Den = Color.FromArgb(0, 0, 0);
         public static Color Trang = Color.FromArgb(255, 255, 255);
-        public static Color DenNhat = Color.FromArgb(36, 35, 34);
-        public static Color Xam = Color.FromArgb(77, 77, 77);
+        public static Color DenNhat = Color.FromArgb(29, 29, 29);
+        public static Color Xam = Color.FromArgb(166, 166, 166);
     }
 }

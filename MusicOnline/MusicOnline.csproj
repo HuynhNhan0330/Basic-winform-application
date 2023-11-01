@@ -353,6 +353,19 @@
     <Content Include="CreateData\node_modules\follow-redirects\index.js" />
     <Content Include="CreateData\node_modules\zingmp3-api-full\dist\index.js" />
     <Content Include="Mp3\SimeImlangMemuoiPhaiLong.mp3" />
+    <None Include="Resources\previous.png" />
+    <None Include="Resources\play-and-pause-button.png" />
+    <None Include="Resources\play.png" />
+    <None Include="Resources\libraryIcon1.png" />
+    <None Include="Resources\musicDeactiveIcon.png" />
+    <None Include="Resources\musicActiveIcon.png" />
+    <None Include="Resources\LikeSongDeActiveIcon.png" />
+    <None Include="Resources\LikeSongActiveIcon.png" />
+    <None Include="Resources\recentlyDeactiveIcon.png" />
+    <None Include="Resources\recentlyActiveIcon.png" />
+    <None Include="Resources\homeDeactiveIcon.png" />
+    <None Include="Resources\homeIconAccept.png" />
+    <None Include="Resources\home.png" />
     <None Include="Resources\libraryIcon.png" />
   </ItemGroup>
   <ItemGroup>

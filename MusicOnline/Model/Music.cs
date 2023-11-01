@@ -11,6 +11,7 @@ namespace MusicOnline.Model
         public string Title { get; set; }
         public string ArtistsNames { get; set; }
         public string Genre { get; set; }
+        public string Type { get; set; }
         public string Lyrics { get; set; }
     }
 }
