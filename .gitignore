@@ -3,6 +3,6 @@ HouseWork/bin
 HouseWork/obj
 MusicOnline/bin
 MusicOnline/obj
-MusicOnline/CreateData/ZingMp3Api/node_modules
-MusicOnline/CreateData/ZingMp3Api/package.json
-MusicOnline/CreateData/ZingMp3Api/package-lock.json
+MusicOnline/CreateData/node_modules
+MusicOnline/CreateData/package.json
+MusicOnline/CreateData/package-lock.json
