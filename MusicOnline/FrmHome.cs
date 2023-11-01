@@ -29,9 +29,9 @@ namespace MusicOnline
             this.Close();
         }
 
-        private void runMp3(string path)
+        public void runMp3(string path)
         {
-            player.URL = path;
+            player.URL = Path.GetFullPath(path);
             player.controls.play();
         }
 
@@ -150,6 +150,16 @@ namespace MusicOnline
                 AMessageBoxFrm ms = new AMessageBoxFrm("Không thể đọc file: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 ms.ShowDialog();
             }
+        }
+
+        protected override void OnPaint(PaintEventArgs e)
+        {
+            base.OnPaint(e);
+
+            GraphicsPath path = RoundedRectangle.Create(this.Width, this.Height, 20);
+
+            // Đặt Region cho Form để tạo hình dạng bo tròn
+            this.Region = new Region(path);
         }
 
         private void loadMusics()

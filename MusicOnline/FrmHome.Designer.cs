@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.timePlay = new System.Windows.Forms.Timer(this.components);
             this.pnBody = new MusicOnline.APanel();
+            this.aPanel2 = new MusicOnline.APanel();
             this.pnBody2 = new MusicOnline.APanel();
             this.flpMusics = new System.Windows.Forms.FlowLayoutPanel();
             this.aPanel1 = new MusicOnline.APanel();
@@ -43,7 +44,6 @@
             this.pibClose = new System.Windows.Forms.PictureBox();
             this.pnBottom = new MusicOnline.APanel();
             this.slider = new MusicOnline.APanel();
-            this.aPanel2 = new MusicOnline.APanel();
             this.pnBody.SuspendLayout();
             this.pnBody2.SuspendLayout();
             this.pnBody1.SuspendLayout();
@@ -71,12 +71,27 @@
             this.pnBody.Controls.Add(this.pnBody1);
             this.pnBody.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnBody.ForeColor = System.Drawing.Color.White;
-            this.pnBody.Location = new System.Drawing.Point(0, 34);
+            this.pnBody.Location = new System.Drawing.Point(0, 30);
             this.pnBody.Name = "pnBody";
             this.pnBody.RoundType = MusicOnline.APanel.RoundStyles.Full;
-            this.pnBody.Size = new System.Drawing.Size(1500, 716);
+            this.pnBody.Size = new System.Drawing.Size(1500, 720);
             this.pnBody.TabIndex = 3;
             this.pnBody.TextColor = System.Drawing.Color.White;
+            // 
+            // aPanel2
+            // 
+            this.aPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
+            this.aPanel2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
+            this.aPanel2.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.aPanel2.BorderRadius = 10;
+            this.aPanel2.BorderSize = 0;
+            this.aPanel2.ForeColor = System.Drawing.Color.White;
+            this.aPanel2.Location = new System.Drawing.Point(1150, 25);
+            this.aPanel2.Name = "aPanel2";
+            this.aPanel2.RoundType = MusicOnline.APanel.RoundStyles.Full;
+            this.aPanel2.Size = new System.Drawing.Size(300, 640);
+            this.aPanel2.TabIndex = 3;
+            this.aPanel2.TextColor = System.Drawing.Color.White;
             // 
             // pnBody2
             // 
@@ -197,7 +212,7 @@
             this.pnTop.Location = new System.Drawing.Point(0, 0);
             this.pnTop.Name = "pnTop";
             this.pnTop.RoundType = MusicOnline.APanel.RoundStyles.Full;
-            this.pnTop.Size = new System.Drawing.Size(1500, 34);
+            this.pnTop.Size = new System.Drawing.Size(1500, 30);
             this.pnTop.TabIndex = 2;
             this.pnTop.TextColor = System.Drawing.Color.White;
             // 
@@ -207,9 +222,9 @@
             this.pibClose.BackgroundImage = global::MusicOnline.Properties.Resources.CloseIcon2;
             this.pibClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pibClose.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pibClose.Location = new System.Drawing.Point(1460, 10);
+            this.pibClose.Location = new System.Drawing.Point(1464, 10);
             this.pibClose.Name = "pibClose";
-            this.pibClose.Size = new System.Drawing.Size(24, 24);
+            this.pibClose.Size = new System.Drawing.Size(20, 20);
             this.pibClose.TabIndex = 0;
             this.pibClose.TabStop = false;
             this.pibClose.Click += new System.EventHandler(this.pibClose_Click);
@@ -250,21 +265,6 @@
             this.slider.MouseDown += new System.Windows.Forms.MouseEventHandler(this.slider_MouseDown);
             this.slider.MouseMove += new System.Windows.Forms.MouseEventHandler(this.slider_MouseMove);
             this.slider.MouseUp += new System.Windows.Forms.MouseEventHandler(this.slider_MouseUp);
-            // 
-            // aPanel2
-            // 
-            this.aPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
-            this.aPanel2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
-            this.aPanel2.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.aPanel2.BorderRadius = 10;
-            this.aPanel2.BorderSize = 0;
-            this.aPanel2.ForeColor = System.Drawing.Color.White;
-            this.aPanel2.Location = new System.Drawing.Point(1150, 25);
-            this.aPanel2.Name = "aPanel2";
-            this.aPanel2.RoundType = MusicOnline.APanel.RoundStyles.Full;
-            this.aPanel2.Size = new System.Drawing.Size(300, 640);
-            this.aPanel2.TabIndex = 3;
-            this.aPanel2.TextColor = System.Drawing.Color.White;
             // 
             // FrmHome
             // 

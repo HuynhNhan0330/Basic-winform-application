@@ -68,5 +68,24 @@ namespace MusicOnline.Usercontrols
         {
             return pnArtistsNames.Height;
         }
+
+        private void ItemMusic_Click(object sender, EventArgs e)
+        {
+            (this.ParentForm as FrmHome).runMp3(@"../../CreateData/Mp3/" + Title + ".mp3");
+        }
+
+        private void ItemMusic_Load(object sender, EventArgs e)
+        {
+            setClickControls(this);
+        }
+
+        private void setClickControls(Control ctrParent)
+        {
+            foreach (Control ctr in ctrParent.Controls)
+            {
+                ctr.Click += ItemMusic_Click;
+                setClickControls(ctr);
+            }
+        }
     }
 }

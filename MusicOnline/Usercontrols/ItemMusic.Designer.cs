@@ -99,7 +99,7 @@
             this.lbArtistsNames.TabIndex = 1;
             this.lbArtistsNames.Text = "Sơn tùng MTP";
             // 
-            // ItemMucic
+            // ItemMusic
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -107,9 +107,12 @@
             this.Controls.Add(this.pnArtistsNames);
             this.Controls.Add(this.pnTitle);
             this.Controls.Add(this.pnThum);
+            this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ForeColor = System.Drawing.Color.White;
-            this.Name = "ItemMucic";
+            this.Name = "ItemMusic";
             this.Size = new System.Drawing.Size(200, 300);
+            this.Load += new System.EventHandler(this.ItemMusic_Load);
+            this.Click += new System.EventHandler(this.ItemMusic_Click);
             this.pnThum.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pibThumbnail)).EndInit();
             this.pnTitle.ResumeLayout(false);
