@@ -73,6 +73,16 @@ namespace MusicOnline.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap boy {
+            get {
+                object obj = ResourceManager.GetObject("boy", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ChatIcon {
             get {
                 object obj = ResourceManager.GetObject("ChatIcon", resourceCulture);
@@ -126,6 +136,16 @@ namespace MusicOnline.Properties {
         internal static System.Drawing.Bitmap ExclamationIcon {
             get {
                 object obj = ResourceManager.GetObject("ExclamationIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap girl {
+            get {
+                object obj = ResourceManager.GetObject("girl", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -326,6 +346,46 @@ namespace MusicOnline.Properties {
         internal static System.Drawing.Bitmap recentlyDeactiveIcon {
             get {
                 object obj = ResourceManager.GetObject("recentlyDeactiveIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap send_message {
+            get {
+                object obj = ResourceManager.GetObject("send-message", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap StarActiveIcon {
+            get {
+                object obj = ResourceManager.GetObject("StarActiveIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap StarActiveIcon1 {
+            get {
+                object obj = ResourceManager.GetObject("StarActiveIcon1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap StarDeactiveIcon {
+            get {
+                object obj = ResourceManager.GetObject("StarDeactiveIcon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

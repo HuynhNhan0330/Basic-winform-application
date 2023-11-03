@@ -1,6 +1,6 @@
 ﻿namespace MusicOnline
 {
-    partial class frmLyrics
+    partial class FrmLyrics
     {
         /// <summary>
         /// Required designer variable.

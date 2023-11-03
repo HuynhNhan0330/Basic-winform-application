@@ -118,85 +118,103 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="ExclamationIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ExclamationIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="musicDeactiveIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\musicDeactiveIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ChatIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ChatIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="InformationIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\InformationIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="QuestionIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\QuestionIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="CloseIcon2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\CloseIcon2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="libraryIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\libraryIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="LikeSongDeActiveIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\LikeSongDeActiveIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="LikeSongActiveIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\LikeSongActiveIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="recentlyDeactiveIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\recentlyDeactiveIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="recentlyActiveIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\recentlyActiveIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="play" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\play.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="homeIconAccept" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\homeIconAccept.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="previous" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\previous.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="play-and-pause-button" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\play-and-pause-button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="musicActiveIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\musicActiveIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="homeDeactiveIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\homeDeactiveIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="previousIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\previousIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="home" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\home.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="downloading" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\downloading.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="libraryIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\libraryIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CloseIcon2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CloseIcon2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ExclamationIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ExclamationIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="play" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\play.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="heartDeactive" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\heartDeactive.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="previousIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\previousIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ChatIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ChatIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="StarActiveIcon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\StarActiveIcon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="boy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\boy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="homeIconAccept" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\homeIconAccept.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="ErrorIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ErrorIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="recentlyActiveIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\recentlyActiveIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LikeSongActiveIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LikeSongActiveIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="pause" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pause.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="downloads" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\downloads.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="downloading" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\downloading.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="musicDeactiveIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\musicDeactiveIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="libraryIcon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\libraryIcon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="001-pause" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\001-pause.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="previous" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\previous.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="heartActive" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\heartActive.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="heartDeactive" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\heartDeactive.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="send-message" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\send-message.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="StarActiveIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\StarActiveIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="downloads" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\downloads.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LikeSongDeActiveIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LikeSongDeActiveIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InformationIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\InformationIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="homeDeactiveIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\homeDeactiveIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="QuestionIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\QuestionIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="recentlyDeactiveIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\recentlyDeactiveIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="001-pause" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\001-pause.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="StarDeactiveIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\StarDeactiveIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="play-and-pause-button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\play-and-pause-button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="girl" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\girl.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

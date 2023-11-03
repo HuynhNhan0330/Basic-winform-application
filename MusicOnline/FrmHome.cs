@@ -515,9 +515,15 @@ namespace MusicOnline
             }
         }
 
+        private void abtnComment_Click(object sender, EventArgs e)
+        {
+            FrmComment _formComment = new FrmComment();
+            _formComment.ShowDialog();
+        }
+
         private void abtnLyrics_Click(object sender, EventArgs e)
         {
-            frmLyrics _formLyrics = new frmLyrics(currentMusicSelected.Lyrics);
+            FrmLyrics _formLyrics = new FrmLyrics(currentMusicSelected.Lyrics);
             _formLyrics.ShowDialog();
         }
 
@@ -541,6 +547,23 @@ namespace MusicOnline
 
             lbType.Text = currentMusicSelected.Type;
             pnType.Height = lbType.Height + 10;
+
+            try
+            {
+                ObservableCollection<Comment> commnets = Data.GetArrayComment(currentMusicSelected).comments;
+                double rating = 0;
+
+                foreach (Comment comment in commnets)
+                    rating += comment.start;
+
+                rating /= commnets.Count();
+                rating = Math.Round(rating, 1);
+                lbRating.Text = rating.ToString("0.0");
+            }
+            catch (Exception ex)
+            {
+                lbRating.Text = "0.0";
+            }
         }
 
         #endregion

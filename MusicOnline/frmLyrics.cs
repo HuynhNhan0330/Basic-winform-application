@@ -12,14 +12,14 @@ using System.Windows.Forms;
 
 namespace MusicOnline
 {
-    public partial class frmLyrics : Form
+    public partial class FrmLyrics : Form
     {
-        public frmLyrics()
+        public FrmLyrics()
         {
             InitializeComponent();
         }
 
-        public frmLyrics(string lyrics)
+        public FrmLyrics(string lyrics)
         {
             InitializeComponent();
             

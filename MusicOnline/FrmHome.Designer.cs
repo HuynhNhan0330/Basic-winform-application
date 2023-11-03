@@ -50,7 +50,7 @@
             this.pnDetailMusic = new MusicOnline.APanel();
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.aButton5 = new MusicOnline.AButton();
+            this.abtnComment = new MusicOnline.AButton();
             this.abtnLyrics = new MusicOnline.AButton();
             this.pnType = new System.Windows.Forms.Panel();
             this.lbType = new System.Windows.Forms.Label();
@@ -69,6 +69,7 @@
             this.pibThumbnail = new System.Windows.Forms.PictureBox();
             this.pn = new MusicOnline.APanel();
             this.aPanel2 = new MusicOnline.APanel();
+            this.pibStar = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.aTextboxUC1 = new MusicOnline.ATextboxUC();
             this.pnPlaylist = new System.Windows.Forms.Panel();
@@ -81,6 +82,7 @@
             this.pnBottom = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
+            this.lbRating = new System.Windows.Forms.Label();
             this.pnControlMusic.SuspendLayout();
             this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pibPrevious)).BeginInit();
@@ -104,6 +106,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pibThumbnail)).BeginInit();
             this.pn.SuspendLayout();
             this.aPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pibStar)).BeginInit();
             this.panel2.SuspendLayout();
             this.pnPlaylist.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -355,42 +358,43 @@
             this.panel8.Controls.Add(this.pnArtistsNames);
             this.panel8.Controls.Add(this.pnTitle);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel8.Location = new System.Drawing.Point(0, 365);
+            this.panel8.Location = new System.Drawing.Point(0, 410);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(380, 325);
+            this.panel8.Size = new System.Drawing.Size(380, 280);
             this.panel8.TabIndex = 5;
             // 
             // panel9
             // 
-            this.panel9.Controls.Add(this.aButton5);
+            this.panel9.Controls.Add(this.abtnComment);
             this.panel9.Controls.Add(this.abtnLyrics);
             this.panel9.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel9.Location = new System.Drawing.Point(0, 265);
+            this.panel9.Location = new System.Drawing.Point(0, 220);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(380, 60);
             this.panel9.TabIndex = 8;
             // 
-            // aButton5
+            // abtnComment
             // 
-            this.aButton5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(155)))), ((int)(((byte)(70)))));
-            this.aButton5.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(155)))), ((int)(((byte)(70)))));
-            this.aButton5.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.aButton5.BorderRadius = 15;
-            this.aButton5.BorderSize = 0;
-            this.aButton5.FlatAppearance.BorderSize = 0;
-            this.aButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.aButton5.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.aButton5.ForeColor = System.Drawing.Color.White;
-            this.aButton5.LineType = MusicOnline.AButton.LineStyles.None;
-            this.aButton5.Location = new System.Drawing.Point(185, 10);
-            this.aButton5.Name = "aButton5";
-            this.aButton5.RoundType = MusicOnline.AButton.RoundStyles.Full;
-            this.aButton5.Size = new System.Drawing.Size(160, 40);
-            this.aButton5.TabIndex = 1;
-            this.aButton5.Text = "Bình Luận";
-            this.aButton5.TextColor = System.Drawing.Color.White;
-            this.aButton5.ThinknessLine = 0;
-            this.aButton5.UseVisualStyleBackColor = false;
+            this.abtnComment.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(155)))), ((int)(((byte)(70)))));
+            this.abtnComment.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(155)))), ((int)(((byte)(70)))));
+            this.abtnComment.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.abtnComment.BorderRadius = 15;
+            this.abtnComment.BorderSize = 0;
+            this.abtnComment.FlatAppearance.BorderSize = 0;
+            this.abtnComment.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.abtnComment.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.abtnComment.ForeColor = System.Drawing.Color.White;
+            this.abtnComment.LineType = MusicOnline.AButton.LineStyles.None;
+            this.abtnComment.Location = new System.Drawing.Point(185, 10);
+            this.abtnComment.Name = "abtnComment";
+            this.abtnComment.RoundType = MusicOnline.AButton.RoundStyles.Full;
+            this.abtnComment.Size = new System.Drawing.Size(160, 40);
+            this.abtnComment.TabIndex = 1;
+            this.abtnComment.Text = "Bình Luận";
+            this.abtnComment.TextColor = System.Drawing.Color.White;
+            this.abtnComment.ThinknessLine = 0;
+            this.abtnComment.UseVisualStyleBackColor = false;
+            this.abtnComment.Click += new System.EventHandler(this.abtnComment_Click);
             // 
             // abtnLyrics
             // 
@@ -561,11 +565,13 @@
             // 
             // pnThumbnail
             // 
+            this.pnThumbnail.Controls.Add(this.lbRating);
+            this.pnThumbnail.Controls.Add(this.pibStar);
             this.pnThumbnail.Controls.Add(this.pibThumbnail);
             this.pnThumbnail.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnThumbnail.Location = new System.Drawing.Point(0, 0);
             this.pnThumbnail.Name = "pnThumbnail";
-            this.pnThumbnail.Size = new System.Drawing.Size(380, 365);
+            this.pnThumbnail.Size = new System.Drawing.Size(380, 410);
             this.pnThumbnail.TabIndex = 1;
             // 
             // pibThumbnail
@@ -611,6 +617,16 @@
             this.aPanel2.Size = new System.Drawing.Size(350, 510);
             this.aPanel2.TabIndex = 6;
             this.aPanel2.TextColor = System.Drawing.Color.White;
+            // 
+            // pibStar
+            // 
+            this.pibStar.BackgroundImage = global::MusicOnline.Properties.Resources.StarActiveIcon1;
+            this.pibStar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pibStar.Location = new System.Drawing.Point(15, 380);
+            this.pibStar.Name = "pibStar";
+            this.pibStar.Size = new System.Drawing.Size(25, 25);
+            this.pibStar.TabIndex = 4;
+            this.pibStar.TabStop = false;
             // 
             // panel2
             // 
@@ -801,6 +817,17 @@
             this.panel10.Size = new System.Drawing.Size(380, 100);
             this.panel10.TabIndex = 0;
             // 
+            // lbRating
+            // 
+            this.lbRating.AutoSize = true;
+            this.lbRating.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbRating.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(227)))), ((int)(((byte)(71)))));
+            this.lbRating.Location = new System.Drawing.Point(45, 384);
+            this.lbRating.Name = "lbRating";
+            this.lbRating.Size = new System.Drawing.Size(35, 21);
+            this.lbRating.TabIndex = 5;
+            this.lbRating.Text = "0.0";
+            // 
             // FrmHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -843,9 +870,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.pibLoveSong)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pibDownload)).EndInit();
             this.pnThumbnail.ResumeLayout(false);
+            this.pnThumbnail.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pibThumbnail)).EndInit();
             this.pn.ResumeLayout(false);
             this.aPanel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pibStar)).EndInit();
             this.panel2.ResumeLayout(false);
             this.pnPlaylist.ResumeLayout(false);
             this.pnPlaylist.PerformLayout();
@@ -898,7 +927,7 @@
         private APanel pnDetailMusic;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Panel panel9;
-        private AButton aButton5;
+        private AButton abtnComment;
         private AButton abtnLyrics;
         private System.Windows.Forms.Panel pnThumbnail;
         private System.Windows.Forms.PictureBox pibThumbnail;
@@ -910,6 +939,8 @@
         private System.Windows.Forms.ComboBox cbType;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pibLoveSong;
+        private System.Windows.Forms.PictureBox pibStar;
+        private System.Windows.Forms.Label lbRating;
     }
 }
 
