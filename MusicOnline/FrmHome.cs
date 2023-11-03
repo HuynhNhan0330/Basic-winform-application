@@ -4,10 +4,10 @@ using MusicOnline.Utils;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Diagnostics;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.IO;
+using System.Linq;
 using System.Text;
 using System.Text.Json;
 using System.Windows.Forms;
@@ -16,10 +16,115 @@ namespace MusicOnline
 {
     public partial class FrmHome : Form
     {
+        #region Thuộc tính
         private WMPLib.WindowsMediaPlayer player = new WMPLib.WindowsMediaPlayer();
+        private ObservableCollection<Music> __musics = new ObservableCollection<Music>();
+        private ObservableCollection<Music> _musics = new ObservableCollection<Music>();
         private ObservableCollection<Music> musics = new ObservableCollection<Music>();
-        private Music currentMusicSelected = null;
+        private ObservableCollection<Music> musicRecently = new ObservableCollection<Music>();
+        private ObservableCollection<Music> musicLove = new ObservableCollection<Music>();
+        private HashSet<String> genres = new HashSet<string>();
+        private HashSet<String> types = new HashSet<string>();
 
+        private Music _currentMusicSelected = null;
+        public Music currentMusicSelected
+        {
+            get { return _currentMusicSelected; }
+            set 
+            { 
+                _currentMusicSelected = value;
+                onMp3();
+                runMp3(@"../../CreateData/Mp3/" + currentMusicSelected.Title + ".mp3");
+                renderDetailMusic();
+                saveRecently();
+            }
+        }
+
+        private string typeMusicSelected = "Toàn bộ";
+        private string textSearch = "";
+
+        #endregion
+
+        #region Phương thức chung
+
+        private void LoadData()
+        {
+            Console.OutputEncoding = Encoding.Unicode;
+            Console.InputEncoding = Encoding.Unicode;
+
+            string filePath = "../../CreateData/musics.json";
+
+            try
+            {
+                using (FileStream fs = File.OpenRead(filePath))
+                {
+                    JsonDocument jsonDocument = JsonDocument.Parse(fs);
+
+                    if (jsonDocument.RootElement.ValueKind == JsonValueKind.Array)
+                    {
+                        foreach (JsonElement element in jsonDocument.RootElement.EnumerateArray())
+                        {
+                            Music music = new Music
+                            {
+                                Title = element.GetProperty("title").GetString(),
+                                ArtistsNames = element.GetProperty("artistsNames").GetString(),
+                                Genre = element.GetProperty("genre").GetString(),
+                                Type = element.GetProperty("type").GetString(),
+                                Lyrics = element.GetProperty("lyrics").GetString()
+                            };
+
+                            genres.Add(music.Genre);
+                            types.Add(music.Type);
+
+                            __musics.Add(music);
+                        }
+                    }
+                }
+
+                __musics = new ObservableCollection<Music>(__musics.OrderBy(music => music.Title));
+                _musics = new ObservableCollection<Music>(__musics);
+                musics = new ObservableCollection<Music>(__musics);
+            }
+            catch (FileNotFoundException)
+            {
+                AMessageBoxFrm ms = new AMessageBoxFrm("Đường dẫn không phù hợp: " + filePath, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                ms.ShowDialog();
+            }
+            catch (Exception ex)
+            {
+                AMessageBoxFrm ms = new AMessageBoxFrm("Không thể đọc file: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                ms.ShowDialog();
+            }
+        }
+
+        private void HVControl(Control ctr)
+        {
+            foreach (Control ctrChil in ctr.Controls)
+                ctrChil.Visible = !ctrChil.Visible;
+        }
+
+        public Music getMusicByTitle(string _title)
+        {
+            foreach (Music music in musics)
+            {
+                if (music.Title == _title)
+                    return music;
+            }
+
+            return null;
+        }
+
+        private void saveRecently()
+        {
+            if (musicRecently.Contains(currentMusicSelected))
+                musicRecently.Remove(currentMusicSelected);
+
+            musicRecently.Insert(0, currentMusicSelected);
+        }
+
+        #endregion
+
+        #region control form
         public FrmHome()
         {
             InitializeComponent();
@@ -30,11 +135,25 @@ namespace MusicOnline
             this.Close();
         }
 
-        public void runMp3(string path)
+        private void FrmHome_Load(object sender, EventArgs e)
         {
-            player.URL = Path.GetFullPath(path);
-            player.controls.play();
+            HVControl(pnControlMusic);
+            HVControl(pnDetailMusic);
+
+            LoadData();
+            loadDataCombobox();
+            loadMusics();
         }
+
+        protected override void OnPaint(PaintEventArgs e)
+        {
+            base.OnPaint(e);
+
+            GraphicsPath path = RoundedRectangle.Create(Width, Height, 15);
+            Region = new Region(path);
+        }
+
+        #endregion
 
         #region Menu
         private void activeButton(AButton abtn)
@@ -53,7 +172,7 @@ namespace MusicOnline
             abtnLikeSong.Image = Properties.Resources.LikeSongDeActiveIcon;
             abtnRecently.Image = Properties.Resources.recentlyDeactiveIcon;
 
-           foreach (AButton abtn in pnMenu.Controls)
+            foreach (AButton abtn in pnMenu.Controls)
                 deactiveButton(abtn);
         }
 
@@ -68,6 +187,10 @@ namespace MusicOnline
             AButton currentAbtn = (AButton)sender;
             activeButton(currentAbtn);
             currentAbtn.Image = Properties.Resources.musicActiveIcon;
+
+            _musics = new ObservableCollection<Music>(__musics);
+            musics = new ObservableCollection<Music>(_musics);
+            loadMusics();
         }
 
         private void abtnLikeSong_Click(object sender, EventArgs e)
@@ -76,6 +199,10 @@ namespace MusicOnline
             AButton currentAbtn = (AButton)sender;
             activeButton(currentAbtn);
             currentAbtn.Image = Properties.Resources.LikeSongActiveIcon;
+
+            _musics = new ObservableCollection<Music>(musicLove);
+            musics = new ObservableCollection<Music>(_musics);
+            loadMusics();
         }
 
         private void abtnRecently_Click(object sender, EventArgs e)
@@ -84,6 +211,9 @@ namespace MusicOnline
             AButton currentAbtn = (AButton)sender;
             activeButton(currentAbtn);
             currentAbtn.Image = Properties.Resources.recentlyActiveIcon;
+            _musics = new ObservableCollection<Music>(musicRecently);
+            musics = new ObservableCollection<Music>(_musics);
+            loadMusics();
         }
 
         #endregion
@@ -158,66 +288,99 @@ namespace MusicOnline
                 max = (int)player.controls.currentItem.duration;
                 defaultValue = (int)player.controls.currentPosition;
                 slider.Invalidate();
+
+                lbStart.Text = player.controls.currentPositionString;
+                lbEnd.Text = player.currentMedia.durationString;
+            }
+
+            if (player.playState == WMPLib.WMPPlayState.wmppsStopped)
+            {
+                lbStart.Text = player.currentMedia.durationString;
             }
         }
 
         #endregion
 
-        private void LoadData()
+        #region control music
+        private void onMp3()
         {
-            Console.OutputEncoding = Encoding.Unicode;
-            Console.InputEncoding = Encoding.Unicode;
-
-            string filePath = "../../CreateData/musics.json";
-
-            try
+            if (string.IsNullOrEmpty(player.URL))
             {
-                using (FileStream fs = File.OpenRead(filePath))
+                HVControl(pnControlMusic);
+                HVControl(pnDetailMusic);
+            }
+        }
+
+        private void runMp3(string path)
+        {
+            player.URL = Path.GetFullPath(path);
+            player.controls.play();
+            pibPlayOrPause.BackgroundImage = Properties.Resources.pause;
+        }
+
+        private void pibNext_Click(object sender, EventArgs e)
+        {
+            if (musics.Count <= 1)
+                player.controls.stop();
+            else
+            {
+                int indexMusic = musics.IndexOf(currentMusicSelected);
+
+                if (indexMusic == -1)
+                    currentMusicSelected = musics[0];
+                else
                 {
-                    JsonDocument jsonDocument = JsonDocument.Parse(fs);
-
-                    if (jsonDocument.RootElement.ValueKind == JsonValueKind.Array)
-                    {
-                        foreach (JsonElement element in jsonDocument.RootElement.EnumerateArray())
-                        {
-                            Music music = new Music
-                            {
-                                Title = element.GetProperty("title").GetString(),
-                                ArtistsNames = element.GetProperty("artistsNames").GetString(),
-                                Genre = element.GetProperty("genre").GetString(),
-                                Type = element.GetProperty("type").GetString(),
-                                Lyrics = element.GetProperty("lyrics").GetString()
-                            };
-
-                            musics.Add(music);
-                        }
-                    }
+                    if (indexMusic + 1 < musics.Count)
+                        currentMusicSelected = musics[indexMusic + 1];
+                    else
+                        currentMusicSelected = musics[0];
                 }
             }
-            catch (FileNotFoundException)
-            {
-                AMessageBoxFrm ms = new AMessageBoxFrm("Đường dẫn không phù hợp: " + filePath, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                ms.ShowDialog();
-            }
-            catch (Exception ex)
-            {
-                AMessageBoxFrm ms = new AMessageBoxFrm("Không thể đọc file: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                ms.ShowDialog();
-            }
         }
 
-        protected override void OnPaint(PaintEventArgs e)
+        private void pibPrevious_Click(object sender, EventArgs e)
         {
-            base.OnPaint(e);
+            if (musics.Count <= 1)
+                player.controls.stop();
+            else
+            {
+                int indexMusic = musics.IndexOf(currentMusicSelected);
 
-            GraphicsPath path = RoundedRectangle.Create(this.Width, this.Height, 20);
-
-            // Đặt Region cho Form để tạo hình dạng bo tròn
-            this.Region = new Region(path);
+                if (indexMusic == -1)
+                    currentMusicSelected = musics[0];
+                else
+                {
+                    if (indexMusic - 1 >= 0)
+                        currentMusicSelected = musics[indexMusic - 1];
+                    else
+                        currentMusicSelected = musics[musics.Count - 1];
+                }
+            }
         }
 
+        private void pibPlayOrPause_Click(object sender, EventArgs e)
+        {
+            switch (player.playState)
+            {
+                case WMPLib.WMPPlayState.wmppsPaused:
+                    player.controls.play();
+                    pibPlayOrPause.BackgroundImage = Properties.Resources._001_pause;
+                    break;
+
+                case WMPLib.WMPPlayState.wmppsPlaying:
+                    player.controls.pause();
+                    pibPlayOrPause.BackgroundImage = Properties.Resources.play;
+                    break;
+            }
+        }
+
+        #endregion
+
+        #region body music
         private void loadMusics()
         {
+            flpMusics.Controls.Clear();
+
             for (int i = 0; i < musics.Count; ++i)
             {
                 Music music = musics[i];
@@ -259,27 +422,113 @@ namespace MusicOnline
             }
         }
 
-        private void FrmHome_Load(object sender, EventArgs e)
+        private void loadDataCombobox()
         {
-            LoadData();
+            cbType.Items.Insert(0, "Toàn bộ");
+            string[] dataCombobox = genres.Concat(types).ToArray().Distinct().ToArray();
+            Array.Sort(dataCombobox, (x, y) => string.Compare(x, y));
+            cbType.Items.AddRange(dataCombobox);
+        }
+
+        private void atbSearch__TextChanged(object sender, EventArgs e)
+        {
+            if (textSearch != atbSearch.Texts)
+            {
+                textSearch = atbSearch.Texts;
+                filterMusic();
+            }
+        }
+
+        private void cbType_SelectedValueChanged(object sender, EventArgs e)
+        {
+            if (typeMusicSelected != cbType.Text)
+            {
+                typeMusicSelected = cbType.Text;
+                filterMusic();
+            }
+        }
+
+        private void filterMusic()
+        {
+            if (string.IsNullOrEmpty(textSearch)) musics = new ObservableCollection<Music>(_musics);
+            else musics = new ObservableCollection<Music>(_musics.Where(music => music.Title.ToLower().Contains(atbSearch.Texts.ToLower()) || music.ArtistsNames.ToLower().Contains(atbSearch.Texts.ToLower())).ToList());
+
+            if (!(string.IsNullOrEmpty(typeMusicSelected) || typeMusicSelected == "Toàn bộ"))
+                musics = new ObservableCollection<Music>(musics.Where((music) => music.Type == typeMusicSelected || music.Genre == typeMusicSelected));
+
             loadMusics();
         }
 
-        private Music getMusicByTitle(string _title)
-        {
-            foreach (Music music in musics)
-            {
-                if (music.Title == _title)
-                    return music;
-            }
+        #endregion
 
-            return null;
+        #region detail music
+        private void pibLoveSong_Click(object sender, EventArgs e)
+        {
+            if (musicLove.Contains(currentMusicSelected))
+            {
+                pibLoveSong.BackgroundImage = Properties.Resources.heartDeactive;
+                musicLove.Remove(currentMusicSelected);
+            }
+            else // Chưa có
+            {
+                pibLoveSong.BackgroundImage = Properties.Resources.heartActive;
+                musicLove.Insert(0, currentMusicSelected);
+            }
         }
 
+        private void pibDownload_Click(object sender, EventArgs e)
+        {
+            FolderBrowserDialog folderBrowserDialog = new FolderBrowserDialog();
+            folderBrowserDialog.Description = "Chọn vị trí lưu nhạc";
+
+            if (folderBrowserDialog.ShowDialog() == DialogResult.OK)
+            {
+                string selectedFolderPath = folderBrowserDialog.SelectedPath;
+
+                try
+                {
+                    string sourceFilePath = "../../CreateData/Mp3/" + currentMusicSelected.Title + ".mp3";
+                    string destinationFilePath = Path.Combine(selectedFolderPath, currentMusicSelected.Title + " (MusicOnline).mp3");
+                    bool isSave = true;
+
+                    if (File.Exists(destinationFilePath))
+                    {
+                        AMessageBoxFrm ms = new AMessageBoxFrm("Bạn có muốn lưu đè lên tệp cũ không?", "Tệp đã tồn tại!!!", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                        
+                        if (ms.ShowDialog() == DialogResult.Yes)
+                            File.Copy(sourceFilePath, destinationFilePath, true);
+                        else isSave = false;
+                    }
+                    else File.Copy(sourceFilePath, destinationFilePath);
+                    
+                    if (isSave)
+                    {
+                        AMessageBoxFrm ms = new AMessageBoxFrm("Tải xuống thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        ms.ShowDialog();
+                    }
+                }
+                catch(Exception ex)
+                {
+                    AMessageBoxFrm ms = new AMessageBoxFrm(ex.Message, "lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    ms.ShowDialog();
+                }
+            }
+        }
+
+        private void abtnLyrics_Click(object sender, EventArgs e)
+        {
+            frmLyrics _formLyrics = new frmLyrics(currentMusicSelected.Lyrics);
+            _formLyrics.ShowDialog();
+        }
 
         private void renderDetailMusic()
         {
             pibThumbnail.BackgroundImage = Helper.loadImagePath("../../CreateData/Image/" + currentMusicSelected.Title + ".jpg");
+
+            if (musicLove.Contains(currentMusicSelected))
+                pibLoveSong.BackgroundImage = Properties.Resources.heartActive;
+            else
+                pibLoveSong.BackgroundImage = Properties.Resources.heartDeactive;
 
             lbTitle.Text = currentMusicSelected.Title;
             pnTitle.Height = lbTitle.Height + 15;
@@ -294,10 +543,6 @@ namespace MusicOnline
             pnType.Height = lbType.Height + 10;
         }
 
-        public void setDetailMusic(string _title)
-        {
-            currentMusicSelected = getMusicByTitle(_title);
-            renderDetailMusic();
-        }
+        #endregion
     }
 }

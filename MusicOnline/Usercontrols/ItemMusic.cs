@@ -72,8 +72,7 @@ namespace MusicOnline.Usercontrols
         private void ItemMusic_Click(object sender, EventArgs e)
         {
             FrmHome currentFrm = this.ParentForm as FrmHome;
-            currentFrm.runMp3(@"../../CreateData/Mp3/" + Title + ".mp3");
-            currentFrm.setDetailMusic(Title);
+            currentFrm.currentMusicSelected = currentFrm.getMusicByTitle(Title);
         }
 
         private void ItemMusic_Load(object sender, EventArgs e)

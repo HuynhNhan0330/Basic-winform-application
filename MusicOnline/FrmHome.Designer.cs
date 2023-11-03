@@ -30,21 +30,28 @@
         {
             this.components = new System.ComponentModel.Container();
             this.timePlay = new System.Windows.Forms.Timer(this.components);
-            this.pnBody = new MusicOnline.APanel();
-            this.pn = new MusicOnline.APanel();
-            this.aPanel2 = new MusicOnline.APanel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.aTextboxUC1 = new MusicOnline.ATextboxUC();
+            this.pnControlMusic = new System.Windows.Forms.Panel();
+            this.lbEnd = new System.Windows.Forms.Label();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.pibPrevious = new System.Windows.Forms.PictureBox();
+            this.pibNext = new System.Windows.Forms.PictureBox();
+            this.pibPlayOrPause = new System.Windows.Forms.PictureBox();
+            this.lbStart = new System.Windows.Forms.Label();
+            this.slider = new MusicOnline.APanel();
+            this.pnTop = new System.Windows.Forms.Panel();
+            this.pibClose = new System.Windows.Forms.PictureBox();
+            this.pnBody = new System.Windows.Forms.Panel();
+            this.aPanel1 = new MusicOnline.APanel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pnMenu = new MusicOnline.APanel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.cbType = new System.Windows.Forms.ComboBox();
+            this.atbSearch = new MusicOnline.ATextboxUC();
+            this.flpMusics = new System.Windows.Forms.FlowLayoutPanel();
             this.pnDetailMusic = new MusicOnline.APanel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.pnOperator = new System.Windows.Forms.Panel();
-            this.aButton3 = new MusicOnline.AButton();
-            this.aButton2 = new MusicOnline.AButton();
-            this.aButton1 = new MusicOnline.AButton();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.aButton5 = new MusicOnline.AButton();
+            this.abtnLyrics = new MusicOnline.AButton();
             this.pnType = new System.Windows.Forms.Panel();
             this.lbType = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -55,190 +62,272 @@
             this.lbArtistsNames = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.pnTitle = new System.Windows.Forms.Panel();
+            this.pibLoveSong = new System.Windows.Forms.PictureBox();
+            this.pibDownload = new System.Windows.Forms.PictureBox();
             this.lbTitle = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.pnListMusic = new MusicOnline.APanel();
-            this.flpMusics = new System.Windows.Forms.FlowLayoutPanel();
-            this.aPanel1 = new MusicOnline.APanel();
-            this.pnTop = new MusicOnline.APanel();
-            this.pnBottom = new MusicOnline.APanel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.slider = new MusicOnline.APanel();
-            this.panel7 = new System.Windows.Forms.Panel();
+            this.pnThumbnail = new System.Windows.Forms.Panel();
+            this.pibThumbnail = new System.Windows.Forms.PictureBox();
+            this.pn = new MusicOnline.APanel();
+            this.aPanel2 = new MusicOnline.APanel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.aTextboxUC1 = new MusicOnline.ATextboxUC();
+            this.pnPlaylist = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pnMenu = new MusicOnline.APanel();
             this.abtnRecently = new MusicOnline.AButton();
             this.abtnLikeSong = new MusicOnline.AButton();
             this.abtnListMusic = new MusicOnline.AButton();
-            this.pibThumbnail = new System.Windows.Forms.PictureBox();
-            this.pibClose = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pnBottom = new System.Windows.Forms.Panel();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.pnControlMusic.SuspendLayout();
+            this.panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pibPrevious)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pibNext)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pibPlayOrPause)).BeginInit();
+            this.pnTop.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pibClose)).BeginInit();
             this.pnBody.SuspendLayout();
-            this.pn.SuspendLayout();
-            this.aPanel2.SuspendLayout();
-            this.panel2.SuspendLayout();
+            this.aPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.pnMenu.SuspendLayout();
             this.pnDetailMusic.SuspendLayout();
-            this.panel5.SuspendLayout();
-            this.pnOperator.SuspendLayout();
+            this.panel8.SuspendLayout();
+            this.panel9.SuspendLayout();
             this.pnType.SuspendLayout();
             this.pnGenre.SuspendLayout();
             this.pnArtistsNames.SuspendLayout();
             this.pnTitle.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.pnListMusic.SuspendLayout();
-            this.pnTop.SuspendLayout();
-            this.pnBottom.SuspendLayout();
-            this.panel6.SuspendLayout();
-            this.panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pibLoveSong)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pibDownload)).BeginInit();
+            this.pnThumbnail.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pibThumbnail)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pibClose)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.pn.SuspendLayout();
+            this.aPanel2.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.pnPlaylist.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pnMenu.SuspendLayout();
+            this.pnBottom.SuspendLayout();
             this.SuspendLayout();
             // 
             // timePlay
             // 
             this.timePlay.Enabled = true;
+            this.timePlay.Interval = 500;
             this.timePlay.Tick += new System.EventHandler(this.timePlay_Tick);
+            // 
+            // pnControlMusic
+            // 
+            this.pnControlMusic.Controls.Add(this.lbEnd);
+            this.pnControlMusic.Controls.Add(this.panel7);
+            this.pnControlMusic.Controls.Add(this.lbStart);
+            this.pnControlMusic.Controls.Add(this.slider);
+            this.pnControlMusic.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pnControlMusic.Location = new System.Drawing.Point(380, 0);
+            this.pnControlMusic.Name = "pnControlMusic";
+            this.pnControlMusic.Size = new System.Drawing.Size(700, 100);
+            this.pnControlMusic.TabIndex = 1;
+            // 
+            // lbEnd
+            // 
+            this.lbEnd.AutoSize = true;
+            this.lbEnd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
+            this.lbEnd.Location = new System.Drawing.Point(660, 56);
+            this.lbEnd.Name = "lbEnd";
+            this.lbEnd.Size = new System.Drawing.Size(38, 16);
+            this.lbEnd.TabIndex = 3;
+            this.lbEnd.Text = "00:00";
+            // 
+            // panel7
+            // 
+            this.panel7.Controls.Add(this.pibPrevious);
+            this.panel7.Controls.Add(this.pibNext);
+            this.panel7.Controls.Add(this.pibPlayOrPause);
+            this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel7.Location = new System.Drawing.Point(0, 0);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(700, 40);
+            this.panel7.TabIndex = 2;
+            // 
+            // pibPrevious
+            // 
+            this.pibPrevious.BackgroundImage = global::MusicOnline.Properties.Resources.previousIcon;
+            this.pibPrevious.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pibPrevious.Location = new System.Drawing.Point(290, 10);
+            this.pibPrevious.Name = "pibPrevious";
+            this.pibPrevious.Size = new System.Drawing.Size(20, 20);
+            this.pibPrevious.TabIndex = 4;
+            this.pibPrevious.TabStop = false;
+            this.pibPrevious.Click += new System.EventHandler(this.pibPrevious_Click);
+            // 
+            // pibNext
+            // 
+            this.pibNext.BackgroundImage = global::MusicOnline.Properties.Resources.play_and_pause_button;
+            this.pibNext.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pibNext.Location = new System.Drawing.Point(390, 10);
+            this.pibNext.Name = "pibNext";
+            this.pibNext.Size = new System.Drawing.Size(20, 20);
+            this.pibNext.TabIndex = 3;
+            this.pibNext.TabStop = false;
+            this.pibNext.Click += new System.EventHandler(this.pibNext_Click);
+            // 
+            // pibPlayOrPause
+            // 
+            this.pibPlayOrPause.BackgroundImage = global::MusicOnline.Properties.Resources._001_pause;
+            this.pibPlayOrPause.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pibPlayOrPause.Location = new System.Drawing.Point(330, 0);
+            this.pibPlayOrPause.Name = "pibPlayOrPause";
+            this.pibPlayOrPause.Size = new System.Drawing.Size(40, 40);
+            this.pibPlayOrPause.TabIndex = 2;
+            this.pibPlayOrPause.TabStop = false;
+            this.pibPlayOrPause.Click += new System.EventHandler(this.pibPlayOrPause_Click);
+            // 
+            // lbStart
+            // 
+            this.lbStart.AutoSize = true;
+            this.lbStart.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
+            this.lbStart.Location = new System.Drawing.Point(0, 56);
+            this.lbStart.Name = "lbStart";
+            this.lbStart.Size = new System.Drawing.Size(38, 16);
+            this.lbStart.TabIndex = 1;
+            this.lbStart.Text = "00:00";
+            // 
+            // slider
+            // 
+            this.slider.BackColor = System.Drawing.Color.Transparent;
+            this.slider.BackgroundColor = System.Drawing.Color.Transparent;
+            this.slider.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.slider.BorderRadius = 0;
+            this.slider.BorderSize = 0;
+            this.slider.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.slider.ForeColor = System.Drawing.Color.White;
+            this.slider.Location = new System.Drawing.Point(50, 50);
+            this.slider.Name = "slider";
+            this.slider.RoundType = MusicOnline.APanel.RoundStyles.Full;
+            this.slider.Size = new System.Drawing.Size(600, 45);
+            this.slider.TabIndex = 0;
+            this.slider.TextColor = System.Drawing.Color.White;
+            this.slider.Paint += new System.Windows.Forms.PaintEventHandler(this.slider_Paint);
+            this.slider.MouseDown += new System.Windows.Forms.MouseEventHandler(this.slider_MouseDown);
+            this.slider.MouseMove += new System.Windows.Forms.MouseEventHandler(this.slider_MouseMove);
+            this.slider.MouseUp += new System.Windows.Forms.MouseEventHandler(this.slider_MouseUp);
+            // 
+            // pnTop
+            // 
+            this.pnTop.Controls.Add(this.pibClose);
+            this.pnTop.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnTop.Location = new System.Drawing.Point(0, 0);
+            this.pnTop.Name = "pnTop";
+            this.pnTop.Size = new System.Drawing.Size(1500, 30);
+            this.pnTop.TabIndex = 4;
+            // 
+            // pibClose
+            // 
+            this.pibClose.BackgroundImage = global::MusicOnline.Properties.Resources.CloseIcon2;
+            this.pibClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pibClose.Location = new System.Drawing.Point(1470, 10);
+            this.pibClose.Name = "pibClose";
+            this.pibClose.Size = new System.Drawing.Size(20, 20);
+            this.pibClose.TabIndex = 0;
+            this.pibClose.TabStop = false;
+            this.pibClose.Click += new System.EventHandler(this.pibClose_Click);
             // 
             // pnBody
             // 
-            this.pnBody.BackColor = System.Drawing.Color.Transparent;
-            this.pnBody.BackgroundColor = System.Drawing.Color.Transparent;
-            this.pnBody.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.pnBody.BorderRadius = 0;
-            this.pnBody.BorderSize = 0;
-            this.pnBody.Controls.Add(this.pn);
+            this.pnBody.Controls.Add(this.aPanel1);
             this.pnBody.Controls.Add(this.pnDetailMusic);
-            this.pnBody.Controls.Add(this.pnListMusic);
-            this.pnBody.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnBody.ForeColor = System.Drawing.Color.White;
+            this.pnBody.Controls.Add(this.pn);
+            this.pnBody.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnBody.Location = new System.Drawing.Point(0, 30);
             this.pnBody.Name = "pnBody";
-            this.pnBody.RoundType = MusicOnline.APanel.RoundStyles.Full;
-            this.pnBody.Size = new System.Drawing.Size(1500, 700);
-            this.pnBody.TabIndex = 3;
-            this.pnBody.TextColor = System.Drawing.Color.White;
+            this.pnBody.Size = new System.Drawing.Size(1500, 720);
+            this.pnBody.TabIndex = 5;
             // 
-            // pn
+            // aPanel1
             // 
-            this.pn.BackColor = System.Drawing.Color.Transparent;
-            this.pn.BackgroundColor = System.Drawing.Color.Transparent;
-            this.pn.BorderColor = System.Drawing.Color.Black;
-            this.pn.BorderRadius = 10;
-            this.pn.BorderSize = 0;
-            this.pn.Controls.Add(this.aPanel2);
-            this.pn.Controls.Add(this.pnMenu);
-            this.pn.ForeColor = System.Drawing.Color.White;
-            this.pn.Location = new System.Drawing.Point(26, 25);
-            this.pn.Name = "pn";
-            this.pn.RoundType = MusicOnline.APanel.RoundStyles.Full;
-            this.pn.Size = new System.Drawing.Size(250, 640);
-            this.pn.TabIndex = 4;
-            this.pn.TextColor = System.Drawing.Color.White;
-            // 
-            // aPanel2
-            // 
-            this.aPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
-            this.aPanel2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
-            this.aPanel2.BorderColor = System.Drawing.Color.Black;
-            this.aPanel2.BorderRadius = 10;
-            this.aPanel2.BorderSize = 0;
-            this.aPanel2.Controls.Add(this.panel3);
-            this.aPanel2.Controls.Add(this.panel2);
-            this.aPanel2.Controls.Add(this.panel1);
-            this.aPanel2.ForeColor = System.Drawing.Color.White;
-            this.aPanel2.Location = new System.Drawing.Point(0, 246);
-            this.aPanel2.Name = "aPanel2";
-            this.aPanel2.RoundType = MusicOnline.APanel.RoundStyles.Full;
-            this.aPanel2.Size = new System.Drawing.Size(250, 354);
-            this.aPanel2.TabIndex = 6;
-            this.aPanel2.TextColor = System.Drawing.Color.White;
-            // 
-            // panel3
-            // 
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(0, 97);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(250, 257);
-            this.panel3.TabIndex = 4;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.aTextboxUC1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 47);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(250, 50);
-            this.panel2.TabIndex = 3;
-            // 
-            // aTextboxUC1
-            // 
-            this.aTextboxUC1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
-            this.aTextboxUC1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
-            this.aTextboxUC1.BorderFocusColor = System.Drawing.Color.HotPink;
-            this.aTextboxUC1.BorderRadius = 0;
-            this.aTextboxUC1.BorderSize = 2;
-            this.aTextboxUC1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.aTextboxUC1.ForeColor = System.Drawing.Color.White;
-            this.aTextboxUC1.Location = new System.Drawing.Point(15, 15);
-            this.aTextboxUC1.Margin = new System.Windows.Forms.Padding(4);
-            this.aTextboxUC1.Multiline = false;
-            this.aTextboxUC1.Name = "aTextboxUC1";
-            this.aTextboxUC1.Padding = new System.Windows.Forms.Padding(7);
-            this.aTextboxUC1.PasswordChar = false;
-            this.aTextboxUC1.PlaceholderColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
-            this.aTextboxUC1.PlaceholderText = "Tên danh sách";
-            this.aTextboxUC1.RoundType = MusicOnline.ATextboxUC.RoundStyles.Full;
-            this.aTextboxUC1.Size = new System.Drawing.Size(194, 35);
-            this.aTextboxUC1.TabIndex = 2;
-            this.aTextboxUC1.Texts = "";
-            this.aTextboxUC1.UnderlinedStyle = true;
+            this.aPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
+            this.aPanel1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
+            this.aPanel1.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.aPanel1.BorderRadius = 15;
+            this.aPanel1.BorderSize = 0;
+            this.aPanel1.Controls.Add(this.panel1);
+            this.aPanel1.Controls.Add(this.flpMusics);
+            this.aPanel1.ForeColor = System.Drawing.Color.White;
+            this.aPanel1.Location = new System.Drawing.Point(380, 15);
+            this.aPanel1.Name = "aPanel1";
+            this.aPanel1.RoundType = MusicOnline.APanel.RoundStyles.Full;
+            this.aPanel1.Size = new System.Drawing.Size(700, 690);
+            this.aPanel1.TabIndex = 7;
+            this.aPanel1.TextColor = System.Drawing.Color.White;
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.cbType);
+            this.panel1.Controls.Add(this.atbSearch);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(250, 47);
-            this.panel1.TabIndex = 1;
+            this.panel1.Size = new System.Drawing.Size(700, 50);
+            this.panel1.TabIndex = 2;
             // 
-            // label1
+            // label2
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(60, 15);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(149, 25);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Danh sách phát";
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(304, 22);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(73, 20);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Thể loại:";
             // 
-            // pnMenu
+            // cbType
             // 
-            this.pnMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
-            this.pnMenu.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
-            this.pnMenu.BorderColor = System.Drawing.Color.Black;
-            this.pnMenu.BorderRadius = 10;
-            this.pnMenu.BorderSize = 0;
-            this.pnMenu.Controls.Add(this.abtnRecently);
-            this.pnMenu.Controls.Add(this.abtnLikeSong);
-            this.pnMenu.Controls.Add(this.abtnListMusic);
-            this.pnMenu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnMenu.ForeColor = System.Drawing.Color.White;
-            this.pnMenu.Location = new System.Drawing.Point(0, 0);
-            this.pnMenu.Name = "pnMenu";
-            this.pnMenu.RoundType = MusicOnline.APanel.RoundStyles.Full;
-            this.pnMenu.Size = new System.Drawing.Size(250, 160);
-            this.pnMenu.TabIndex = 5;
-            this.pnMenu.TextColor = System.Drawing.Color.White;
+            this.cbType.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cbType.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cbType.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
+            this.cbType.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbType.ForeColor = System.Drawing.Color.White;
+            this.cbType.FormattingEnabled = true;
+            this.cbType.Location = new System.Drawing.Point(390, 18);
+            this.cbType.Name = "cbType";
+            this.cbType.Size = new System.Drawing.Size(280, 28);
+            this.cbType.TabIndex = 1;
+            this.cbType.Text = "Toàn bộ";
+            this.cbType.SelectedValueChanged += new System.EventHandler(this.cbType_SelectedValueChanged);
+            // 
+            // atbSearch
+            // 
+            this.atbSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
+            this.atbSearch.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
+            this.atbSearch.BorderFocusColor = System.Drawing.Color.White;
+            this.atbSearch.BorderRadius = 10;
+            this.atbSearch.BorderSize = 2;
+            this.atbSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.atbSearch.ForeColor = System.Drawing.Color.White;
+            this.atbSearch.Location = new System.Drawing.Point(30, 15);
+            this.atbSearch.Margin = new System.Windows.Forms.Padding(4);
+            this.atbSearch.Multiline = false;
+            this.atbSearch.Name = "atbSearch";
+            this.atbSearch.Padding = new System.Windows.Forms.Padding(7);
+            this.atbSearch.PasswordChar = false;
+            this.atbSearch.PlaceholderColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
+            this.atbSearch.PlaceholderText = " Tìm kiếm";
+            this.atbSearch.RoundType = MusicOnline.ATextboxUC.RoundStyles.Full;
+            this.atbSearch.Size = new System.Drawing.Size(250, 35);
+            this.atbSearch.TabIndex = 0;
+            this.atbSearch.Texts = "";
+            this.atbSearch.UnderlinedStyle = false;
+            this.atbSearch._TextChanged += new System.EventHandler(this.atbSearch__TextChanged);
+            // 
+            // flpMusics
+            // 
+            this.flpMusics.AutoScroll = true;
+            this.flpMusics.Location = new System.Drawing.Point(30, 65);
+            this.flpMusics.Name = "flpMusics";
+            this.flpMusics.Size = new System.Drawing.Size(640, 610);
+            this.flpMusics.TabIndex = 1;
             // 
             // pnDetailMusic
             // 
@@ -247,106 +336,84 @@
             this.pnDetailMusic.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.pnDetailMusic.BorderRadius = 10;
             this.pnDetailMusic.BorderSize = 0;
-            this.pnDetailMusic.Controls.Add(this.panel5);
-            this.pnDetailMusic.Controls.Add(this.panel4);
+            this.pnDetailMusic.Controls.Add(this.panel8);
+            this.pnDetailMusic.Controls.Add(this.pnThumbnail);
             this.pnDetailMusic.ForeColor = System.Drawing.Color.White;
-            this.pnDetailMusic.Location = new System.Drawing.Point(1110, 25);
+            this.pnDetailMusic.Location = new System.Drawing.Point(1100, 15);
             this.pnDetailMusic.Name = "pnDetailMusic";
             this.pnDetailMusic.RoundType = MusicOnline.APanel.RoundStyles.Full;
-            this.pnDetailMusic.Size = new System.Drawing.Size(380, 666);
-            this.pnDetailMusic.TabIndex = 3;
+            this.pnDetailMusic.Size = new System.Drawing.Size(380, 690);
+            this.pnDetailMusic.TabIndex = 6;
             this.pnDetailMusic.TextColor = System.Drawing.Color.White;
             // 
-            // panel5
+            // panel8
             // 
-            this.panel5.AutoScroll = true;
-            this.panel5.Controls.Add(this.pnOperator);
-            this.panel5.Controls.Add(this.pnType);
-            this.panel5.Controls.Add(this.pnGenre);
-            this.panel5.Controls.Add(this.pnArtistsNames);
-            this.panel5.Controls.Add(this.pnTitle);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel5.Location = new System.Drawing.Point(0, 365);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(380, 301);
-            this.panel5.TabIndex = 4;
+            this.panel8.AutoScroll = true;
+            this.panel8.Controls.Add(this.panel9);
+            this.panel8.Controls.Add(this.pnType);
+            this.panel8.Controls.Add(this.pnGenre);
+            this.panel8.Controls.Add(this.pnArtistsNames);
+            this.panel8.Controls.Add(this.pnTitle);
+            this.panel8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel8.Location = new System.Drawing.Point(0, 365);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(380, 325);
+            this.panel8.TabIndex = 5;
             // 
-            // pnOperator
+            // panel9
             // 
-            this.pnOperator.Controls.Add(this.aButton3);
-            this.pnOperator.Controls.Add(this.aButton2);
-            this.pnOperator.Controls.Add(this.aButton1);
-            this.pnOperator.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnOperator.Location = new System.Drawing.Point(0, 241);
-            this.pnOperator.Name = "pnOperator";
-            this.pnOperator.Size = new System.Drawing.Size(380, 60);
-            this.pnOperator.TabIndex = 8;
+            this.panel9.Controls.Add(this.aButton5);
+            this.panel9.Controls.Add(this.abtnLyrics);
+            this.panel9.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel9.Location = new System.Drawing.Point(0, 265);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(380, 60);
+            this.panel9.TabIndex = 8;
             // 
-            // aButton3
+            // aButton5
             // 
-            this.aButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(155)))), ((int)(((byte)(70)))));
-            this.aButton3.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(155)))), ((int)(((byte)(70)))));
-            this.aButton3.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.aButton3.BorderRadius = 15;
-            this.aButton3.BorderSize = 0;
-            this.aButton3.FlatAppearance.BorderSize = 0;
-            this.aButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.aButton3.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.aButton3.ForeColor = System.Drawing.Color.White;
-            this.aButton3.LineType = MusicOnline.AButton.LineStyles.None;
-            this.aButton3.Location = new System.Drawing.Point(255, 10);
-            this.aButton3.Name = "aButton3";
-            this.aButton3.RoundType = MusicOnline.AButton.RoundStyles.Full;
-            this.aButton3.Size = new System.Drawing.Size(100, 40);
-            this.aButton3.TabIndex = 2;
-            this.aButton3.Text = "Tải xuống";
-            this.aButton3.TextColor = System.Drawing.Color.White;
-            this.aButton3.ThinknessLine = 0;
-            this.aButton3.UseVisualStyleBackColor = false;
+            this.aButton5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(155)))), ((int)(((byte)(70)))));
+            this.aButton5.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(155)))), ((int)(((byte)(70)))));
+            this.aButton5.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.aButton5.BorderRadius = 15;
+            this.aButton5.BorderSize = 0;
+            this.aButton5.FlatAppearance.BorderSize = 0;
+            this.aButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.aButton5.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.aButton5.ForeColor = System.Drawing.Color.White;
+            this.aButton5.LineType = MusicOnline.AButton.LineStyles.None;
+            this.aButton5.Location = new System.Drawing.Point(185, 10);
+            this.aButton5.Name = "aButton5";
+            this.aButton5.RoundType = MusicOnline.AButton.RoundStyles.Full;
+            this.aButton5.Size = new System.Drawing.Size(160, 40);
+            this.aButton5.TabIndex = 1;
+            this.aButton5.Text = "Bình Luận";
+            this.aButton5.TextColor = System.Drawing.Color.White;
+            this.aButton5.ThinknessLine = 0;
+            this.aButton5.UseVisualStyleBackColor = false;
             // 
-            // aButton2
+            // abtnLyrics
             // 
-            this.aButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(155)))), ((int)(((byte)(70)))));
-            this.aButton2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(155)))), ((int)(((byte)(70)))));
-            this.aButton2.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.aButton2.BorderRadius = 15;
-            this.aButton2.BorderSize = 0;
-            this.aButton2.FlatAppearance.BorderSize = 0;
-            this.aButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.aButton2.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.aButton2.ForeColor = System.Drawing.Color.White;
-            this.aButton2.LineType = MusicOnline.AButton.LineStyles.None;
-            this.aButton2.Location = new System.Drawing.Point(125, 10);
-            this.aButton2.Name = "aButton2";
-            this.aButton2.RoundType = MusicOnline.AButton.RoundStyles.Full;
-            this.aButton2.Size = new System.Drawing.Size(100, 40);
-            this.aButton2.TabIndex = 1;
-            this.aButton2.Text = "Bình Luận";
-            this.aButton2.TextColor = System.Drawing.Color.White;
-            this.aButton2.ThinknessLine = 0;
-            this.aButton2.UseVisualStyleBackColor = false;
-            // 
-            // aButton1
-            // 
-            this.aButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(155)))), ((int)(((byte)(70)))));
-            this.aButton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(155)))), ((int)(((byte)(70)))));
-            this.aButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.aButton1.BorderRadius = 15;
-            this.aButton1.BorderSize = 0;
-            this.aButton1.FlatAppearance.BorderSize = 0;
-            this.aButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.aButton1.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.aButton1.ForeColor = System.Drawing.Color.White;
-            this.aButton1.LineType = MusicOnline.AButton.LineStyles.None;
-            this.aButton1.Location = new System.Drawing.Point(5, 10);
-            this.aButton1.Name = "aButton1";
-            this.aButton1.RoundType = MusicOnline.AButton.RoundStyles.Full;
-            this.aButton1.Size = new System.Drawing.Size(110, 40);
-            this.aButton1.TabIndex = 0;
-            this.aButton1.Text = "Lời bài hát";
-            this.aButton1.TextColor = System.Drawing.Color.White;
-            this.aButton1.ThinknessLine = 0;
-            this.aButton1.UseVisualStyleBackColor = false;
+            this.abtnLyrics.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(155)))), ((int)(((byte)(70)))));
+            this.abtnLyrics.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(155)))), ((int)(((byte)(70)))));
+            this.abtnLyrics.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.abtnLyrics.BorderRadius = 15;
+            this.abtnLyrics.BorderSize = 0;
+            this.abtnLyrics.FlatAppearance.BorderSize = 0;
+            this.abtnLyrics.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.abtnLyrics.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.abtnLyrics.ForeColor = System.Drawing.Color.White;
+            this.abtnLyrics.LineType = MusicOnline.AButton.LineStyles.None;
+            this.abtnLyrics.Location = new System.Drawing.Point(15, 10);
+            this.abtnLyrics.Name = "abtnLyrics";
+            this.abtnLyrics.RoundType = MusicOnline.AButton.RoundStyles.Full;
+            this.abtnLyrics.Size = new System.Drawing.Size(160, 40);
+            this.abtnLyrics.TabIndex = 0;
+            this.abtnLyrics.Text = "Lời bài hát";
+            this.abtnLyrics.TextColor = System.Drawing.Color.White;
+            this.abtnLyrics.ThinknessLine = 0;
+            this.abtnLyrics.UseVisualStyleBackColor = false;
+            this.abtnLyrics.Click += new System.EventHandler(this.abtnLyrics_Click);
             // 
             // pnType
             // 
@@ -364,7 +431,7 @@
             this.lbType.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbType.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
             this.lbType.Location = new System.Drawing.Point(110, 10);
-            this.lbType.MaximumSize = new System.Drawing.Size(255, 0);
+            this.lbType.MaximumSize = new System.Drawing.Size(250, 0);
             this.lbType.Name = "lbType";
             this.lbType.Size = new System.Drawing.Size(38, 20);
             this.lbType.TabIndex = 1;
@@ -397,7 +464,7 @@
             this.lbGenre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbGenre.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
             this.lbGenre.Location = new System.Drawing.Point(110, 10);
-            this.lbGenre.MaximumSize = new System.Drawing.Size(255, 0);
+            this.lbGenre.MaximumSize = new System.Drawing.Size(250, 0);
             this.lbGenre.Name = "lbGenre";
             this.lbGenre.Size = new System.Drawing.Size(55, 20);
             this.lbGenre.TabIndex = 1;
@@ -430,7 +497,7 @@
             this.lbArtistsNames.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbArtistsNames.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
             this.lbArtistsNames.Location = new System.Drawing.Point(110, 10);
-            this.lbArtistsNames.MaximumSize = new System.Drawing.Size(255, 0);
+            this.lbArtistsNames.MaximumSize = new System.Drawing.Size(250, 0);
             this.lbArtistsNames.Name = "lbArtistsNames";
             this.lbArtistsNames.Size = new System.Drawing.Size(75, 20);
             this.lbArtistsNames.TabIndex = 1;
@@ -449,6 +516,8 @@
             // 
             // pnTitle
             // 
+            this.pnTitle.Controls.Add(this.pibLoveSong);
+            this.pnTitle.Controls.Add(this.pibDownload);
             this.pnTitle.Controls.Add(this.lbTitle);
             this.pnTitle.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnTitle.Location = new System.Drawing.Point(0, 0);
@@ -456,152 +525,134 @@
             this.pnTitle.Size = new System.Drawing.Size(380, 50);
             this.pnTitle.TabIndex = 5;
             // 
+            // pibLoveSong
+            // 
+            this.pibLoveSong.BackgroundImage = global::MusicOnline.Properties.Resources.heartDeactive;
+            this.pibLoveSong.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pibLoveSong.Location = new System.Drawing.Point(280, 17);
+            this.pibLoveSong.Name = "pibLoveSong";
+            this.pibLoveSong.Size = new System.Drawing.Size(25, 25);
+            this.pibLoveSong.TabIndex = 3;
+            this.pibLoveSong.TabStop = false;
+            this.pibLoveSong.Click += new System.EventHandler(this.pibLoveSong_Click);
+            // 
+            // pibDownload
+            // 
+            this.pibDownload.BackgroundImage = global::MusicOnline.Properties.Resources.downloads;
+            this.pibDownload.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pibDownload.Location = new System.Drawing.Point(320, 15);
+            this.pibDownload.Name = "pibDownload";
+            this.pibDownload.Size = new System.Drawing.Size(25, 25);
+            this.pibDownload.TabIndex = 2;
+            this.pibDownload.TabStop = false;
+            this.pibDownload.Click += new System.EventHandler(this.pibDownload_Click);
+            // 
             // lbTitle
             // 
             this.lbTitle.AutoSize = true;
             this.lbTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTitle.ForeColor = System.Drawing.Color.White;
-            this.lbTitle.Location = new System.Drawing.Point(15, 15);
-            this.lbTitle.MaximumSize = new System.Drawing.Size(350, 0);
+            this.lbTitle.Location = new System.Drawing.Point(11, 15);
+            this.lbTitle.MaximumSize = new System.Drawing.Size(250, 0);
             this.lbTitle.Name = "lbTitle";
             this.lbTitle.Size = new System.Drawing.Size(217, 25);
             this.lbTitle.TabIndex = 1;
             this.lbTitle.Text = "Chúng ta của hiện tại";
             // 
-            // panel4
+            // pnThumbnail
             // 
-            this.panel4.Controls.Add(this.pibThumbnail);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(0, 0);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(380, 365);
-            this.panel4.TabIndex = 0;
+            this.pnThumbnail.Controls.Add(this.pibThumbnail);
+            this.pnThumbnail.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnThumbnail.Location = new System.Drawing.Point(0, 0);
+            this.pnThumbnail.Name = "pnThumbnail";
+            this.pnThumbnail.Size = new System.Drawing.Size(380, 365);
+            this.pnThumbnail.TabIndex = 1;
             // 
-            // pnListMusic
+            // pibThumbnail
             // 
-            this.pnListMusic.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
-            this.pnListMusic.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
-            this.pnListMusic.BorderColor = System.Drawing.Color.Black;
-            this.pnListMusic.BorderRadius = 10;
-            this.pnListMusic.BorderSize = 0;
-            this.pnListMusic.Controls.Add(this.flpMusics);
-            this.pnListMusic.Controls.Add(this.aPanel1);
-            this.pnListMusic.ForeColor = System.Drawing.Color.White;
-            this.pnListMusic.Location = new System.Drawing.Point(400, 25);
-            this.pnListMusic.Name = "pnListMusic";
-            this.pnListMusic.RoundType = MusicOnline.APanel.RoundStyles.Full;
-            this.pnListMusic.Size = new System.Drawing.Size(700, 640);
-            this.pnListMusic.TabIndex = 2;
-            this.pnListMusic.TextColor = System.Drawing.Color.White;
+            this.pibThumbnail.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pibThumbnail.Location = new System.Drawing.Point(15, 15);
+            this.pibThumbnail.Name = "pibThumbnail";
+            this.pibThumbnail.Size = new System.Drawing.Size(350, 350);
+            this.pibThumbnail.TabIndex = 0;
+            this.pibThumbnail.TabStop = false;
             // 
-            // flpMusics
+            // pn
             // 
-            this.flpMusics.AutoScroll = true;
-            this.flpMusics.Location = new System.Drawing.Point(40, 100);
-            this.flpMusics.Name = "flpMusics";
-            this.flpMusics.Size = new System.Drawing.Size(640, 500);
-            this.flpMusics.TabIndex = 1;
+            this.pn.BackColor = System.Drawing.Color.Transparent;
+            this.pn.BackgroundColor = System.Drawing.Color.Transparent;
+            this.pn.BorderColor = System.Drawing.Color.Black;
+            this.pn.BorderRadius = 10;
+            this.pn.BorderSize = 0;
+            this.pn.Controls.Add(this.aPanel2);
+            this.pn.Controls.Add(this.pnMenu);
+            this.pn.ForeColor = System.Drawing.Color.White;
+            this.pn.Location = new System.Drawing.Point(10, 15);
+            this.pn.Name = "pn";
+            this.pn.RoundType = MusicOnline.APanel.RoundStyles.Full;
+            this.pn.Size = new System.Drawing.Size(350, 690);
+            this.pn.TabIndex = 4;
+            this.pn.TextColor = System.Drawing.Color.White;
             // 
-            // aPanel1
+            // aPanel2
             // 
-            this.aPanel1.BackColor = System.Drawing.Color.Transparent;
-            this.aPanel1.BackgroundColor = System.Drawing.Color.Transparent;
-            this.aPanel1.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.aPanel1.BorderRadius = 0;
-            this.aPanel1.BorderSize = 0;
-            this.aPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.aPanel1.ForeColor = System.Drawing.Color.White;
-            this.aPanel1.Location = new System.Drawing.Point(0, 0);
-            this.aPanel1.Name = "aPanel1";
-            this.aPanel1.RoundType = MusicOnline.APanel.RoundStyles.Full;
-            this.aPanel1.Size = new System.Drawing.Size(700, 70);
-            this.aPanel1.TabIndex = 0;
-            this.aPanel1.TextColor = System.Drawing.Color.White;
+            this.aPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
+            this.aPanel2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
+            this.aPanel2.BorderColor = System.Drawing.Color.Black;
+            this.aPanel2.BorderRadius = 10;
+            this.aPanel2.BorderSize = 0;
+            this.aPanel2.Controls.Add(this.panel2);
+            this.aPanel2.Controls.Add(this.pnPlaylist);
+            this.aPanel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.aPanel2.ForeColor = System.Drawing.Color.White;
+            this.aPanel2.Location = new System.Drawing.Point(0, 180);
+            this.aPanel2.Name = "aPanel2";
+            this.aPanel2.RoundType = MusicOnline.APanel.RoundStyles.Full;
+            this.aPanel2.Size = new System.Drawing.Size(350, 510);
+            this.aPanel2.TabIndex = 6;
+            this.aPanel2.TextColor = System.Drawing.Color.White;
             // 
-            // pnTop
+            // panel2
             // 
-            this.pnTop.BackColor = System.Drawing.Color.Black;
-            this.pnTop.BackgroundColor = System.Drawing.Color.Black;
-            this.pnTop.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.pnTop.BorderRadius = 0;
-            this.pnTop.BorderSize = 0;
-            this.pnTop.Controls.Add(this.pibClose);
-            this.pnTop.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnTop.ForeColor = System.Drawing.Color.White;
-            this.pnTop.Location = new System.Drawing.Point(0, 0);
-            this.pnTop.Name = "pnTop";
-            this.pnTop.RoundType = MusicOnline.APanel.RoundStyles.Full;
-            this.pnTop.Size = new System.Drawing.Size(1500, 30);
-            this.pnTop.TabIndex = 2;
-            this.pnTop.TextColor = System.Drawing.Color.White;
+            this.panel2.Controls.Add(this.aTextboxUC1);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 47);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(350, 50);
+            this.panel2.TabIndex = 3;
             // 
-            // pnBottom
+            // aTextboxUC1
             // 
-            this.pnBottom.BackColor = System.Drawing.Color.Transparent;
-            this.pnBottom.BackgroundColor = System.Drawing.Color.Transparent;
-            this.pnBottom.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.pnBottom.BorderRadius = 0;
-            this.pnBottom.BorderSize = 0;
-            this.pnBottom.Controls.Add(this.panel6);
-            this.pnBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnBottom.ForeColor = System.Drawing.Color.White;
-            this.pnBottom.Location = new System.Drawing.Point(0, 730);
-            this.pnBottom.Name = "pnBottom";
-            this.pnBottom.RoundType = MusicOnline.APanel.RoundStyles.Full;
-            this.pnBottom.Size = new System.Drawing.Size(1500, 120);
-            this.pnBottom.TabIndex = 1;
-            this.pnBottom.TextColor = System.Drawing.Color.White;
+            this.aTextboxUC1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
+            this.aTextboxUC1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
+            this.aTextboxUC1.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.aTextboxUC1.BorderRadius = 0;
+            this.aTextboxUC1.BorderSize = 2;
+            this.aTextboxUC1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.aTextboxUC1.ForeColor = System.Drawing.Color.White;
+            this.aTextboxUC1.Location = new System.Drawing.Point(15, 15);
+            this.aTextboxUC1.Margin = new System.Windows.Forms.Padding(4);
+            this.aTextboxUC1.Multiline = false;
+            this.aTextboxUC1.Name = "aTextboxUC1";
+            this.aTextboxUC1.Padding = new System.Windows.Forms.Padding(7);
+            this.aTextboxUC1.PasswordChar = false;
+            this.aTextboxUC1.PlaceholderColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
+            this.aTextboxUC1.PlaceholderText = "Tên danh sách";
+            this.aTextboxUC1.RoundType = MusicOnline.ATextboxUC.RoundStyles.Full;
+            this.aTextboxUC1.Size = new System.Drawing.Size(194, 35);
+            this.aTextboxUC1.TabIndex = 2;
+            this.aTextboxUC1.Texts = "";
+            this.aTextboxUC1.UnderlinedStyle = true;
             // 
-            // panel6
+            // pnPlaylist
             // 
-            this.panel6.Controls.Add(this.panel7);
-            this.panel6.Controls.Add(this.label2);
-            this.panel6.Controls.Add(this.slider);
-            this.panel6.Location = new System.Drawing.Point(400, 6);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(700, 114);
-            this.panel6.TabIndex = 1;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
-            this.label2.Location = new System.Drawing.Point(0, 48);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(38, 16);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "00:00";
-            // 
-            // slider
-            // 
-            this.slider.BackColor = System.Drawing.Color.Transparent;
-            this.slider.BackgroundColor = System.Drawing.Color.Transparent;
-            this.slider.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.slider.BorderRadius = 0;
-            this.slider.BorderSize = 0;
-            this.slider.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.slider.ForeColor = System.Drawing.Color.White;
-            this.slider.Location = new System.Drawing.Point(48, 38);
-            this.slider.Name = "slider";
-            this.slider.RoundType = MusicOnline.APanel.RoundStyles.Full;
-            this.slider.Size = new System.Drawing.Size(557, 40);
-            this.slider.TabIndex = 0;
-            this.slider.TextColor = System.Drawing.Color.White;
-            this.slider.Paint += new System.Windows.Forms.PaintEventHandler(this.slider_Paint);
-            this.slider.MouseDown += new System.Windows.Forms.MouseEventHandler(this.slider_MouseDown);
-            this.slider.MouseMove += new System.Windows.Forms.MouseEventHandler(this.slider_MouseMove);
-            this.slider.MouseUp += new System.Windows.Forms.MouseEventHandler(this.slider_MouseUp);
-            // 
-            // panel7
-            // 
-            this.panel7.Controls.Add(this.pictureBox4);
-            this.panel7.Controls.Add(this.pictureBox3);
-            this.panel7.Controls.Add(this.pictureBox2);
-            this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel7.Location = new System.Drawing.Point(0, 0);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(700, 40);
-            this.panel7.TabIndex = 2;
+            this.pnPlaylist.Controls.Add(this.pictureBox1);
+            this.pnPlaylist.Controls.Add(this.label1);
+            this.pnPlaylist.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnPlaylist.Location = new System.Drawing.Point(0, 0);
+            this.pnPlaylist.Name = "pnPlaylist";
+            this.pnPlaylist.Size = new System.Drawing.Size(350, 47);
+            this.pnPlaylist.TabIndex = 1;
             // 
             // pictureBox1
             // 
@@ -613,12 +664,41 @@
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(60, 15);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(149, 25);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Danh sách phát";
+            // 
+            // pnMenu
+            // 
+            this.pnMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
+            this.pnMenu.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
+            this.pnMenu.BorderColor = System.Drawing.Color.Black;
+            this.pnMenu.BorderRadius = 10;
+            this.pnMenu.BorderSize = 0;
+            this.pnMenu.Controls.Add(this.abtnRecently);
+            this.pnMenu.Controls.Add(this.abtnLikeSong);
+            this.pnMenu.Controls.Add(this.abtnListMusic);
+            this.pnMenu.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnMenu.ForeColor = System.Drawing.Color.White;
+            this.pnMenu.Location = new System.Drawing.Point(0, 0);
+            this.pnMenu.Name = "pnMenu";
+            this.pnMenu.RoundType = MusicOnline.APanel.RoundStyles.Full;
+            this.pnMenu.Size = new System.Drawing.Size(350, 160);
+            this.pnMenu.TabIndex = 5;
+            this.pnMenu.TextColor = System.Drawing.Color.White;
+            // 
             // abtnRecently
             // 
             this.abtnRecently.BackColor = System.Drawing.Color.Transparent;
             this.abtnRecently.BackgroundColor = System.Drawing.Color.Transparent;
             this.abtnRecently.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.abtnRecently.BorderRadius = 15;
+            this.abtnRecently.BorderRadius = 0;
             this.abtnRecently.BorderSize = 0;
             this.abtnRecently.FlatAppearance.BorderSize = 0;
             this.abtnRecently.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -630,9 +710,10 @@
             this.abtnRecently.Location = new System.Drawing.Point(15, 105);
             this.abtnRecently.Name = "abtnRecently";
             this.abtnRecently.RoundType = MusicOnline.AButton.RoundStyles.Full;
-            this.abtnRecently.Size = new System.Drawing.Size(216, 40);
+            this.abtnRecently.Size = new System.Drawing.Size(320, 40);
             this.abtnRecently.TabIndex = 2;
-            this.abtnRecently.Text = "Nhạc gần đây";
+            this.abtnRecently.Text = "      Nhạc gần đây";
+            this.abtnRecently.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.abtnRecently.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
             this.abtnRecently.ThinknessLine = 0;
             this.abtnRecently.UseVisualStyleBackColor = false;
@@ -644,7 +725,7 @@
             this.abtnLikeSong.BackColor = System.Drawing.Color.Transparent;
             this.abtnLikeSong.BackgroundColor = System.Drawing.Color.Transparent;
             this.abtnLikeSong.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.abtnLikeSong.BorderRadius = 15;
+            this.abtnLikeSong.BorderRadius = 0;
             this.abtnLikeSong.BorderSize = 0;
             this.abtnLikeSong.FlatAppearance.BorderSize = 0;
             this.abtnLikeSong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -656,9 +737,10 @@
             this.abtnLikeSong.Location = new System.Drawing.Point(15, 60);
             this.abtnLikeSong.Name = "abtnLikeSong";
             this.abtnLikeSong.RoundType = MusicOnline.AButton.RoundStyles.Full;
-            this.abtnLikeSong.Size = new System.Drawing.Size(225, 40);
+            this.abtnLikeSong.Size = new System.Drawing.Size(320, 40);
             this.abtnLikeSong.TabIndex = 1;
-            this.abtnLikeSong.Text = "Nhạc yêu thích";
+            this.abtnLikeSong.Text = "      Nhạc yêu thích";
+            this.abtnLikeSong.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.abtnLikeSong.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
             this.abtnLikeSong.ThinknessLine = 0;
             this.abtnLikeSong.UseVisualStyleBackColor = false;
@@ -670,7 +752,7 @@
             this.abtnListMusic.BackColor = System.Drawing.Color.Transparent;
             this.abtnListMusic.BackgroundColor = System.Drawing.Color.Transparent;
             this.abtnListMusic.BorderColor = System.Drawing.Color.Red;
-            this.abtnListMusic.BorderRadius = 15;
+            this.abtnListMusic.BorderRadius = 0;
             this.abtnListMusic.BorderSize = 0;
             this.abtnListMusic.FlatAppearance.BorderSize = 0;
             this.abtnListMusic.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -682,66 +764,42 @@
             this.abtnListMusic.Location = new System.Drawing.Point(15, 15);
             this.abtnListMusic.Name = "abtnListMusic";
             this.abtnListMusic.RoundType = MusicOnline.AButton.RoundStyles.Full;
-            this.abtnListMusic.Size = new System.Drawing.Size(234, 40);
+            this.abtnListMusic.Size = new System.Drawing.Size(320, 40);
             this.abtnListMusic.TabIndex = 0;
-            this.abtnListMusic.Text = "Danh sách nhạc";
+            this.abtnListMusic.Text = "      Danh sách nhạc";
+            this.abtnListMusic.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.abtnListMusic.TextColor = System.Drawing.Color.White;
             this.abtnListMusic.ThinknessLine = 0;
             this.abtnListMusic.UseVisualStyleBackColor = false;
             this.abtnListMusic.Click += new System.EventHandler(this.abtnListMusic_Click);
             this.abtnListMusic.MouseHover += new System.EventHandler(this.abtnHover_MouseHover);
             // 
-            // pibThumbnail
+            // pnBottom
             // 
-            this.pibThumbnail.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pibThumbnail.Location = new System.Drawing.Point(15, 15);
-            this.pibThumbnail.Name = "pibThumbnail";
-            this.pibThumbnail.Size = new System.Drawing.Size(350, 350);
-            this.pibThumbnail.TabIndex = 0;
-            this.pibThumbnail.TabStop = false;
+            this.pnBottom.Controls.Add(this.panel11);
+            this.pnBottom.Controls.Add(this.pnControlMusic);
+            this.pnBottom.Controls.Add(this.panel10);
+            this.pnBottom.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnBottom.Location = new System.Drawing.Point(0, 750);
+            this.pnBottom.Name = "pnBottom";
+            this.pnBottom.Size = new System.Drawing.Size(1500, 100);
+            this.pnBottom.TabIndex = 6;
             // 
-            // pibClose
+            // panel11
             // 
-            this.pibClose.BackColor = System.Drawing.Color.Transparent;
-            this.pibClose.BackgroundImage = global::MusicOnline.Properties.Resources.CloseIcon2;
-            this.pibClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pibClose.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pibClose.Location = new System.Drawing.Point(1464, 10);
-            this.pibClose.Name = "pibClose";
-            this.pibClose.Size = new System.Drawing.Size(20, 20);
-            this.pibClose.TabIndex = 0;
-            this.pibClose.TabStop = false;
-            this.pibClose.Click += new System.EventHandler(this.pibClose_Click);
+            this.panel11.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel11.Location = new System.Drawing.Point(1080, 0);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(420, 100);
+            this.panel11.TabIndex = 2;
             // 
-            // pictureBox3
+            // panel10
             // 
-            this.pictureBox3.BackgroundImage = global::MusicOnline.Properties.Resources.play_and_pause_button;
-            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox3.Location = new System.Drawing.Point(390, 8);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox3.TabIndex = 3;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackgroundImage = global::MusicOnline.Properties.Resources.play;
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(330, 0);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(40, 40);
-            this.pictureBox2.TabIndex = 2;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackgroundImage = global::MusicOnline.Properties.Resources.previous;
-            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox4.Location = new System.Drawing.Point(286, 8);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox4.TabIndex = 4;
-            this.pictureBox4.TabStop = false;
+            this.panel10.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel10.Location = new System.Drawing.Point(0, 0);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(380, 100);
+            this.panel10.TabIndex = 0;
             // 
             // FrmHome
             // 
@@ -749,9 +807,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1500, 850);
+            this.Controls.Add(this.pnBottom);
             this.Controls.Add(this.pnBody);
             this.Controls.Add(this.pnTop);
-            this.Controls.Add(this.pnBottom);
             this.DoubleBuffered = true;
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -759,16 +817,21 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.FrmHome_Load);
+            this.pnControlMusic.ResumeLayout(false);
+            this.pnControlMusic.PerformLayout();
+            this.panel7.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pibPrevious)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pibNext)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pibPlayOrPause)).EndInit();
+            this.pnTop.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pibClose)).EndInit();
             this.pnBody.ResumeLayout(false);
-            this.pn.ResumeLayout(false);
-            this.aPanel2.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
+            this.aPanel1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.pnMenu.ResumeLayout(false);
             this.pnDetailMusic.ResumeLayout(false);
-            this.panel5.ResumeLayout(false);
-            this.pnOperator.ResumeLayout(false);
+            this.panel8.ResumeLayout(false);
+            this.panel9.ResumeLayout(false);
             this.pnType.ResumeLayout(false);
             this.pnType.PerformLayout();
             this.pnGenre.ResumeLayout(false);
@@ -777,71 +840,76 @@
             this.pnArtistsNames.PerformLayout();
             this.pnTitle.ResumeLayout(false);
             this.pnTitle.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.pnListMusic.ResumeLayout(false);
-            this.pnTop.ResumeLayout(false);
-            this.pnBottom.ResumeLayout(false);
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
-            this.panel7.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pibLoveSong)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pibDownload)).EndInit();
+            this.pnThumbnail.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pibThumbnail)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pibClose)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            this.pn.ResumeLayout(false);
+            this.aPanel2.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.pnPlaylist.ResumeLayout(false);
+            this.pnPlaylist.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.pnMenu.ResumeLayout(false);
+            this.pnBottom.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pibClose;
-        private APanel pnBottom;
-        private APanel slider;
         private System.Windows.Forms.Timer timePlay;
-        private APanel pnTop;
-        private APanel pnBody;
-        private APanel pnListMusic;
-        private APanel aPanel1;
+        private System.Windows.Forms.Panel pnControlMusic;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.PictureBox pibPrevious;
+        private System.Windows.Forms.PictureBox pibNext;
+        private System.Windows.Forms.PictureBox pibPlayOrPause;
+        private System.Windows.Forms.Label lbStart;
+        private APanel slider;
         private System.Windows.Forms.FlowLayoutPanel flpMusics;
-        private APanel pnDetailMusic;
-        private System.Windows.Forms.PictureBox pibThumbnail;
-        private System.Windows.Forms.Label lbTitle;
-        private System.Windows.Forms.Panel pnTitle;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Panel pnArtistsNames;
-        private System.Windows.Forms.Label lbArtistsNames;
-        private System.Windows.Forms.Panel pnOperator;
         private System.Windows.Forms.Panel pnType;
         private System.Windows.Forms.Label lbType;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Panel pnGenre;
         private System.Windows.Forms.Label lbGenre;
         private System.Windows.Forms.Label label4;
-        private AButton aButton1;
-        private AButton aButton3;
-        private AButton aButton2;
+        private System.Windows.Forms.Panel pnArtistsNames;
+        private System.Windows.Forms.Label lbArtistsNames;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Panel pnTitle;
+        private System.Windows.Forms.Label lbTitle;
         private APanel pn;
         private APanel aPanel2;
-        private APanel pnMenu;
-        private AButton abtnListMusic;
-        private AButton abtnLikeSong;
-        private AButton abtnRecently;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel2;
         private ATextboxUC aTextboxUC1;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel pnPlaylist;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label1;
+        private APanel pnMenu;
+        private AButton abtnRecently;
+        private AButton abtnLikeSong;
+        private AButton abtnListMusic;
+        private System.Windows.Forms.Panel pnTop;
+        private System.Windows.Forms.Panel pnBody;
+        private System.Windows.Forms.PictureBox pibClose;
+        private System.Windows.Forms.Panel pnBottom;
+        private System.Windows.Forms.Panel panel11;
+        private System.Windows.Forms.Panel panel10;
+        private APanel pnDetailMusic;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Panel panel9;
+        private AButton aButton5;
+        private AButton abtnLyrics;
+        private System.Windows.Forms.Panel pnThumbnail;
+        private System.Windows.Forms.PictureBox pibThumbnail;
+        private System.Windows.Forms.PictureBox pibDownload;
+        private System.Windows.Forms.Label lbEnd;
+        private APanel aPanel1;
+        private System.Windows.Forms.Panel panel1;
+        private ATextboxUC atbSearch;
+        private System.Windows.Forms.ComboBox cbType;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox pibLoveSong;
     }
 }
 

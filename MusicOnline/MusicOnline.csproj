@@ -101,6 +101,12 @@
     <Compile Include="FrmHome.Designer.cs">
       <DependentUpon>FrmHome.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmLyrics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLyrics.Designer.cs">
+      <DependentUpon>frmLyrics.cs</DependentUpon>
+    </Compile>
     <Compile Include="Model\Music.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -121,6 +127,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmHome.resx">
       <DependentUpon>FrmHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLyrics.resx">
+      <DependentUpon>frmLyrics.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -353,6 +362,13 @@
     <Content Include="CreateData\node_modules\follow-redirects\index.js" />
     <Content Include="CreateData\node_modules\zingmp3-api-full\dist\index.js" />
     <Content Include="Mp3\SimeImlangMemuoiPhaiLong.mp3" />
+    <None Include="Resources\heartDeactive.png" />
+    <None Include="Resources\heartActive.png" />
+    <None Include="Resources\001-pause.png" />
+    <None Include="Resources\pause.png" />
+    <None Include="Resources\downloads.png" />
+    <None Include="Resources\downloading.png" />
+    <None Include="Resources\previousIcon.png" />
     <None Include="Resources\previous.png" />
     <None Include="Resources\play-and-pause-button.png" />
     <None Include="Resources\play.png" />
