@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MusicOnline.Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,13 @@ namespace MusicOnline.Usercontrols
 {
     public partial class ItemMusic : UserControl
     {
+        private Music _music;
+        public Music music
+        {
+            get { return _music; }
+            set { _music = value; }
+        }
+
         public ItemMusic(string title)
         {
             InitializeComponent();

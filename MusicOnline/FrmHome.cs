@@ -11,6 +11,7 @@ using System.Linq;
 using System.Text;
 using System.Text.Json;
 using System.Windows.Forms;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace MusicOnline
 {
@@ -25,6 +26,7 @@ namespace MusicOnline
         private ObservableCollection<Music> musicLove = new ObservableCollection<Music>();
         private HashSet<String> genres = new HashSet<string>();
         private HashSet<String> types = new HashSet<string>();
+        private Playlist currentPlaylist;
 
         private Music _currentMusicSelected = null;
         public Music currentMusicSelected
@@ -531,6 +533,9 @@ namespace MusicOnline
         {
             pibThumbnail.BackgroundImage = Helper.loadImagePath("../../CreateData/Image/" + currentMusicSelected.Title + ".jpg");
 
+            pnAddToPlaylist.Visible = false;
+            pibAddToPlaylist.Visible = true;
+
             if (musicLove.Contains(currentMusicSelected))
                 pibLoveSong.BackgroundImage = Properties.Resources.heartActive;
             else
@@ -566,6 +571,95 @@ namespace MusicOnline
             }
         }
 
+        private void pibCancel_Click(object sender, EventArgs e)
+        {
+            pnAddToPlaylist.Visible = false;
+            pibAddToPlaylist.Visible = true;
+        }
+
+        private void pibAddToPlaylist_Click(object sender, EventArgs e)
+        {
+            pnAddToPlaylist.Visible = true;
+            pibAddToPlaylist.Visible = false;
+        }
+
+        private void pibAccept_Click(object sender, EventArgs e)
+        {
+            Data.addMusicToPlayList(cbAddToPlaylist.Text, currentMusicSelected);
+        }
+
+        #endregion
+
+        #region playlist
+        private void lbAddPlaylist_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(atbNamePlaylist.Texts))
+            {
+                Playlist pl = new Playlist(atbNamePlaylist.Texts);
+
+                if (Data.addDataPlaylist(pl))
+                {
+                    PlaylistItemUC newPlaylist = new PlaylistItemUC(pl);
+                    newPlaylist.Dock = DockStyle.Top;
+                    pnListPlaylist.Controls.Add(newPlaylist);
+                
+                    cbAddToPlaylist.Items.Add(atbNamePlaylist.Texts);
+                }
+            }
+            else
+            {
+                AMessageBoxFrm ms = new AMessageBoxFrm("Không được để trống giá trị", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                ms.ShowDialog();
+            }
+        }
+
+        public void removePlaylist(string name)
+        {
+            PlaylistItemUC pl = null;
+
+            foreach(PlaylistItemUC _pl  in pnListPlaylist.Controls)
+            {
+                if (_pl.playlist.name == name)
+                {
+                    pl = _pl;
+                }
+            }
+
+            pnListPlaylist.Controls.Remove(pl);
+
+            cbAddToPlaylist.Items.Remove(name);
+        }
+
+        private void atbNamePlaylist__TextChanged(object sender, EventArgs e)
+        {
+            if (atbNamePlaylist.Texts.Length > 10)
+            {
+                atbNamePlaylist.Texts = atbNamePlaylist.Texts.Substring(0, 10);
+                AMessageBoxFrm ms = new AMessageBoxFrm("Giới hạn tên 10 kí tự !", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                ms.ShowDialog();
+            }
+        }
+
+        public void updateListPlaylist()
+        {
+            cbAddToPlaylist.Items.Clear();
+            foreach(PlaylistItemUC playlistItem in pnListPlaylist.Controls)
+            {
+                playlistItem.playlist = playlistItem.playlist;
+                cbAddToPlaylist.Items.Add(playlistItem.playlist.name);
+            }
+        }
+
+        public void loadPlaylist(Playlist playlist)
+        {
+            _musics = new ObservableCollection<Music>(playlist.musics);
+            musics = new ObservableCollection<Music>(playlist.musics);
+            loadMusics();
+            
+            // Lưu lại
+            currentPlaylist = playlist;
+            deactiveAllButton();
+        }
         #endregion
     }
 }

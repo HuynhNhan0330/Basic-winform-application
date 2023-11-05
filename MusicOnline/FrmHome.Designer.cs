@@ -66,12 +66,20 @@
             this.pibDownload = new System.Windows.Forms.PictureBox();
             this.lbTitle = new System.Windows.Forms.Label();
             this.pnThumbnail = new System.Windows.Forms.Panel();
+            this.pnAddToPlaylist = new System.Windows.Forms.Panel();
+            this.pibCancel = new System.Windows.Forms.PictureBox();
+            this.pibAccept = new System.Windows.Forms.PictureBox();
+            this.cbAddToPlaylist = new System.Windows.Forms.ComboBox();
+            this.pibAddToPlaylist = new System.Windows.Forms.PictureBox();
+            this.lbRating = new System.Windows.Forms.Label();
+            this.pibStar = new System.Windows.Forms.PictureBox();
             this.pibThumbnail = new System.Windows.Forms.PictureBox();
             this.pn = new MusicOnline.APanel();
             this.aPanel2 = new MusicOnline.APanel();
-            this.pibStar = new System.Windows.Forms.PictureBox();
+            this.pnListPlaylist = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.aTextboxUC1 = new MusicOnline.ATextboxUC();
+            this.lbAddPlaylist = new System.Windows.Forms.Label();
+            this.atbNamePlaylist = new MusicOnline.ATextboxUC();
             this.pnPlaylist = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -82,7 +90,6 @@
             this.pnBottom = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
-            this.lbRating = new System.Windows.Forms.Label();
             this.pnControlMusic.SuspendLayout();
             this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pibPrevious)).BeginInit();
@@ -103,10 +110,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.pibLoveSong)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pibDownload)).BeginInit();
             this.pnThumbnail.SuspendLayout();
+            this.pnAddToPlaylist.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pibCancel)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pibAccept)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pibAddToPlaylist)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pibStar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pibThumbnail)).BeginInit();
             this.pn.SuspendLayout();
             this.aPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pibStar)).BeginInit();
             this.panel2.SuspendLayout();
             this.pnPlaylist.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -157,6 +168,7 @@
             // 
             this.pibPrevious.BackgroundImage = global::MusicOnline.Properties.Resources.previousIcon;
             this.pibPrevious.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pibPrevious.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pibPrevious.Location = new System.Drawing.Point(290, 10);
             this.pibPrevious.Name = "pibPrevious";
             this.pibPrevious.Size = new System.Drawing.Size(20, 20);
@@ -168,6 +180,7 @@
             // 
             this.pibNext.BackgroundImage = global::MusicOnline.Properties.Resources.play_and_pause_button;
             this.pibNext.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pibNext.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pibNext.Location = new System.Drawing.Point(390, 10);
             this.pibNext.Name = "pibNext";
             this.pibNext.Size = new System.Drawing.Size(20, 20);
@@ -179,6 +192,7 @@
             // 
             this.pibPlayOrPause.BackgroundImage = global::MusicOnline.Properties.Resources._001_pause;
             this.pibPlayOrPause.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pibPlayOrPause.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pibPlayOrPause.Location = new System.Drawing.Point(330, 0);
             this.pibPlayOrPause.Name = "pibPlayOrPause";
             this.pibPlayOrPause.Size = new System.Drawing.Size(40, 40);
@@ -229,6 +243,7 @@
             // 
             this.pibClose.BackgroundImage = global::MusicOnline.Properties.Resources.CloseIcon2;
             this.pibClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pibClose.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pibClose.Location = new System.Drawing.Point(1470, 10);
             this.pibClose.Name = "pibClose";
             this.pibClose.Size = new System.Drawing.Size(20, 20);
@@ -380,6 +395,7 @@
             this.abtnComment.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.abtnComment.BorderRadius = 15;
             this.abtnComment.BorderSize = 0;
+            this.abtnComment.Cursor = System.Windows.Forms.Cursors.Hand;
             this.abtnComment.FlatAppearance.BorderSize = 0;
             this.abtnComment.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.abtnComment.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -403,6 +419,7 @@
             this.abtnLyrics.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.abtnLyrics.BorderRadius = 15;
             this.abtnLyrics.BorderSize = 0;
+            this.abtnLyrics.Cursor = System.Windows.Forms.Cursors.Hand;
             this.abtnLyrics.FlatAppearance.BorderSize = 0;
             this.abtnLyrics.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.abtnLyrics.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -533,6 +550,7 @@
             // 
             this.pibLoveSong.BackgroundImage = global::MusicOnline.Properties.Resources.heartDeactive;
             this.pibLoveSong.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pibLoveSong.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pibLoveSong.Location = new System.Drawing.Point(280, 17);
             this.pibLoveSong.Name = "pibLoveSong";
             this.pibLoveSong.Size = new System.Drawing.Size(25, 25);
@@ -544,6 +562,7 @@
             // 
             this.pibDownload.BackgroundImage = global::MusicOnline.Properties.Resources.downloads;
             this.pibDownload.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pibDownload.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pibDownload.Location = new System.Drawing.Point(320, 15);
             this.pibDownload.Name = "pibDownload";
             this.pibDownload.Size = new System.Drawing.Size(25, 25);
@@ -565,6 +584,8 @@
             // 
             // pnThumbnail
             // 
+            this.pnThumbnail.Controls.Add(this.pnAddToPlaylist);
+            this.pnThumbnail.Controls.Add(this.pibAddToPlaylist);
             this.pnThumbnail.Controls.Add(this.lbRating);
             this.pnThumbnail.Controls.Add(this.pibStar);
             this.pnThumbnail.Controls.Add(this.pibThumbnail);
@@ -573,6 +594,84 @@
             this.pnThumbnail.Name = "pnThumbnail";
             this.pnThumbnail.Size = new System.Drawing.Size(380, 410);
             this.pnThumbnail.TabIndex = 1;
+            // 
+            // pnAddToPlaylist
+            // 
+            this.pnAddToPlaylist.Controls.Add(this.pibCancel);
+            this.pnAddToPlaylist.Controls.Add(this.pibAccept);
+            this.pnAddToPlaylist.Controls.Add(this.cbAddToPlaylist);
+            this.pnAddToPlaylist.Location = new System.Drawing.Point(128, 380);
+            this.pnAddToPlaylist.Name = "pnAddToPlaylist";
+            this.pnAddToPlaylist.Size = new System.Drawing.Size(220, 30);
+            this.pnAddToPlaylist.TabIndex = 7;
+            // 
+            // pibCancel
+            // 
+            this.pibCancel.BackgroundImage = global::MusicOnline.Properties.Resources.cancel;
+            this.pibCancel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pibCancel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pibCancel.Location = new System.Drawing.Point(200, 5);
+            this.pibCancel.Name = "pibCancel";
+            this.pibCancel.Size = new System.Drawing.Size(15, 15);
+            this.pibCancel.TabIndex = 8;
+            this.pibCancel.TabStop = false;
+            this.pibCancel.Click += new System.EventHandler(this.pibCancel_Click);
+            // 
+            // pibAccept
+            // 
+            this.pibAccept.BackgroundImage = global::MusicOnline.Properties.Resources.checkmarks;
+            this.pibAccept.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pibAccept.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pibAccept.Location = new System.Drawing.Point(165, 0);
+            this.pibAccept.Name = "pibAccept";
+            this.pibAccept.Size = new System.Drawing.Size(25, 25);
+            this.pibAccept.TabIndex = 7;
+            this.pibAccept.TabStop = false;
+            this.pibAccept.Click += new System.EventHandler(this.pibAccept_Click);
+            // 
+            // cbAddToPlaylist
+            // 
+            this.cbAddToPlaylist.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
+            this.cbAddToPlaylist.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbAddToPlaylist.ForeColor = System.Drawing.Color.White;
+            this.cbAddToPlaylist.FormattingEnabled = true;
+            this.cbAddToPlaylist.Location = new System.Drawing.Point(0, 0);
+            this.cbAddToPlaylist.Name = "cbAddToPlaylist";
+            this.cbAddToPlaylist.Size = new System.Drawing.Size(150, 26);
+            this.cbAddToPlaylist.TabIndex = 6;
+            // 
+            // pibAddToPlaylist
+            // 
+            this.pibAddToPlaylist.BackgroundImage = global::MusicOnline.Properties.Resources.add_to_playlist__1_;
+            this.pibAddToPlaylist.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pibAddToPlaylist.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pibAddToPlaylist.Location = new System.Drawing.Point(320, 380);
+            this.pibAddToPlaylist.Name = "pibAddToPlaylist";
+            this.pibAddToPlaylist.Size = new System.Drawing.Size(25, 25);
+            this.pibAddToPlaylist.TabIndex = 0;
+            this.pibAddToPlaylist.TabStop = false;
+            this.pibAddToPlaylist.Click += new System.EventHandler(this.pibAddToPlaylist_Click);
+            // 
+            // lbRating
+            // 
+            this.lbRating.AutoSize = true;
+            this.lbRating.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbRating.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(227)))), ((int)(((byte)(71)))));
+            this.lbRating.Location = new System.Drawing.Point(45, 384);
+            this.lbRating.Name = "lbRating";
+            this.lbRating.Size = new System.Drawing.Size(35, 21);
+            this.lbRating.TabIndex = 5;
+            this.lbRating.Text = "0.0";
+            // 
+            // pibStar
+            // 
+            this.pibStar.BackgroundImage = global::MusicOnline.Properties.Resources.StarActiveIcon1;
+            this.pibStar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pibStar.Location = new System.Drawing.Point(15, 380);
+            this.pibStar.Name = "pibStar";
+            this.pibStar.Size = new System.Drawing.Size(25, 25);
+            this.pibStar.TabIndex = 4;
+            this.pibStar.TabStop = false;
             // 
             // pibThumbnail
             // 
@@ -607,6 +706,7 @@
             this.aPanel2.BorderColor = System.Drawing.Color.Black;
             this.aPanel2.BorderRadius = 10;
             this.aPanel2.BorderSize = 0;
+            this.aPanel2.Controls.Add(this.pnListPlaylist);
             this.aPanel2.Controls.Add(this.panel2);
             this.aPanel2.Controls.Add(this.pnPlaylist);
             this.aPanel2.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -618,47 +718,59 @@
             this.aPanel2.TabIndex = 6;
             this.aPanel2.TextColor = System.Drawing.Color.White;
             // 
-            // pibStar
+            // pnListPlaylist
             // 
-            this.pibStar.BackgroundImage = global::MusicOnline.Properties.Resources.StarActiveIcon1;
-            this.pibStar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pibStar.Location = new System.Drawing.Point(15, 380);
-            this.pibStar.Name = "pibStar";
-            this.pibStar.Size = new System.Drawing.Size(25, 25);
-            this.pibStar.TabIndex = 4;
-            this.pibStar.TabStop = false;
+            this.pnListPlaylist.AutoScroll = true;
+            this.pnListPlaylist.Location = new System.Drawing.Point(10, 120);
+            this.pnListPlaylist.Name = "pnListPlaylist";
+            this.pnListPlaylist.Size = new System.Drawing.Size(330, 375);
+            this.pnListPlaylist.TabIndex = 4;
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.aTextboxUC1);
+            this.panel2.Controls.Add(this.lbAddPlaylist);
+            this.panel2.Controls.Add(this.atbNamePlaylist);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 47);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(350, 50);
             this.panel2.TabIndex = 3;
             // 
-            // aTextboxUC1
+            // lbAddPlaylist
             // 
-            this.aTextboxUC1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
-            this.aTextboxUC1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
-            this.aTextboxUC1.BorderFocusColor = System.Drawing.Color.HotPink;
-            this.aTextboxUC1.BorderRadius = 0;
-            this.aTextboxUC1.BorderSize = 2;
-            this.aTextboxUC1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.aTextboxUC1.ForeColor = System.Drawing.Color.White;
-            this.aTextboxUC1.Location = new System.Drawing.Point(15, 15);
-            this.aTextboxUC1.Margin = new System.Windows.Forms.Padding(4);
-            this.aTextboxUC1.Multiline = false;
-            this.aTextboxUC1.Name = "aTextboxUC1";
-            this.aTextboxUC1.Padding = new System.Windows.Forms.Padding(7);
-            this.aTextboxUC1.PasswordChar = false;
-            this.aTextboxUC1.PlaceholderColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
-            this.aTextboxUC1.PlaceholderText = "Tên danh sách";
-            this.aTextboxUC1.RoundType = MusicOnline.ATextboxUC.RoundStyles.Full;
-            this.aTextboxUC1.Size = new System.Drawing.Size(194, 35);
-            this.aTextboxUC1.TabIndex = 2;
-            this.aTextboxUC1.Texts = "";
-            this.aTextboxUC1.UnderlinedStyle = true;
+            this.lbAddPlaylist.AutoSize = true;
+            this.lbAddPlaylist.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbAddPlaylist.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbAddPlaylist.Location = new System.Drawing.Point(307, 18);
+            this.lbAddPlaylist.Name = "lbAddPlaylist";
+            this.lbAddPlaylist.Size = new System.Drawing.Size(33, 35);
+            this.lbAddPlaylist.TabIndex = 4;
+            this.lbAddPlaylist.Text = "+";
+            this.lbAddPlaylist.Click += new System.EventHandler(this.lbAddPlaylist_Click);
+            // 
+            // atbNamePlaylist
+            // 
+            this.atbNamePlaylist.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
+            this.atbNamePlaylist.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
+            this.atbNamePlaylist.BorderFocusColor = System.Drawing.Color.White;
+            this.atbNamePlaylist.BorderRadius = 0;
+            this.atbNamePlaylist.BorderSize = 2;
+            this.atbNamePlaylist.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.atbNamePlaylist.ForeColor = System.Drawing.Color.White;
+            this.atbNamePlaylist.Location = new System.Drawing.Point(15, 15);
+            this.atbNamePlaylist.Margin = new System.Windows.Forms.Padding(4);
+            this.atbNamePlaylist.Multiline = false;
+            this.atbNamePlaylist.Name = "atbNamePlaylist";
+            this.atbNamePlaylist.Padding = new System.Windows.Forms.Padding(7);
+            this.atbNamePlaylist.PasswordChar = false;
+            this.atbNamePlaylist.PlaceholderColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
+            this.atbNamePlaylist.PlaceholderText = "Tên danh sách";
+            this.atbNamePlaylist.RoundType = MusicOnline.ATextboxUC.RoundStyles.Full;
+            this.atbNamePlaylist.Size = new System.Drawing.Size(285, 35);
+            this.atbNamePlaylist.TabIndex = 2;
+            this.atbNamePlaylist.Texts = "";
+            this.atbNamePlaylist.UnderlinedStyle = true;
+            this.atbNamePlaylist._TextChanged += new System.EventHandler(this.atbNamePlaylist__TextChanged);
             // 
             // pnPlaylist
             // 
@@ -684,7 +796,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(60, 15);
+            this.label1.Location = new System.Drawing.Point(70, 15);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(149, 25);
             this.label1.TabIndex = 0;
@@ -716,6 +828,7 @@
             this.abtnRecently.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.abtnRecently.BorderRadius = 0;
             this.abtnRecently.BorderSize = 0;
+            this.abtnRecently.Cursor = System.Windows.Forms.Cursors.Hand;
             this.abtnRecently.FlatAppearance.BorderSize = 0;
             this.abtnRecently.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.abtnRecently.Font = new System.Drawing.Font("Arial", 10F);
@@ -743,6 +856,7 @@
             this.abtnLikeSong.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.abtnLikeSong.BorderRadius = 0;
             this.abtnLikeSong.BorderSize = 0;
+            this.abtnLikeSong.Cursor = System.Windows.Forms.Cursors.Hand;
             this.abtnLikeSong.FlatAppearance.BorderSize = 0;
             this.abtnLikeSong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.abtnLikeSong.Font = new System.Drawing.Font("Arial", 10F);
@@ -770,6 +884,7 @@
             this.abtnListMusic.BorderColor = System.Drawing.Color.Red;
             this.abtnListMusic.BorderRadius = 0;
             this.abtnListMusic.BorderSize = 0;
+            this.abtnListMusic.Cursor = System.Windows.Forms.Cursors.Hand;
             this.abtnListMusic.FlatAppearance.BorderSize = 0;
             this.abtnListMusic.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.abtnListMusic.Font = new System.Drawing.Font("Arial", 10F);
@@ -817,17 +932,6 @@
             this.panel10.Size = new System.Drawing.Size(380, 100);
             this.panel10.TabIndex = 0;
             // 
-            // lbRating
-            // 
-            this.lbRating.AutoSize = true;
-            this.lbRating.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbRating.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(227)))), ((int)(((byte)(71)))));
-            this.lbRating.Location = new System.Drawing.Point(45, 384);
-            this.lbRating.Name = "lbRating";
-            this.lbRating.Size = new System.Drawing.Size(35, 21);
-            this.lbRating.TabIndex = 5;
-            this.lbRating.Text = "0.0";
-            // 
             // FrmHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -871,11 +975,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.pibDownload)).EndInit();
             this.pnThumbnail.ResumeLayout(false);
             this.pnThumbnail.PerformLayout();
+            this.pnAddToPlaylist.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pibCancel)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pibAccept)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pibAddToPlaylist)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pibStar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pibThumbnail)).EndInit();
             this.pn.ResumeLayout(false);
             this.aPanel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pibStar)).EndInit();
             this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.pnPlaylist.ResumeLayout(false);
             this.pnPlaylist.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -910,7 +1019,7 @@
         private APanel pn;
         private APanel aPanel2;
         private System.Windows.Forms.Panel panel2;
-        private ATextboxUC aTextboxUC1;
+        private ATextboxUC atbNamePlaylist;
         private System.Windows.Forms.Panel pnPlaylist;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
@@ -941,6 +1050,13 @@
         private System.Windows.Forms.PictureBox pibLoveSong;
         private System.Windows.Forms.PictureBox pibStar;
         private System.Windows.Forms.Label lbRating;
+        private System.Windows.Forms.Label lbAddPlaylist;
+        private System.Windows.Forms.Panel pnListPlaylist;
+        private System.Windows.Forms.ComboBox cbAddToPlaylist;
+        private System.Windows.Forms.Panel pnAddToPlaylist;
+        private System.Windows.Forms.PictureBox pibAccept;
+        private System.Windows.Forms.PictureBox pibCancel;
+        private System.Windows.Forms.PictureBox pibAddToPlaylist;
     }
 }
 

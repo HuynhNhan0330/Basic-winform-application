@@ -63,7 +63,7 @@
             // 
             this.pibStar2.BackgroundImage = global::MusicOnline.Properties.Resources.StarDeactiveIcon;
             this.pibStar2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pibStar2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pibStar2.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.pibStar2.Location = new System.Drawing.Point(130, 15);
             this.pibStar2.Name = "pibStar2";
             this.pibStar2.Size = new System.Drawing.Size(25, 25);
@@ -74,7 +74,7 @@
             // 
             this.pibStar3.BackgroundImage = global::MusicOnline.Properties.Resources.StarDeactiveIcon;
             this.pibStar3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pibStar3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pibStar3.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.pibStar3.Location = new System.Drawing.Point(170, 15);
             this.pibStar3.Name = "pibStar3";
             this.pibStar3.Size = new System.Drawing.Size(25, 25);
@@ -85,7 +85,7 @@
             // 
             this.pibStar4.BackgroundImage = global::MusicOnline.Properties.Resources.StarDeactiveIcon;
             this.pibStar4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pibStar4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pibStar4.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.pibStar4.Location = new System.Drawing.Point(210, 15);
             this.pibStar4.Name = "pibStar4";
             this.pibStar4.Size = new System.Drawing.Size(25, 25);
@@ -96,7 +96,7 @@
             // 
             this.pibStar5.BackgroundImage = global::MusicOnline.Properties.Resources.StarDeactiveIcon;
             this.pibStar5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pibStar5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pibStar5.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.pibStar5.Location = new System.Drawing.Point(250, 15);
             this.pibStar5.Name = "pibStar5";
             this.pibStar5.Size = new System.Drawing.Size(25, 25);
@@ -107,7 +107,7 @@
             // 
             this.pibStar1.BackgroundImage = global::MusicOnline.Properties.Resources.StarDeactiveIcon;
             this.pibStar1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pibStar1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pibStar1.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.pibStar1.Location = new System.Drawing.Point(90, 15);
             this.pibStar1.Name = "pibStar1";
             this.pibStar1.Size = new System.Drawing.Size(25, 25);

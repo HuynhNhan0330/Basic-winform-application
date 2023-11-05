@@ -1,5 +1,6 @@
 ﻿using MusicOnline.Model;
 using MusicOnline.Usercontrols;
+using MusicOnline.Utils;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -31,6 +32,10 @@ namespace MusicOnline
 
             GraphicsPath path = RoundedRectangle.Create(Width, Height, 10);
             Region = new Region(path);
+
+            Graphics g = e.Graphics;
+            using (Pen pen = new Pen(BaseColor.XanhLa, 2))
+                g.DrawPath(pen, path);
         }
 
         private void pibClose_Click(object sender, EventArgs e)

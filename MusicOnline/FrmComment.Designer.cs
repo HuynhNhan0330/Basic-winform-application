@@ -111,6 +111,7 @@
             // 
             this.arbtnGirl.AutoSize = true;
             this.arbtnGirl.CheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(155)))), ((int)(((byte)(70)))));
+            this.arbtnGirl.Cursor = System.Windows.Forms.Cursors.Hand;
             this.arbtnGirl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.arbtnGirl.Location = new System.Drawing.Point(510, 30);
             this.arbtnGirl.MinimumSize = new System.Drawing.Size(0, 21);
@@ -127,6 +128,7 @@
             this.arbtnBoy.AutoSize = true;
             this.arbtnBoy.Checked = true;
             this.arbtnBoy.CheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(155)))), ((int)(((byte)(70)))));
+            this.arbtnBoy.Cursor = System.Windows.Forms.Cursors.Hand;
             this.arbtnBoy.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.arbtnBoy.Location = new System.Drawing.Point(420, 30);
             this.arbtnBoy.MinimumSize = new System.Drawing.Size(0, 21);
@@ -143,6 +145,7 @@
             // 
             this.pibSend.BackgroundImage = global::MusicOnline.Properties.Resources.send_message;
             this.pibSend.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pibSend.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pibSend.Location = new System.Drawing.Point(534, 83);
             this.pibSend.Name = "pibSend";
             this.pibSend.Size = new System.Drawing.Size(30, 30);

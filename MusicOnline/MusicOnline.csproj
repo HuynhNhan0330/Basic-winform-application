@@ -99,6 +99,12 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Data.cs" />
+    <Compile Include="FrmEditPlaylist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEditPlaylist.Designer.cs">
+      <DependentUpon>FrmEditPlaylist.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmHome.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -119,8 +125,15 @@
     </Compile>
     <Compile Include="Model\Comment.cs" />
     <Compile Include="Model\Music.cs" />
+    <Compile Include="Model\Playlist.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Usercontrols\ItemMusicInPlaylistUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Usercontrols\ItemMusicInPlaylistUC.Designer.cs">
+      <DependentUpon>ItemMusicInPlaylistUC.cs</DependentUpon>
+    </Compile>
     <Compile Include="Usercontrols\MessageUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -133,6 +146,12 @@
     <Compile Include="Usercontrols\ItemMusic.Designer.cs">
       <DependentUpon>ItemMusic.cs</DependentUpon>
     </Compile>
+    <Compile Include="Usercontrols\PlaylistItemUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Usercontrols\PlaylistItemUC.Designer.cs">
+      <DependentUpon>PlaylistItemUC.cs</DependentUpon>
+    </Compile>
     <Compile Include="Utils\BaseColor.cs" />
     <Compile Include="Utils\Helper.cs" />
     <Compile Include="Utils\RoundedRectangle.cs" />
@@ -141,6 +160,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AControls\ATextboxUC.resx">
       <DependentUpon>ATextboxUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEditPlaylist.resx">
+      <DependentUpon>FrmEditPlaylist.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmHome.resx">
       <DependentUpon>FrmHome.cs</DependentUpon>
@@ -161,11 +183,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Usercontrols\ItemMusicInPlaylistUC.resx">
+      <DependentUpon>ItemMusicInPlaylistUC.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Usercontrols\MessageUC.resx">
       <DependentUpon>MessageUC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Usercontrols\ItemMusic.resx">
       <DependentUpon>ItemMusic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usercontrols\PlaylistItemUC.resx">
+      <DependentUpon>PlaylistItemUC.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="CreateData\musics.json" />
     <None Include="CreateData\NhacAuMy.json" />
@@ -385,6 +413,12 @@
     <Content Include="CreateData\node_modules\follow-redirects\index.js" />
     <Content Include="CreateData\node_modules\zingmp3-api-full\dist\index.js" />
     <Content Include="Mp3\SimeImlangMemuoiPhaiLong.mp3" />
+    <None Include="Resources\add-to-playlist %281%29.png" />
+    <None Include="Resources\add-to-playlist.png" />
+    <None Include="Resources\cancel.png" />
+    <None Include="Resources\checkmarks.png" />
+    <None Include="Resources\close-button.png" />
+    <None Include="Resources\pencil.png" />
     <None Include="Resources\girl.png" />
     <None Include="Resources\boy.png" />
     <None Include="Resources\send-message.png" />
