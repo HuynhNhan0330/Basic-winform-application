@@ -12,7 +12,7 @@ namespace MusicOnline
 
         #region border size
         private int _BorderSize = 0;
-        
+
         [Category("Extention")]
         public int BorderSize
         {
@@ -96,7 +96,7 @@ namespace MusicOnline
         #endregion
 
         #region thinkness line
-        private int _ThinknessLine= 0;
+        private int _ThinknessLine = 0;
 
         [Category("Extention")]
         public int ThinknessLine
@@ -166,17 +166,17 @@ namespace MusicOnline
                     case RoundStyles.Full:
                         using (GraphicsPath pathSurface = RoundedRectangle.Create(rectSurface, _BorderRadius))
                         using (GraphicsPath pathBorder = RoundedRectangle.Create(rectBorder, _BorderRadius - _BorderSize))
-                        drawRound(smoothSize, pathSurface, pathBorder, pevent);
+                            drawRound(smoothSize, pathSurface, pathBorder, pevent);
                         break;
                     case RoundStyles.Top:
                         using (GraphicsPath pathSurface = RoundedRectangle.CreateTop(rectSurface, _BorderRadius))
                         using (GraphicsPath pathBorder = RoundedRectangle.CreateTop(rectBorder, _BorderRadius - _BorderSize))
-                        drawRound(smoothSize, pathSurface, pathBorder, pevent);
+                            drawRound(smoothSize, pathSurface, pathBorder, pevent);
                         break;
                     case RoundStyles.Right:
                         using (GraphicsPath pathSurface = RoundedRectangle.CreateRight(rectSurface, _BorderRadius))
                         using (GraphicsPath pathBorder = RoundedRectangle.CreateRight(rectBorder, _BorderRadius - _BorderSize))
-                        drawRound(smoothSize, pathSurface, pathBorder, pevent);
+                            drawRound(smoothSize, pathSurface, pathBorder, pevent);
                         break;
                 }
             }

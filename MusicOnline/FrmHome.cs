@@ -628,6 +628,8 @@ namespace MusicOnline
             pnListPlaylist.Controls.Remove(pl);
 
             cbAddToPlaylist.Items.Remove(name);
+            if (currentPlaylist.name == name)
+                abtnListMusic_Click(abtnListMusic, EventArgs.Empty);
         }
 
         private void atbNamePlaylist__TextChanged(object sender, EventArgs e)
