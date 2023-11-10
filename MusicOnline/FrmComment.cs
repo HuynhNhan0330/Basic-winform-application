@@ -123,7 +123,11 @@ namespace MusicOnline
         private void sendMessage()
         {
             if (string.IsNullOrEmpty(atbText.Texts))
+            {
+                AMessageBoxFrm ms = new AMessageBoxFrm("Dữ liệu bị trống", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                ms.ShowDialog();
                 return;
+            }
 
             loadMessage(atbText.Texts.TrimEnd(), arbtnBoy.Checked, star);
 

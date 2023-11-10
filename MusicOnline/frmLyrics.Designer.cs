@@ -46,6 +46,7 @@
             // 
             this.pibClose.BackgroundImage = global::MusicOnline.Properties.Resources.CloseIcon2;
             this.pibClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pibClose.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pibClose.Location = new System.Drawing.Point(670, 10);
             this.pibClose.Name = "pibClose";
             this.pibClose.Size = new System.Drawing.Size(20, 20);
@@ -53,7 +54,7 @@
             this.pibClose.TabStop = false;
             this.pibClose.Click += new System.EventHandler(this.pibClose_Click);
             // 
-            // frmLyrics
+            // FrmLyrics
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -62,7 +63,7 @@
             this.Controls.Add(this.pibClose);
             this.Controls.Add(this.pnLyrics);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "frmLyrics";
+            this.Name = "FrmLyrics";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmLyrics";
             ((System.ComponentModel.ISupportInitialize)(this.pibClose)).EndInit();

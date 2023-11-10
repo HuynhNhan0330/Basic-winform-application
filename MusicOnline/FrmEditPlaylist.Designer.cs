@@ -30,6 +30,7 @@
         {
             this.pibClose = new System.Windows.Forms.PictureBox();
             this.aPanel1 = new MusicOnline.APanel();
+            this.abtnDeleteAll = new MusicOnline.AButton();
             this.pnBody = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pibCancel = new System.Windows.Forms.PictureBox();
@@ -62,6 +63,7 @@
             this.aPanel1.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.aPanel1.BorderRadius = 20;
             this.aPanel1.BorderSize = 0;
+            this.aPanel1.Controls.Add(this.abtnDeleteAll);
             this.aPanel1.Controls.Add(this.pnBody);
             this.aPanel1.Controls.Add(this.panel1);
             this.aPanel1.ForeColor = System.Drawing.Color.White;
@@ -72,12 +74,36 @@
             this.aPanel1.TabIndex = 2;
             this.aPanel1.TextColor = System.Drawing.Color.White;
             // 
+            // abtnDeleteAll
+            // 
+            this.abtnDeleteAll.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(155)))), ((int)(((byte)(70)))));
+            this.abtnDeleteAll.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(155)))), ((int)(((byte)(70)))));
+            this.abtnDeleteAll.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.abtnDeleteAll.BorderRadius = 15;
+            this.abtnDeleteAll.BorderSize = 0;
+            this.abtnDeleteAll.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.abtnDeleteAll.FlatAppearance.BorderSize = 0;
+            this.abtnDeleteAll.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.abtnDeleteAll.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.abtnDeleteAll.ForeColor = System.Drawing.Color.White;
+            this.abtnDeleteAll.LineType = MusicOnline.AButton.LineStyles.None;
+            this.abtnDeleteAll.Location = new System.Drawing.Point(440, 95);
+            this.abtnDeleteAll.Name = "abtnDeleteAll";
+            this.abtnDeleteAll.RoundType = MusicOnline.AButton.RoundStyles.Full;
+            this.abtnDeleteAll.Size = new System.Drawing.Size(150, 40);
+            this.abtnDeleteAll.TabIndex = 2;
+            this.abtnDeleteAll.Text = "Xoá tất cả";
+            this.abtnDeleteAll.TextColor = System.Drawing.Color.White;
+            this.abtnDeleteAll.ThinknessLine = 0;
+            this.abtnDeleteAll.UseVisualStyleBackColor = false;
+            this.abtnDeleteAll.Click += new System.EventHandler(this.abtnDeleteAll_Click);
+            // 
             // pnBody
             // 
             this.pnBody.AutoScroll = true;
-            this.pnBody.Location = new System.Drawing.Point(0, 100);
+            this.pnBody.Location = new System.Drawing.Point(0, 150);
             this.pnBody.Name = "pnBody";
-            this.pnBody.Size = new System.Drawing.Size(590, 450);
+            this.pnBody.Size = new System.Drawing.Size(590, 400);
             this.pnBody.TabIndex = 1;
             // 
             // panel1
@@ -182,5 +208,6 @@
         private System.Windows.Forms.PictureBox pibAccept;
         private System.Windows.Forms.PictureBox pibCancel;
         private System.Windows.Forms.Panel pnBody;
+        private AButton abtnDeleteAll;
     }
 }

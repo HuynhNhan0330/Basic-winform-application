@@ -106,5 +106,21 @@ namespace MusicOnline
             if (icDelete != null)
                 pnBody.Controls.Remove(icDelete);
         }
+
+        private void abtnDeleteAll_Click(object sender, EventArgs e)
+        {
+            AMessageBoxFrm ms = new AMessageBoxFrm("Xác nhận xoá tất cả", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (ms.ShowDialog() == DialogResult.Yes)
+            {
+                playlist.musics.Clear();
+                pnBody.Controls.Clear();
+
+                FrmHome fr = Application.OpenForms.OfType<FrmHome>().FirstOrDefault();
+                fr.loadPlaylist(playlist);
+
+                AMessageBoxFrm ms1 = new AMessageBoxFrm("Xoá thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                ms1.ShowDialog();  
+            }
+        }
     }
 }
