@@ -164,6 +164,8 @@ namespace MusicOnline
 
             atbSearch.Texts = "";
             cbType.SelectedIndex = 0;
+
+            currentPlaylist = null;
         }
 
         private void deactiveButton(AButton abtn)
@@ -631,8 +633,9 @@ namespace MusicOnline
             pnListPlaylist.Controls.Remove(pl);
 
             cbAddToPlaylist.Items.Remove(name);
-            if (currentPlaylist.name == name)
+            if (currentPlaylist != null && currentPlaylist.name == name)
                 abtnListMusic_Click(abtnListMusic, EventArgs.Empty);
+
         }
 
         private void atbNamePlaylist__TextChanged(object sender, EventArgs e)
