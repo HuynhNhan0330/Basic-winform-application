@@ -161,6 +161,9 @@ namespace MusicOnline
         private void activeButton(AButton abtn)
         {
             abtn.ForeColor = BaseColor.Trang;
+
+            atbSearch.Texts = "";
+            cbType.SelectedIndex = 0;
         }
 
         private void deactiveButton(AButton abtn)

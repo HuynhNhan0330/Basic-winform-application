@@ -82,7 +82,6 @@ namespace MusicOnline
                 AMessageBoxFrm ms = new AMessageBoxFrm(ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 ms.ShowDialog();
             }
-            playlist.musics.Add(music);
         }
 
         public static void removeMusicToPlaylist(Playlist playlist, Music music)
