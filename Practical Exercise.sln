@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HouseWork", "HouseWork\Hous
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicOnline", "MusicOnline\MusicOnline.csproj", "{EC2B668A-49FE-472B-9317-E2A756481473}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Banking", "Banking\Banking.csproj", "{458AD572-2A1D-43D5-A705-BBB4A2A3BAF5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,6 +22,10 @@ Global
 		{EC2B668A-49FE-472B-9317-E2A756481473}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EC2B668A-49FE-472B-9317-E2A756481473}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EC2B668A-49FE-472B-9317-E2A756481473}.Release|Any CPU.Build.0 = Release|Any CPU
+		{458AD572-2A1D-43D5-A705-BBB4A2A3BAF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{458AD572-2A1D-43D5-A705-BBB4A2A3BAF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{458AD572-2A1D-43D5-A705-BBB4A2A3BAF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{458AD572-2A1D-43D5-A705-BBB4A2A3BAF5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
