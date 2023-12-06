@@ -47,6 +47,9 @@ namespace Banking
             this.aPanel5 = new Banking.AControls.APanel();
             this.atxbRePassword = new Banking.AControls.ATextboxUC();
             this.pibHideViewRePassword = new System.Windows.Forms.PictureBox();
+            this.aPanel6 = new Banking.AControls.APanel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.aDateTimePicker1 = new Banking.AControls.ADateTimePicker();
             this.aPanel1.SuspendLayout();
             this.aPanel2.SuspendLayout();
             this.aPanel3.SuspendLayout();
@@ -54,6 +57,7 @@ namespace Banking
             ((System.ComponentModel.ISupportInitialize)(this.pibHideViewPassword)).BeginInit();
             this.aPanel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pibHideViewRePassword)).BeginInit();
+            this.aPanel6.SuspendLayout();
             this.SuspendLayout();
             // 
             // label4
@@ -74,7 +78,7 @@ namespace Banking
             this.lbLogin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
             this.lbLogin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(152)))), ((int)(((byte)(249)))));
-            this.lbLogin.Location = new System.Drawing.Point(215, 435);
+            this.lbLogin.Location = new System.Drawing.Point(215, 486);
             this.lbLogin.Name = "lbLogin";
             this.lbLogin.Size = new System.Drawing.Size(88, 18);
             this.lbLogin.TabIndex = 13;
@@ -86,7 +90,7 @@ namespace Banking
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(113)))), ((int)(((byte)(122)))));
-            this.label2.Location = new System.Drawing.Point(89, 435);
+            this.label2.Location = new System.Drawing.Point(89, 486);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(120, 18);
             this.label2.TabIndex = 11;
@@ -105,7 +109,7 @@ namespace Banking
             this.abtnRegsiter.Font = new System.Drawing.Font("Arial", 10.8F);
             this.abtnRegsiter.ForeColor = System.Drawing.Color.White;
             this.abtnRegsiter.LineType = Banking.AControls.AButton.LineStyles.None;
-            this.abtnRegsiter.Location = new System.Drawing.Point(50, 375);
+            this.abtnRegsiter.Location = new System.Drawing.Point(50, 426);
             this.abtnRegsiter.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.abtnRegsiter.Name = "abtnRegsiter";
             this.abtnRegsiter.RoundType = Banking.AControls.AButton.RoundStyles.Full;
@@ -168,7 +172,7 @@ namespace Banking
             this.aPanel2.BorderSize = 0;
             this.aPanel2.Controls.Add(this.atxbEmail);
             this.aPanel2.ForeColor = System.Drawing.Color.White;
-            this.aPanel2.Location = new System.Drawing.Point(50, 165);
+            this.aPanel2.Location = new System.Drawing.Point(50, 216);
             this.aPanel2.Name = "aPanel2";
             this.aPanel2.RoundType = Banking.AControls.APanel.RoundStyles.Full;
             this.aPanel2.Size = new System.Drawing.Size(300, 37);
@@ -211,7 +215,7 @@ namespace Banking
             this.aPanel3.BorderSize = 0;
             this.aPanel3.Controls.Add(this.atxbPhone);
             this.aPanel3.ForeColor = System.Drawing.Color.White;
-            this.aPanel3.Location = new System.Drawing.Point(50, 215);
+            this.aPanel3.Location = new System.Drawing.Point(50, 266);
             this.aPanel3.Name = "aPanel3";
             this.aPanel3.RoundType = Banking.AControls.APanel.RoundStyles.Full;
             this.aPanel3.Size = new System.Drawing.Size(300, 37);
@@ -255,7 +259,7 @@ namespace Banking
             this.aPanel4.Controls.Add(this.atxbPassword);
             this.aPanel4.Controls.Add(this.pibHideViewPassword);
             this.aPanel4.ForeColor = System.Drawing.Color.White;
-            this.aPanel4.Location = new System.Drawing.Point(50, 265);
+            this.aPanel4.Location = new System.Drawing.Point(50, 316);
             this.aPanel4.Name = "aPanel4";
             this.aPanel4.RoundType = Banking.AControls.APanel.RoundStyles.Full;
             this.aPanel4.Size = new System.Drawing.Size(300, 37);
@@ -313,7 +317,7 @@ namespace Banking
             this.aPanel5.Controls.Add(this.atxbRePassword);
             this.aPanel5.Controls.Add(this.pibHideViewRePassword);
             this.aPanel5.ForeColor = System.Drawing.Color.White;
-            this.aPanel5.Location = new System.Drawing.Point(50, 315);
+            this.aPanel5.Location = new System.Drawing.Point(50, 366);
             this.aPanel5.Name = "aPanel5";
             this.aPanel5.RoundType = Banking.AControls.APanel.RoundStyles.Full;
             this.aPanel5.Size = new System.Drawing.Size(300, 37);
@@ -361,11 +365,54 @@ namespace Banking
             this.pibHideViewRePassword.TabStop = false;
             this.pibHideViewRePassword.Click += new System.EventHandler(this.pibHideViewRePassword_Click);
             // 
+            // aPanel6
+            // 
+            this.aPanel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(221)))), ((int)(((byte)(252)))));
+            this.aPanel6.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(221)))), ((int)(((byte)(252)))));
+            this.aPanel6.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.aPanel6.BorderRadius = 10;
+            this.aPanel6.BorderSize = 0;
+            this.aPanel6.Controls.Add(this.aDateTimePicker1);
+            this.aPanel6.Controls.Add(this.label1);
+            this.aPanel6.ForeColor = System.Drawing.Color.White;
+            this.aPanel6.Location = new System.Drawing.Point(50, 158);
+            this.aPanel6.Name = "aPanel6";
+            this.aPanel6.RoundType = Banking.AControls.APanel.RoundStyles.Full;
+            this.aPanel6.Size = new System.Drawing.Size(300, 37);
+            this.aPanel6.TabIndex = 37;
+            this.aPanel6.TextColor = System.Drawing.Color.White;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(16, 12);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(67, 16);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Ngày sinh";
+            // 
+            // aDateTimePicker1
+            // 
+            this.aDateTimePicker1.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.aDateTimePicker1.BorderSize = 0;
+            this.aDateTimePicker1.CustomFormat = "dd/MM/yyyy";
+            this.aDateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F);
+            this.aDateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.aDateTimePicker1.Location = new System.Drawing.Point(126, 0);
+            this.aDateTimePicker1.MinimumSize = new System.Drawing.Size(0, 35);
+            this.aDateTimePicker1.Name = "aDateTimePicker1";
+            this.aDateTimePicker1.Size = new System.Drawing.Size(200, 35);
+            this.aDateTimePicker1.SkinColor = System.Drawing.Color.MediumSlateBlue;
+            this.aDateTimePicker1.TabIndex = 1;
+            this.aDateTimePicker1.TextColor = System.Drawing.Color.White;
+            // 
             // RegisterUC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.aPanel6);
             this.Controls.Add(this.aPanel5);
             this.Controls.Add(this.aPanel4);
             this.Controls.Add(this.aPanel3);
@@ -377,7 +424,7 @@ namespace Banking
             this.Controls.Add(this.label2);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "RegisterUC";
-            this.Size = new System.Drawing.Size(400, 500);
+            this.Size = new System.Drawing.Size(500, 650);
             this.aPanel1.ResumeLayout(false);
             this.aPanel2.ResumeLayout(false);
             this.aPanel3.ResumeLayout(false);
@@ -385,6 +432,8 @@ namespace Banking
             ((System.ComponentModel.ISupportInitialize)(this.pibHideViewPassword)).EndInit();
             this.aPanel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pibHideViewRePassword)).EndInit();
+            this.aPanel6.ResumeLayout(false);
+            this.aPanel6.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -407,5 +456,8 @@ namespace Banking
         private AControls.APanel aPanel5;
         private AControls.ATextboxUC atxbRePassword;
         private PictureBox pibHideViewRePassword;
+        private AControls.APanel aPanel6;
+        private AControls.ADateTimePicker aDateTimePicker1;
+        private Label label1;
     }
 }

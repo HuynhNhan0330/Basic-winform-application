@@ -73,9 +73,16 @@
     <Compile Include="AControls\ATextboxUC.Designer.cs">
       <DependentUpon>ATextboxUC.cs</DependentUpon>
     </Compile>
+    <Compile Include="Model\Customer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utils\RoundedRectangle.cs" />
+    <Compile Include="View\Customer\FormMainWindown.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Customer\FormMainWindown.Designer.cs">
+      <DependentUpon>FormMainWindown.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\Login\FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
