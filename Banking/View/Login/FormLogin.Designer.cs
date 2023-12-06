@@ -38,11 +38,12 @@
             this.apnMain.BorderColor = System.Drawing.Color.White;
             this.apnMain.BorderRadius = 60;
             this.apnMain.BorderSize = 0;
+            this.apnMain.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.apnMain.ForeColor = System.Drawing.Color.White;
             this.apnMain.Location = new System.Drawing.Point(0, 150);
             this.apnMain.Name = "apnMain";
             this.apnMain.RoundType = Banking.AControls.APanel.RoundStyles.Top;
-            this.apnMain.Size = new System.Drawing.Size(500, 650);
+            this.apnMain.Size = new System.Drawing.Size(600, 650);
             this.apnMain.TabIndex = 0;
             this.apnMain.TextColor = System.Drawing.Color.White;
             // 
@@ -51,7 +52,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(93)))), ((int)(((byte)(56)))));
-            this.ClientSize = new System.Drawing.Size(500, 800);
+            this.ClientSize = new System.Drawing.Size(600, 800);
             this.Controls.Add(this.apnMain);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormLogin";

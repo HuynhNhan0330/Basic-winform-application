@@ -234,7 +234,7 @@ namespace Banking
             this.Controls.Add(this.label2);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "LoginUC";
-            this.Size = new System.Drawing.Size(400, 700);
+            this.Size = new System.Drawing.Size(600, 650);
             ((System.ComponentModel.ISupportInitialize)(this.pibHideViewPassword)).EndInit();
             this.aPanel1.ResumeLayout(false);
             this.aPanel2.ResumeLayout(false);

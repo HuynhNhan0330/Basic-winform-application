@@ -48,8 +48,8 @@ namespace Banking
             this.atxbRePassword = new Banking.AControls.ATextboxUC();
             this.pibHideViewRePassword = new System.Windows.Forms.PictureBox();
             this.aPanel6 = new Banking.AControls.APanel();
-            this.label1 = new System.Windows.Forms.Label();
             this.aDateTimePicker1 = new Banking.AControls.ADateTimePicker();
+            this.label1 = new System.Windows.Forms.Label();
             this.aPanel1.SuspendLayout();
             this.aPanel2.SuspendLayout();
             this.aPanel3.SuspendLayout();
@@ -77,7 +77,7 @@ namespace Banking
             this.lbLogin.AutoSize = true;
             this.lbLogin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            this.lbLogin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(152)))), ((int)(((byte)(249)))));
+            this.lbLogin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(156)))), ((int)(((byte)(95)))));
             this.lbLogin.Location = new System.Drawing.Point(215, 486);
             this.lbLogin.Name = "lbLogin";
             this.lbLogin.Size = new System.Drawing.Size(88, 18);
@@ -98,8 +98,8 @@ namespace Banking
             // 
             // abtnRegsiter
             // 
-            this.abtnRegsiter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(152)))), ((int)(((byte)(249)))));
-            this.abtnRegsiter.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(152)))), ((int)(((byte)(249)))));
+            this.abtnRegsiter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(208)))), ((int)(((byte)(128)))));
+            this.abtnRegsiter.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(208)))), ((int)(((byte)(128)))));
             this.abtnRegsiter.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.abtnRegsiter.BorderRadius = 15;
             this.abtnRegsiter.BorderSize = 0;
@@ -122,8 +122,8 @@ namespace Banking
             // 
             // aPanel1
             // 
-            this.aPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(221)))), ((int)(((byte)(252)))));
-            this.aPanel1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(221)))), ((int)(((byte)(252)))));
+            this.aPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(180)))), ((int)(((byte)(110)))));
+            this.aPanel1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(180)))), ((int)(((byte)(110)))));
             this.aPanel1.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.aPanel1.BorderRadius = 10;
             this.aPanel1.BorderSize = 0;
@@ -138,9 +138,9 @@ namespace Banking
             // 
             // atxbName
             // 
-            this.atxbName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(221)))), ((int)(((byte)(252)))));
-            this.atxbName.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(221)))), ((int)(((byte)(252)))));
-            this.atxbName.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(221)))), ((int)(((byte)(252)))));
+            this.atxbName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(180)))), ((int)(((byte)(110)))));
+            this.atxbName.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(180)))), ((int)(((byte)(110)))));
+            this.atxbName.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(94)))));
             this.atxbName.BorderRadius = 0;
             this.atxbName.BorderSize = 2;
             this.atxbName.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -154,7 +154,7 @@ namespace Banking
             this.atxbName.Name = "atxbName";
             this.atxbName.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.atxbName.PasswordChar = false;
-            this.atxbName.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.atxbName.PlaceholderColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(232)))), ((int)(((byte)(224)))));
             this.atxbName.PlaceholderText = "Họ và tên";
             this.atxbName.RoundType = Banking.AControls.ATextboxUC.RoundStyles.Full;
             this.atxbName.Size = new System.Drawing.Size(267, 33);
@@ -367,8 +367,8 @@ namespace Banking
             // 
             // aPanel6
             // 
-            this.aPanel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(221)))), ((int)(((byte)(252)))));
-            this.aPanel6.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(221)))), ((int)(((byte)(252)))));
+            this.aPanel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(180)))), ((int)(((byte)(110)))));
+            this.aPanel6.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(180)))), ((int)(((byte)(110)))));
             this.aPanel6.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.aPanel6.BorderRadius = 10;
             this.aPanel6.BorderSize = 0;
@@ -382,16 +382,6 @@ namespace Banking
             this.aPanel6.TabIndex = 37;
             this.aPanel6.TextColor = System.Drawing.Color.White;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(16, 12);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 16);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Ngày sinh";
-            // 
             // aDateTimePicker1
             // 
             this.aDateTimePicker1.BorderColor = System.Drawing.Color.PaleVioletRed;
@@ -399,13 +389,24 @@ namespace Banking
             this.aDateTimePicker1.CustomFormat = "dd/MM/yyyy";
             this.aDateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F);
             this.aDateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.aDateTimePicker1.Location = new System.Drawing.Point(126, 0);
-            this.aDateTimePicker1.MinimumSize = new System.Drawing.Size(0, 35);
+            this.aDateTimePicker1.Location = new System.Drawing.Point(126, 1);
+            this.aDateTimePicker1.MinimumSize = new System.Drawing.Size(4, 35);
             this.aDateTimePicker1.Name = "aDateTimePicker1";
-            this.aDateTimePicker1.Size = new System.Drawing.Size(200, 35);
-            this.aDateTimePicker1.SkinColor = System.Drawing.Color.MediumSlateBlue;
+            this.aDateTimePicker1.Size = new System.Drawing.Size(171, 35);
+            this.aDateTimePicker1.SkinColor = System.Drawing.Color.MediumSpringGreen;
             this.aDateTimePicker1.TabIndex = 1;
             this.aDateTimePicker1.TextColor = System.Drawing.Color.White;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(16, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(83, 20);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Ngày sinh";
             // 
             // RegisterUC
             // 
@@ -424,7 +425,7 @@ namespace Banking
             this.Controls.Add(this.label2);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "RegisterUC";
-            this.Size = new System.Drawing.Size(500, 650);
+            this.Size = new System.Drawing.Size(600, 650);
             this.aPanel1.ResumeLayout(false);
             this.aPanel2.ResumeLayout(false);
             this.aPanel3.ResumeLayout(false);
