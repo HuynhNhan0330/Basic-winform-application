@@ -78,7 +78,7 @@ namespace Banking
             this.lbRegister.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
             this.lbRegister.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(156)))), ((int)(((byte)(95)))));
-            this.lbRegister.Location = new System.Drawing.Point(321, 363);
+            this.lbRegister.Location = new System.Drawing.Point(327, 363);
             this.lbRegister.Name = "lbRegister";
             this.lbRegister.Size = new System.Drawing.Size(69, 18);
             this.lbRegister.TabIndex = 26;

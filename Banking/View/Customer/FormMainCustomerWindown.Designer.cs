@@ -30,16 +30,16 @@
         {
             this.pnMenu = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.pnTop = new System.Windows.Forms.Panel();
-            this.lbNameBank = new System.Windows.Forms.Label();
-            this.pnMain = new System.Windows.Forms.Panel();
-            this.piNotification = new System.Windows.Forms.PictureBox();
-            this.pibClose = new System.Windows.Forms.PictureBox();
             this.abtnHome = new Banking.AControls.AButton();
             this.abtnTransferMoney = new Banking.AControls.AButton();
             this.abtnStatement = new Banking.AControls.AButton();
             this.abtnSave = new Banking.AControls.AButton();
             this.abtnQRCode = new Banking.AControls.AButton();
+            this.pnTop = new System.Windows.Forms.Panel();
+            this.piNotification = new System.Windows.Forms.PictureBox();
+            this.pibClose = new System.Windows.Forms.PictureBox();
+            this.lbNameBank = new System.Windows.Forms.Label();
+            this.pnMain = new System.Windows.Forms.Panel();
             this.pnMenu.SuspendLayout();
             this.pnTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.piNotification)).BeginInit();
@@ -55,9 +55,9 @@
             this.pnMenu.Controls.Add(this.abtnSave);
             this.pnMenu.Controls.Add(this.abtnQRCode);
             this.pnMenu.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnMenu.Location = new System.Drawing.Point(0, 715);
+            this.pnMenu.Location = new System.Drawing.Point(0, 705);
             this.pnMenu.Name = "pnMenu";
-            this.pnMenu.Size = new System.Drawing.Size(597, 85);
+            this.pnMenu.Size = new System.Drawing.Size(596, 95);
             this.pnMenu.TabIndex = 0;
             // 
             // panel2
@@ -65,64 +65,10 @@
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(93)))), ((int)(((byte)(56)))));
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.ForeColor = System.Drawing.Color.Blue;
-            this.panel2.Location = new System.Drawing.Point(0, 80);
+            this.panel2.Location = new System.Drawing.Point(0, 90);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(597, 5);
+            this.panel2.Size = new System.Drawing.Size(596, 5);
             this.panel2.TabIndex = 0;
-            // 
-            // pnTop
-            // 
-            this.pnTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(93)))), ((int)(((byte)(56)))));
-            this.pnTop.Controls.Add(this.piNotification);
-            this.pnTop.Controls.Add(this.pibClose);
-            this.pnTop.Controls.Add(this.lbNameBank);
-            this.pnTop.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnTop.Location = new System.Drawing.Point(0, 0);
-            this.pnTop.Name = "pnTop";
-            this.pnTop.Size = new System.Drawing.Size(597, 100);
-            this.pnTop.TabIndex = 1;
-            // 
-            // lbNameBank
-            // 
-            this.lbNameBank.AutoSize = true;
-            this.lbNameBank.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold);
-            this.lbNameBank.ForeColor = System.Drawing.Color.White;
-            this.lbNameBank.Location = new System.Drawing.Point(236, 30);
-            this.lbNameBank.Name = "lbNameBank";
-            this.lbNameBank.Size = new System.Drawing.Size(125, 39);
-            this.lbNameBank.TabIndex = 0;
-            this.lbNameBank.Text = "NBank";
-            // 
-            // pnMain
-            // 
-            this.pnMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnMain.Location = new System.Drawing.Point(0, 100);
-            this.pnMain.Name = "pnMain";
-            this.pnMain.Size = new System.Drawing.Size(597, 615);
-            this.pnMain.TabIndex = 2;
-            // 
-            // piNotification
-            // 
-            this.piNotification.BackgroundImage = global::Banking.Properties.Resources.notification_bell;
-            this.piNotification.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.piNotification.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.piNotification.Location = new System.Drawing.Point(540, 34);
-            this.piNotification.Name = "piNotification";
-            this.piNotification.Size = new System.Drawing.Size(32, 32);
-            this.piNotification.TabIndex = 2;
-            this.piNotification.TabStop = false;
-            // 
-            // pibClose
-            // 
-            this.pibClose.BackgroundImage = global::Banking.Properties.Resources.log_out;
-            this.pibClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pibClose.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pibClose.Location = new System.Drawing.Point(25, 34);
-            this.pibClose.Name = "pibClose";
-            this.pibClose.Size = new System.Drawing.Size(32, 32);
-            this.pibClose.TabIndex = 1;
-            this.pibClose.TabStop = false;
-            this.pibClose.Click += new System.EventHandler(this.pibClose_Click);
             // 
             // abtnHome
             // 
@@ -141,7 +87,7 @@
             this.abtnHome.Location = new System.Drawing.Point(-2, 1);
             this.abtnHome.Name = "abtnHome";
             this.abtnHome.RoundType = Banking.AControls.AButton.RoundStyles.Top;
-            this.abtnHome.Size = new System.Drawing.Size(120, 80);
+            this.abtnHome.Size = new System.Drawing.Size(120, 90);
             this.abtnHome.TabIndex = 0;
             this.abtnHome.Text = "Trang chủ";
             this.abtnHome.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -167,7 +113,7 @@
             this.abtnTransferMoney.Location = new System.Drawing.Point(118, 1);
             this.abtnTransferMoney.Name = "abtnTransferMoney";
             this.abtnTransferMoney.RoundType = Banking.AControls.AButton.RoundStyles.Top;
-            this.abtnTransferMoney.Size = new System.Drawing.Size(120, 80);
+            this.abtnTransferMoney.Size = new System.Drawing.Size(120, 90);
             this.abtnTransferMoney.TabIndex = 4;
             this.abtnTransferMoney.Text = "Chuyển tiền";
             this.abtnTransferMoney.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -193,7 +139,7 @@
             this.abtnStatement.Location = new System.Drawing.Point(478, 1);
             this.abtnStatement.Name = "abtnStatement";
             this.abtnStatement.RoundType = Banking.AControls.AButton.RoundStyles.Top;
-            this.abtnStatement.Size = new System.Drawing.Size(120, 80);
+            this.abtnStatement.Size = new System.Drawing.Size(120, 90);
             this.abtnStatement.TabIndex = 3;
             this.abtnStatement.Text = "Sao kê";
             this.abtnStatement.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -219,7 +165,7 @@
             this.abtnSave.Location = new System.Drawing.Point(358, 1);
             this.abtnSave.Name = "abtnSave";
             this.abtnSave.RoundType = Banking.AControls.AButton.RoundStyles.Top;
-            this.abtnSave.Size = new System.Drawing.Size(120, 80);
+            this.abtnSave.Size = new System.Drawing.Size(120, 90);
             this.abtnSave.TabIndex = 2;
             this.abtnSave.Text = "Mở tiết kiệm";
             this.abtnSave.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -245,7 +191,7 @@
             this.abtnQRCode.Location = new System.Drawing.Point(238, 1);
             this.abtnQRCode.Name = "abtnQRCode";
             this.abtnQRCode.RoundType = Banking.AControls.AButton.RoundStyles.Top;
-            this.abtnQRCode.Size = new System.Drawing.Size(120, 80);
+            this.abtnQRCode.Size = new System.Drawing.Size(120, 90);
             this.abtnQRCode.TabIndex = 1;
             this.abtnQRCode.Text = "QR code";
             this.abtnQRCode.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -254,11 +200,65 @@
             this.abtnQRCode.UseVisualStyleBackColor = false;
             this.abtnQRCode.Click += new System.EventHandler(this.abtnQRCode_Click);
             // 
+            // pnTop
+            // 
+            this.pnTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(93)))), ((int)(((byte)(56)))));
+            this.pnTop.Controls.Add(this.piNotification);
+            this.pnTop.Controls.Add(this.pibClose);
+            this.pnTop.Controls.Add(this.lbNameBank);
+            this.pnTop.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnTop.Location = new System.Drawing.Point(0, 0);
+            this.pnTop.Name = "pnTop";
+            this.pnTop.Size = new System.Drawing.Size(596, 100);
+            this.pnTop.TabIndex = 1;
+            // 
+            // piNotification
+            // 
+            this.piNotification.BackgroundImage = global::Banking.Properties.Resources.notification_bell;
+            this.piNotification.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.piNotification.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.piNotification.Location = new System.Drawing.Point(540, 34);
+            this.piNotification.Name = "piNotification";
+            this.piNotification.Size = new System.Drawing.Size(32, 32);
+            this.piNotification.TabIndex = 2;
+            this.piNotification.TabStop = false;
+            // 
+            // pibClose
+            // 
+            this.pibClose.BackgroundImage = global::Banking.Properties.Resources.log_out;
+            this.pibClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pibClose.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pibClose.Location = new System.Drawing.Point(25, 34);
+            this.pibClose.Name = "pibClose";
+            this.pibClose.Size = new System.Drawing.Size(32, 32);
+            this.pibClose.TabIndex = 1;
+            this.pibClose.TabStop = false;
+            this.pibClose.Click += new System.EventHandler(this.pibClose_Click);
+            // 
+            // lbNameBank
+            // 
+            this.lbNameBank.AutoSize = true;
+            this.lbNameBank.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold);
+            this.lbNameBank.ForeColor = System.Drawing.Color.White;
+            this.lbNameBank.Location = new System.Drawing.Point(236, 30);
+            this.lbNameBank.Name = "lbNameBank";
+            this.lbNameBank.Size = new System.Drawing.Size(125, 39);
+            this.lbNameBank.TabIndex = 0;
+            this.lbNameBank.Text = "NBank";
+            // 
+            // pnMain
+            // 
+            this.pnMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnMain.Location = new System.Drawing.Point(0, 100);
+            this.pnMain.Name = "pnMain";
+            this.pnMain.Size = new System.Drawing.Size(596, 605);
+            this.pnMain.TabIndex = 2;
+            // 
             // FormMainCustomerWindown
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(597, 800);
+            this.ClientSize = new System.Drawing.Size(596, 800);
             this.Controls.Add(this.pnMain);
             this.Controls.Add(this.pnTop);
             this.Controls.Add(this.pnMenu);

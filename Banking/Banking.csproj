@@ -73,6 +73,8 @@
     <Compile Include="AControls\ATextboxUC.Designer.cs">
       <DependentUpon>ATextboxUC.cs</DependentUpon>
     </Compile>
+    <Compile Include="DALs\CustomerDAL.cs" />
+    <Compile Include="Database\CustomerDB.cs" />
     <Compile Include="Model\Customer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -239,6 +241,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\fileActive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Service\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,4 +1,7 @@
-﻿using System;
+﻿using Banking.AControls;
+using Banking.DALs;
+using Banking.Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,13 +22,36 @@ namespace Banking
 
         private void abtnLogin_Click(object sender, EventArgs e)
         {
-            var currentForm = FindForm();
-            currentForm.Hide();
+            if (string.IsNullOrEmpty(atxbUsername.Texts.Trim()))
+            {
+                AMessageBoxFrm ms = new AMessageBoxFrm("Không được để trống tài khoản", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                ms.ShowDialog();
+            }
+            else if (string.IsNullOrEmpty(atxbPassword.Texts.Trim()))
+            {
+                AMessageBoxFrm ms = new AMessageBoxFrm("Không được để trống tài khoản", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                ms.ShowDialog();
+            }
+            else
+            {
+                Customer customer = CustomerDAL.Ins.checkLogin(atxbUsername.Texts.Trim(), atxbPassword.Texts.Trim());
 
-            //FormAdminHome frmHome = new FormAdminHome();
-            //frmHome.ShowDialog();
+                if (customer != null)
+                {
+                    var currentForm = FindForm();
+                    currentForm.Hide();
 
-            currentForm.Show();
+                    FormMainCustomerWindown frmHome = new FormMainCustomerWindown();
+                    frmHome.ShowDialog();
+
+                    currentForm.Show();
+                }
+                else
+                {
+                    AMessageBoxFrm ms = new AMessageBoxFrm("Tài khoản hoặc mật khẩu không đúng", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    ms.ShowDialog();
+                }
+            }
         }
 
         private void lbRegister_Click(object sender, EventArgs e)
