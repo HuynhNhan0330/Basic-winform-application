@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.apnMain = new Banking.AControls.APanel();
+            this.loginUC1 = new Banking.LoginUC();
+            this.apnMain.SuspendLayout();
             this.SuspendLayout();
             // 
             // apnMain
@@ -38,14 +40,25 @@
             this.apnMain.BorderColor = System.Drawing.Color.White;
             this.apnMain.BorderRadius = 60;
             this.apnMain.BorderSize = 0;
+            this.apnMain.Controls.Add(this.loginUC1);
             this.apnMain.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.apnMain.ForeColor = System.Drawing.Color.White;
-            this.apnMain.Location = new System.Drawing.Point(0, 150);
+            this.apnMain.Location = new System.Drawing.Point(0, 200);
             this.apnMain.Name = "apnMain";
             this.apnMain.RoundType = Banking.AControls.APanel.RoundStyles.Top;
-            this.apnMain.Size = new System.Drawing.Size(600, 650);
+            this.apnMain.Size = new System.Drawing.Size(600, 600);
             this.apnMain.TabIndex = 0;
             this.apnMain.TextColor = System.Drawing.Color.White;
+            // 
+            // loginUC1
+            // 
+            this.loginUC1.BackColor = System.Drawing.Color.White;
+            this.loginUC1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.loginUC1.Location = new System.Drawing.Point(0, 0);
+            this.loginUC1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.loginUC1.Name = "loginUC1";
+            this.loginUC1.Size = new System.Drawing.Size(600, 600);
+            this.loginUC1.TabIndex = 0;
             // 
             // FormLogin
             // 
@@ -58,6 +71,7 @@
             this.Name = "FormLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormLogin";
+            this.apnMain.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -65,5 +79,6 @@
         #endregion
 
         private AControls.APanel apnMain;
+        private LoginUC loginUC1;
     }
 }

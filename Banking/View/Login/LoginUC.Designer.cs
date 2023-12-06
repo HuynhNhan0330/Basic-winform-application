@@ -48,11 +48,11 @@ namespace Banking
             // 
             // pibHideViewPassword
             // 
-            this.pibHideViewPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(221)))), ((int)(((byte)(252)))));
+            this.pibHideViewPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(180)))), ((int)(((byte)(110)))));
             this.pibHideViewPassword.BackgroundImage = global::Banking.Properties.Resources.view;
             this.pibHideViewPassword.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pibHideViewPassword.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pibHideViewPassword.Location = new System.Drawing.Point(271, 7);
+            this.pibHideViewPassword.Location = new System.Drawing.Point(361, 9);
             this.pibHideViewPassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pibHideViewPassword.Name = "pibHideViewPassword";
             this.pibHideViewPassword.Size = new System.Drawing.Size(22, 22);
@@ -65,7 +65,7 @@ namespace Banking
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold);
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(115, 50);
+            this.label4.Location = new System.Drawing.Point(215, 50);
             this.label4.MaximumSize = new System.Drawing.Size(330, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(169, 35);
@@ -77,8 +77,8 @@ namespace Banking
             this.lbRegister.AutoSize = true;
             this.lbRegister.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            this.lbRegister.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(152)))), ((int)(((byte)(249)))));
-            this.lbRegister.Location = new System.Drawing.Point(227, 363);
+            this.lbRegister.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(156)))), ((int)(((byte)(95)))));
+            this.lbRegister.Location = new System.Drawing.Point(321, 363);
             this.lbRegister.Name = "lbRegister";
             this.lbRegister.Size = new System.Drawing.Size(69, 18);
             this.lbRegister.TabIndex = 26;
@@ -90,7 +90,7 @@ namespace Banking
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(113)))), ((int)(((byte)(122)))));
-            this.label2.Location = new System.Drawing.Point(88, 363);
+            this.label2.Location = new System.Drawing.Point(182, 363);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(136, 18);
             this.label2.TabIndex = 24;
@@ -101,8 +101,8 @@ namespace Banking
             this.lbForgotPassword.AutoSize = true;
             this.lbForgotPassword.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbForgotPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.5F);
-            this.lbForgotPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(152)))), ((int)(((byte)(249)))));
-            this.lbForgotPassword.Location = new System.Drawing.Point(217, 250);
+            this.lbForgotPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(156)))), ((int)(((byte)(95)))));
+            this.lbForgotPassword.Location = new System.Drawing.Point(362, 250);
             this.lbForgotPassword.Name = "lbForgotPassword";
             this.lbForgotPassword.Size = new System.Drawing.Size(132, 22);
             this.lbForgotPassword.TabIndex = 30;
@@ -110,26 +110,26 @@ namespace Banking
             // 
             // atxbPassword
             // 
-            this.atxbPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(221)))), ((int)(((byte)(252)))));
-            this.atxbPassword.BorderColor = System.Drawing.Color.Transparent;
-            this.atxbPassword.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(221)))), ((int)(((byte)(252)))));
+            this.atxbPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(180)))), ((int)(((byte)(110)))));
+            this.atxbPassword.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(180)))), ((int)(((byte)(110)))));
+            this.atxbPassword.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(180)))), ((int)(((byte)(110)))));
             this.atxbPassword.BorderRadius = 0;
             this.atxbPassword.BorderSize = 2;
             this.atxbPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.atxbPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.atxbPassword.ForeColor = System.Drawing.Color.Black;
+            this.atxbPassword.ForeColor = System.Drawing.Color.White;
             this.atxbPassword.isFocused = false;
             this.atxbPassword.isPlaceholder = true;
-            this.atxbPassword.Location = new System.Drawing.Point(19, 2);
+            this.atxbPassword.Location = new System.Drawing.Point(19, 3);
             this.atxbPassword.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.atxbPassword.Multiline = false;
             this.atxbPassword.Name = "atxbPassword";
             this.atxbPassword.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.atxbPassword.PasswordChar = true;
-            this.atxbPassword.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.atxbPassword.PlaceholderColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(232)))), ((int)(((byte)(224)))));
             this.atxbPassword.PlaceholderText = "Mật khẩu";
             this.atxbPassword.RoundType = Banking.AControls.ATextboxUC.RoundStyles.Full;
-            this.atxbPassword.Size = new System.Drawing.Size(245, 33);
+            this.atxbPassword.Size = new System.Drawing.Size(330, 33);
             this.atxbPassword.TabIndex = 29;
             this.atxbPassword.textAlign = Banking.AControls.ATextboxUC.TextAlign.Left;
             this.atxbPassword.Texts = "";
@@ -137,8 +137,8 @@ namespace Banking
             // 
             // abtnLogin
             // 
-            this.abtnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(152)))), ((int)(((byte)(249)))));
-            this.abtnLogin.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(152)))), ((int)(((byte)(249)))));
+            this.abtnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(208)))), ((int)(((byte)(128)))));
+            this.abtnLogin.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(208)))), ((int)(((byte)(128)))));
             this.abtnLogin.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.abtnLogin.BorderRadius = 15;
             this.abtnLogin.BorderSize = 0;
@@ -148,11 +148,11 @@ namespace Banking
             this.abtnLogin.Font = new System.Drawing.Font("Arial", 10.8F);
             this.abtnLogin.ForeColor = System.Drawing.Color.White;
             this.abtnLogin.LineType = Banking.AControls.AButton.LineStyles.None;
-            this.abtnLogin.Location = new System.Drawing.Point(50, 302);
+            this.abtnLogin.Location = new System.Drawing.Point(100, 302);
             this.abtnLogin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.abtnLogin.Name = "abtnLogin";
             this.abtnLogin.RoundType = Banking.AControls.AButton.RoundStyles.Full;
-            this.abtnLogin.Size = new System.Drawing.Size(300, 40);
+            this.abtnLogin.Size = new System.Drawing.Size(400, 40);
             this.abtnLogin.TabIndex = 27;
             this.abtnLogin.Text = "Đăng nhập";
             this.abtnLogin.TextColor = System.Drawing.Color.White;
@@ -162,26 +162,26 @@ namespace Banking
             // 
             // atxbUsername
             // 
-            this.atxbUsername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(221)))), ((int)(((byte)(252)))));
-            this.atxbUsername.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(221)))), ((int)(((byte)(252)))));
-            this.atxbUsername.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(221)))), ((int)(((byte)(252)))));
+            this.atxbUsername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(180)))), ((int)(((byte)(110)))));
+            this.atxbUsername.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(180)))), ((int)(((byte)(110)))));
+            this.atxbUsername.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(180)))), ((int)(((byte)(110)))));
             this.atxbUsername.BorderRadius = 0;
             this.atxbUsername.BorderSize = 2;
             this.atxbUsername.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.atxbUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.atxbUsername.ForeColor = System.Drawing.Color.Black;
+            this.atxbUsername.ForeColor = System.Drawing.Color.White;
             this.atxbUsername.isFocused = false;
             this.atxbUsername.isPlaceholder = true;
-            this.atxbUsername.Location = new System.Drawing.Point(19, 2);
+            this.atxbUsername.Location = new System.Drawing.Point(19, 3);
             this.atxbUsername.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.atxbUsername.Multiline = false;
             this.atxbUsername.Name = "atxbUsername";
             this.atxbUsername.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.atxbUsername.PasswordChar = false;
-            this.atxbUsername.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.atxbUsername.PlaceholderColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(232)))), ((int)(((byte)(224)))));
             this.atxbUsername.PlaceholderText = "Email hoặc số điện thoại";
             this.atxbUsername.RoundType = Banking.AControls.ATextboxUC.RoundStyles.Full;
-            this.atxbUsername.Size = new System.Drawing.Size(267, 33);
+            this.atxbUsername.Size = new System.Drawing.Size(350, 33);
             this.atxbUsername.TabIndex = 22;
             this.atxbUsername.textAlign = Banking.AControls.ATextboxUC.TextAlign.Left;
             this.atxbUsername.Texts = "";
@@ -189,34 +189,34 @@ namespace Banking
             // 
             // aPanel1
             // 
-            this.aPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(221)))), ((int)(((byte)(252)))));
-            this.aPanel1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(221)))), ((int)(((byte)(252)))));
+            this.aPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(180)))), ((int)(((byte)(110)))));
+            this.aPanel1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(180)))), ((int)(((byte)(110)))));
             this.aPanel1.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.aPanel1.BorderRadius = 10;
             this.aPanel1.BorderSize = 0;
             this.aPanel1.Controls.Add(this.atxbUsername);
             this.aPanel1.ForeColor = System.Drawing.Color.White;
-            this.aPanel1.Location = new System.Drawing.Point(50, 136);
+            this.aPanel1.Location = new System.Drawing.Point(100, 136);
             this.aPanel1.Name = "aPanel1";
             this.aPanel1.RoundType = Banking.AControls.APanel.RoundStyles.Full;
-            this.aPanel1.Size = new System.Drawing.Size(300, 37);
+            this.aPanel1.Size = new System.Drawing.Size(400, 40);
             this.aPanel1.TabIndex = 31;
             this.aPanel1.TextColor = System.Drawing.Color.White;
             // 
             // aPanel2
             // 
-            this.aPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(221)))), ((int)(((byte)(252)))));
-            this.aPanel2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(221)))), ((int)(((byte)(252)))));
+            this.aPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(180)))), ((int)(((byte)(110)))));
+            this.aPanel2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(180)))), ((int)(((byte)(110)))));
             this.aPanel2.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.aPanel2.BorderRadius = 10;
             this.aPanel2.BorderSize = 0;
             this.aPanel2.Controls.Add(this.atxbPassword);
             this.aPanel2.Controls.Add(this.pibHideViewPassword);
             this.aPanel2.ForeColor = System.Drawing.Color.White;
-            this.aPanel2.Location = new System.Drawing.Point(50, 200);
+            this.aPanel2.Location = new System.Drawing.Point(100, 200);
             this.aPanel2.Name = "aPanel2";
             this.aPanel2.RoundType = Banking.AControls.APanel.RoundStyles.Full;
-            this.aPanel2.Size = new System.Drawing.Size(300, 37);
+            this.aPanel2.Size = new System.Drawing.Size(400, 40);
             this.aPanel2.TabIndex = 32;
             this.aPanel2.TextColor = System.Drawing.Color.White;
             // 
@@ -234,7 +234,7 @@ namespace Banking
             this.Controls.Add(this.label2);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "LoginUC";
-            this.Size = new System.Drawing.Size(600, 650);
+            this.Size = new System.Drawing.Size(600, 600);
             ((System.ComponentModel.ISupportInitialize)(this.pibHideViewPassword)).EndInit();
             this.aPanel1.ResumeLayout(false);
             this.aPanel2.ResumeLayout(false);
