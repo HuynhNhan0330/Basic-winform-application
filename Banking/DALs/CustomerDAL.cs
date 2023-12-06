@@ -1,5 +1,6 @@
 ﻿using Banking.Database;
 using Banking.Model;
+using Banking.Utils;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -40,6 +41,23 @@ namespace Banking.DALs
             catch (Exception ex)
             {
                 return null;
+            }
+        }
+
+        public bool register(Customer customer)
+        {
+            try
+            {
+                customer.CustomerID = Helper.nextCode(CustomerDB.Ins.getMaxId(), "KH");
+                Customer customerNew = CustomerDB.Ins.createCustomer(customer);
+                if (customerNew != null)
+                    return true;
+                
+                return false;
+            }
+            catch (Exception ex)
+            {
+                return false;
             }
         }
     }

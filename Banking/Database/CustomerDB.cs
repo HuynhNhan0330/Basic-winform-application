@@ -23,7 +23,7 @@ namespace Banking.Database
             private set => _ins = value;
         }
 
-        private ObservableCollection<Customer> customer = new ObservableCollection<Customer>
+        private ObservableCollection<Customer> customers = new ObservableCollection<Customer>
         {
             new Customer()
             {
@@ -38,7 +38,25 @@ namespace Banking.Database
 
         public ObservableCollection<Customer> getCustomer()
         {
-            return customer;
+            return customers;
+        }
+
+        public string getMaxId()
+        {
+            return customers.Max(kh => kh.CustomerID);
+        }
+
+        public Customer createCustomer(Customer customer)
+        {
+            try
+            {
+                customers.Add(customer);
+                return customer;
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
         }
     }
 }

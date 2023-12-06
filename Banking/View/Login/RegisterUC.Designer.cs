@@ -48,7 +48,7 @@ namespace Banking
             this.atxbRePassword = new Banking.AControls.ATextboxUC();
             this.pibHideViewRePassword = new System.Windows.Forms.PictureBox();
             this.aPanel6 = new Banking.AControls.APanel();
-            this.aDateTimePicker1 = new Banking.AControls.ADateTimePicker();
+            this.adpBirthday = new Banking.AControls.ADateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
             this.aPanel1.SuspendLayout();
             this.aPanel2.SuspendLayout();
@@ -119,6 +119,7 @@ namespace Banking
             this.abtnRegsiter.TextColor = System.Drawing.Color.White;
             this.abtnRegsiter.ThinknessLine = 0;
             this.abtnRegsiter.UseVisualStyleBackColor = false;
+            this.abtnRegsiter.Click += new System.EventHandler(this.abtnRegsiter_Click);
             // 
             // aPanel1
             // 
@@ -372,7 +373,7 @@ namespace Banking
             this.aPanel6.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.aPanel6.BorderRadius = 10;
             this.aPanel6.BorderSize = 0;
-            this.aPanel6.Controls.Add(this.aDateTimePicker1);
+            this.aPanel6.Controls.Add(this.adpBirthday);
             this.aPanel6.Controls.Add(this.label1);
             this.aPanel6.ForeColor = System.Drawing.Color.White;
             this.aPanel6.Location = new System.Drawing.Point(100, 175);
@@ -382,24 +383,24 @@ namespace Banking
             this.aPanel6.TabIndex = 37;
             this.aPanel6.TextColor = System.Drawing.Color.White;
             // 
-            // aDateTimePicker1
+            // adpBirthday
             // 
-            this.aDateTimePicker1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(180)))), ((int)(((byte)(110)))));
-            this.aDateTimePicker1.BorderSize = 0;
-            this.aDateTimePicker1.CalendarForeColor = System.Drawing.Color.Black;
-            this.aDateTimePicker1.CalendarMonthBackground = System.Drawing.Color.Black;
-            this.aDateTimePicker1.CalendarTitleBackColor = System.Drawing.Color.Black;
-            this.aDateTimePicker1.CalendarTitleForeColor = System.Drawing.Color.Black;
-            this.aDateTimePicker1.CustomFormat = "dd/MM/yyyy";
-            this.aDateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.aDateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.aDateTimePicker1.Location = new System.Drawing.Point(234, 1);
-            this.aDateTimePicker1.MinimumSize = new System.Drawing.Size(4, 30);
-            this.aDateTimePicker1.Name = "aDateTimePicker1";
-            this.aDateTimePicker1.Size = new System.Drawing.Size(148, 30);
-            this.aDateTimePicker1.SkinColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(180)))), ((int)(((byte)(110)))));
-            this.aDateTimePicker1.TabIndex = 1;
-            this.aDateTimePicker1.TextColor = System.Drawing.Color.White;
+            this.adpBirthday.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(180)))), ((int)(((byte)(110)))));
+            this.adpBirthday.BorderSize = 0;
+            this.adpBirthday.CalendarForeColor = System.Drawing.Color.Black;
+            this.adpBirthday.CalendarMonthBackground = System.Drawing.Color.Black;
+            this.adpBirthday.CalendarTitleBackColor = System.Drawing.Color.Black;
+            this.adpBirthday.CalendarTitleForeColor = System.Drawing.Color.Black;
+            this.adpBirthday.CustomFormat = "dd/MM/yyyy";
+            this.adpBirthday.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.adpBirthday.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.adpBirthday.Location = new System.Drawing.Point(234, 1);
+            this.adpBirthday.MinimumSize = new System.Drawing.Size(4, 30);
+            this.adpBirthday.Name = "adpBirthday";
+            this.adpBirthday.Size = new System.Drawing.Size(148, 30);
+            this.adpBirthday.SkinColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(180)))), ((int)(((byte)(110)))));
+            this.adpBirthday.TabIndex = 1;
+            this.adpBirthday.TextColor = System.Drawing.Color.White;
             // 
             // label1
             // 
@@ -462,7 +463,7 @@ namespace Banking
         private AControls.ATextboxUC atxbRePassword;
         private PictureBox pibHideViewRePassword;
         private AControls.APanel aPanel6;
-        private AControls.ADateTimePicker aDateTimePicker1;
+        private AControls.ADateTimePicker adpBirthday;
         private Label label1;
     }
 }
