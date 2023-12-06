@@ -90,6 +90,7 @@ namespace Banking
             {
                 Customer customer = new Customer();
                 customer.CustomerName = atxbName.Texts.Trim();
+                customer.Birthday = adpBirthday.Value;
                 customer.Email = atxbEmail.Texts.Trim();
                 customer.PhoneNumber = atxbPhone.Texts.Trim();
                 customer.Password = atxbPassword.Texts.Trim();
