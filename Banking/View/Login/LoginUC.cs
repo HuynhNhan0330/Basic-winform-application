@@ -101,5 +101,11 @@ namespace Banking
                 atxbUsername.setForeColor();
             }
         }
+
+        private void lbForgotPassword_Click(object sender, EventArgs e)
+        {
+            FormLogin currentForm = FindForm() as FormLogin;
+            currentForm.loadBody(new ForgotPasswordUC());
+        }
     }
 }

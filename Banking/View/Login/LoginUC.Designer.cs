@@ -94,6 +94,7 @@ namespace Banking
             this.lbForgotPassword.Size = new System.Drawing.Size(132, 22);
             this.lbForgotPassword.TabIndex = 30;
             this.lbForgotPassword.Text = "Quên mật khẩu";
+            this.lbForgotPassword.Click += new System.EventHandler(this.lbForgotPassword_Click);
             // 
             // cbSaveUsername
             // 

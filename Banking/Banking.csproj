@@ -147,6 +147,12 @@
     <Compile Include="View\Customer\StatementUC.Designer.cs">
       <DependentUpon>StatementUC.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\Login\ForgotPasswordUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Login\ForgotPasswordUC.Designer.cs">
+      <DependentUpon>ForgotPasswordUC.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\Login\FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -207,6 +213,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\Customer\TransferMoney\TransferMoneyUC.resx">
       <DependentUpon>TransferMoneyUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Login\ForgotPasswordUC.resx">
+      <DependentUpon>ForgotPasswordUC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Login\FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
