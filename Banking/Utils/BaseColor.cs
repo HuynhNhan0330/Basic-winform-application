@@ -11,5 +11,7 @@ namespace Banking.Utils
     {
         public static Color XanhLa = Color.FromArgb(16, 93, 56);
         public static Color Xam = Color.FromArgb(153, 153, 153);
+        public static Color inMoney = Color.FromArgb(11, 204, 53);
+        public static Color outMoney = Color.FromArgb(233, 46, 46);
     }
 }

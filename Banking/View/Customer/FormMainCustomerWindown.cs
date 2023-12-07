@@ -27,6 +27,7 @@ namespace Banking
         private void FormMainCustomerWindown_Load(object sender, EventArgs e)
         {
             currentButton = abtnHome;
+
         }
         #endregion
 
@@ -38,6 +39,12 @@ namespace Banking
         #endregion
 
         #region Menu
+        private void loadBody(UserControl uc)
+        {
+            pnMain.Controls.Clear();
+            pnMain.Controls.Add(uc);
+        }
+
         private void doActiveButton(AButton abtn)
         {
             abtn.BackColor = BaseColor.XanhLa;
@@ -153,6 +160,8 @@ namespace Banking
                 doDeactiveButton(currentButton);
                 doActiveButton(abtnChoose);
                 currentButton = abtnChoose;
+
+                loadBody(new StatementUC());
             }
         }
         #endregion
