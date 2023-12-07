@@ -33,6 +33,12 @@ namespace Banking.Usercontrols
         {
             lbNote.Text = notification.Note;
             this.Height = lbNote.Top + lbNote.Height + 15;
+
+            if (notification.NotificationType == 0)
+            {
+                this.BackColor = Color.Gray;
+                lbNote.ForeColor = Color.White;
+            }
         }
     }
 }

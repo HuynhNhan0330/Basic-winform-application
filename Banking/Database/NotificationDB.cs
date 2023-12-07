@@ -49,7 +49,7 @@ namespace Banking.Database
             {
                 NotificationID = "NO0004",
                 CustomerID = "KH0001",
-                NotificationType = 1,
+                NotificationType = 0,
                 Note = "Số dư tài khoản 123456789 +0 vnđ lúc 12/12/2012 12:12:12. Số dư 0 vnđ. Tiền khuyến mãi từ NBank."
             },
         };

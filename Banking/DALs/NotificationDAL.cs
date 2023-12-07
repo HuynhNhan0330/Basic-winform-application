@@ -52,5 +52,36 @@ namespace Banking.DALs
                 return false;
             }
         }
+
+        public bool checkNotification(string customerID)
+        {
+            try
+            {
+                ObservableCollection<Notification> notifications = this.getNotification(customerID);
+
+                Notification notification = notifications.FirstOrDefault(no => no.NotificationType == 0);
+
+                return notification != null;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+        }
+
+        public void seenNotification(string customerID)
+        {
+            try
+            {
+                ObservableCollection<Notification> notifications = this.getNotification(customerID);
+
+                foreach (Notification no in notifications)
+                    no.NotificationType = 1;
+            }
+            catch (Exception ex)
+            {
+
+            }
+        }
     }
 }

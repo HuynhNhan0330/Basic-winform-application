@@ -96,6 +96,9 @@ namespace Banking
 
                         createNotification(transactionDetail);
 
+                        FormMainCustomerWindown form = Application.OpenForms.OfType<FormMainCustomerWindown>().FirstOrDefault();
+                        form.checkNotifinotion();
+
                         AMessageBoxFrm ms = new AMessageBoxFrm("Chuyển tiền thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         ms.ShowDialog();
                     }

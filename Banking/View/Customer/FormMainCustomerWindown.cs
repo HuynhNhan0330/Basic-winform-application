@@ -1,4 +1,5 @@
 ﻿using Banking.AControls;
+using Banking.DALs;
 using Banking.Model;
 using Banking.Utils;
 using System;
@@ -28,13 +29,21 @@ namespace Banking
             InitializeComponent();
         }
 
+        public void checkNotifinotion()
+        {
+            bool isCheck = NotificationDAL.Ins.checkNotification(customer.CustomerID);
 
+            if (isCheck)
+                piNotification.BackgroundImage = Properties.Resources.notification;
+            else
+                piNotification.BackgroundImage = Properties.Resources.notification_bell;
+        }
 
         #region Event form
         private void FormMainCustomerWindown_Load(object sender, EventArgs e)
         {
             currentButton = abtnHome;
-
+            checkNotifinotion();
         }
         #endregion
 
@@ -51,6 +60,8 @@ namespace Banking
                 doDeactiveButton(currentButton);
                 currentButton = null;
             }
+
+            piNotification.BackgroundImage = Properties.Resources.notification_bell;
 
             loadBody(new NotificationUC());
         }

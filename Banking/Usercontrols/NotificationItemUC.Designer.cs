@@ -35,7 +35,7 @@
             // 
             this.lbNote.AutoSize = true;
             this.lbNote.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.lbNote.ForeColor = System.Drawing.Color.Black;
+            this.lbNote.ForeColor = System.Drawing.Color.White;
             this.lbNote.Location = new System.Drawing.Point(25, 25);
             this.lbNote.MaximumSize = new System.Drawing.Size(440, 0);
             this.lbNote.Name = "lbNote";
@@ -47,8 +47,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Control;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(46)))));
             this.Controls.Add(this.lbNote);
+            this.ForeColor = System.Drawing.Color.White;
             this.Name = "NotificationItemUC";
             this.Size = new System.Drawing.Size(440, 97);
             this.ResumeLayout(false);
