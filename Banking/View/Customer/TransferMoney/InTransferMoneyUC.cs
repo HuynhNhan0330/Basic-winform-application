@@ -89,9 +89,12 @@ namespace Banking
                     if (isCreate)
                     {
                         customer.currentMoney = transactionDetail.CurrentMoney;
+                        reCustomer.currentMoney = reCustomer.currentMoney + transactionDetail.Value;
 
                         lbCurrentMoney.Text = Helper.FormatVNMoney(Helper.getCurrentCustomer().currentMoney);
                         lbCurrentMoney.Left = this.Width - lbCurrentMoney.Width - 35;
+
+                        createNotification(transactionDetail);
 
                         AMessageBoxFrm ms = new AMessageBoxFrm("Chuyển tiền thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         ms.ShowDialog();
@@ -108,6 +111,30 @@ namespace Banking
                     ms.ShowDialog();
                 }
             }
+        }
+
+        private void createNotification(TransactionDetail transactionDetail)
+        {
+            //customer
+            Notification notificationCus = new Notification();
+            Customer customer = Helper.getCurrentCustomer();
+            notificationCus.CustomerID = customer.CustomerID;
+            notificationCus.Note = "Số dư tài khoản " + customer.accountNumber + " -" + Helper.FormatVNMoney(transactionDetail.Value) 
+                + " lúc " + transactionDetail.Created.ToString("dd/MM/yyyy hh:mm:ss") + ". Số dư " + Helper.FormatVNMoney(transactionDetail.CurrentMoney)
+                + ". " + transactionDetail.Note + ".";
+            notificationCus.NotificationType = 0;
+
+            NotificationDAL.Ins.createNotification(notificationCus);
+
+            //re
+            Notification notificationRe = new Notification();
+            notificationRe.CustomerID = reCustomer.CustomerID;
+            notificationRe.Note = "Số dư tài khoản " + reCustomer.accountNumber + " +" + Helper.FormatVNMoney(transactionDetail.Value)
+                + " lúc " + transactionDetail.Created.ToString("dd/MM/yyyy hh:mm:ss") + ". Số dư " + Helper.FormatVNMoney(reCustomer.currentMoney)
+                + ". " + transactionDetail.Note + ".";
+            notificationRe.NotificationType = 0;
+
+            NotificationDAL.Ins.createNotification(notificationRe);
         }
     }
 }

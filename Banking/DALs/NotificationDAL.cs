@@ -1,5 +1,6 @@
 ﻿using Banking.Database;
 using Banking.Model;
+using Banking.Utils;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -35,6 +36,20 @@ namespace Banking.DALs
             catch (Exception ex)
             {
                 return null;
+            }
+        }
+
+        public bool createNotification(Notification notification)
+        {
+            try
+            {
+                notification.NotificationID = Helper.nextCode(notification.NotificationID, "NO");
+
+                return NotificationDB.Ins.createNotification(notification);
+            }
+            catch (Exception ex)
+            {
+                return false;
             }
         }
     }

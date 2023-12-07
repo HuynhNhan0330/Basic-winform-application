@@ -77,6 +77,8 @@ namespace Banking
                         lbCurrentMoney.Text = Helper.FormatVNMoney(Helper.getCurrentCustomer().currentMoney);
                         lbCurrentMoney.Left = this.Width - lbCurrentMoney.Width - 35;
 
+                        createNotification(transactionDetail);
+
                         AMessageBoxFrm ms = new AMessageBoxFrm("Chuyển tiền thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         ms.ShowDialog();
                     }
@@ -106,6 +108,20 @@ namespace Banking
                 lbReName.Text = reCustomer.CustomerName;
                 lbReName.Left = this.Width - lbReName.Width - 35;
             }
+        }
+
+        private void createNotification(TransactionDetail transactionDetail)
+        {
+            //customer
+            Notification notificationCus = new Notification();
+            Customer customer = Helper.getCurrentCustomer();
+            notificationCus.CustomerID = customer.CustomerID;
+            notificationCus.Note = "Số dư tài khoản " + customer.accountNumber + " -" + Helper.FormatVNMoney(transactionDetail.Value)
+                + " lúc " + transactionDetail.Created.ToString("dd/MM/yyyy hh:mm:ss") + ". Số dư " + Helper.FormatVNMoney(transactionDetail.CurrentMoney)
+                + ". " + transactionDetail.Note + ".";
+            notificationCus.NotificationType = 0;
+
+            NotificationDAL.Ins.createNotification(notificationCus);
         }
     }
 }

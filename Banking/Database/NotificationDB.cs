@@ -58,5 +58,16 @@ namespace Banking.Database
         {
             return notifications;
         }
+
+        public string getMaxId()
+        {
+            return notifications.Max(no => no.NotificationID);
+        }
+
+        public bool createNotification(Notification notification)
+        {
+            notifications.Add(notification);
+            return true;
+        }
     }
 }
