@@ -342,5 +342,8 @@
   <ItemGroup>
     <None Include="Resources\return.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Utils\SaveUsername.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

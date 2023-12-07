@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -41,6 +42,18 @@ namespace Banking
                     var currentForm = FindForm();
                     currentForm.Hide();
 
+                    string filePath = @"../../Utils/SaveUsername.txt";
+
+                    if (cbSaveUsername.Checked)
+                    {
+                        using (StreamWriter writer = new StreamWriter(filePath))
+                            writer.WriteLine(atxbUsername.Texts.Trim());
+                    }
+                    else
+                    {
+                        File.WriteAllText(filePath, string.Empty);
+                    }
+
                     FormMainCustomerWindown frmHome = new FormMainCustomerWindown();
                     frmHome.ShowDialog();
 
@@ -72,6 +85,17 @@ namespace Banking
                 atxbPassword.PasswordChar = true;
                 pibHideViewPassword.BackgroundImage = Properties.Resources.view;
             }
+        }
+
+        private void LoginUC_Load(object sender, EventArgs e)
+        {
+            string filePath = @"../../Utils/SaveUsername.txt";
+
+            string content = File.ReadAllText(filePath);
+
+            atxbUsername.Texts = content;
+            atxbUsername.isPlaceholder = false;
+            atxbUsername.setForeColor();
         }
     }
 }
