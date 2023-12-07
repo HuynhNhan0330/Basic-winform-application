@@ -1,5 +1,6 @@
 ﻿using Banking.AControls;
 using Banking.DALs;
+using Banking.Database;
 using Banking.Model;
 using Banking.Usercontrols;
 using Banking.Utils;
@@ -19,6 +20,9 @@ namespace Banking
     public partial class StatementUC : UserControl
     {
         private AButton currentButton = null;
+        private ObservableCollection<TransactionDetail> __transactionDetails;
+        private ObservableCollection<TransactionDetail> _transactionDetails;
+        private ObservableCollection<TransactionDetail> transactionDetails;
 
         public StatementUC()
         {
@@ -48,6 +52,8 @@ namespace Banking
                 doDeactiveButton(currentButton);
                 doActiveButton(abtnChoose);
                 currentButton = abtnChoose;
+                loadData(1);
+                loadPanelData();
             }
         }
 
@@ -60,6 +66,8 @@ namespace Banking
                 doDeactiveButton(currentButton);
                 doActiveButton(abtnChoose);
                 currentButton = abtnChoose;
+                loadData(2);
+                loadPanelData();
             }
         }
 
@@ -72,6 +80,8 @@ namespace Banking
                 doDeactiveButton(currentButton);
                 doActiveButton(abtnChoose);
                 currentButton = abtnChoose;
+                loadData(3);
+                loadPanelData();
             }
         }
         #endregion
@@ -80,11 +90,45 @@ namespace Banking
         {
             currentButton = abtnAll;
             loadData();
+            loadPanelData();
         }
 
-        private void loadData()
+        private void loadData(int type = 0)
         {
-            ObservableCollection<TransactionDetail> transactionDetails = TransactionDetailDAL.Ins.getTransactionDetails();
+            
+
+            switch (type)
+            {
+                case 0:
+                    __transactionDetails = TransactionDetailDAL.Ins.getTransactionDetails();
+                    _transactionDetails = new ObservableCollection<TransactionDetail>(__transactionDetails);
+                    transactionDetails = new ObservableCollection<TransactionDetail>(_transactionDetails);
+                    break;
+
+                case 1:
+                    transactionDetails = new ObservableCollection<TransactionDetail>(_transactionDetails);
+                    break;
+                case 2:
+                    transactionDetails.Clear();
+
+                    foreach (TransactionDetail td in _transactionDetails)
+                        if (td.TransactionDetailType == 2) transactionDetails.Add(td);
+                    break;
+
+                case 3:
+                    transactionDetails.Clear();
+
+                    foreach (TransactionDetail td in _transactionDetails)
+                        if (td.TransactionDetailType == 1) transactionDetails.Add(td);
+                    break;
+            }
+
+            
+        }
+
+        private void loadPanelData()
+        {
+            pnMain.Controls.Clear();
 
             foreach (TransactionDetail td in transactionDetails)
             {
@@ -93,6 +137,33 @@ namespace Banking
                 pnMain.Controls.Add(uc);
                 uc.Dock = DockStyle.Top;
                 uc.SendToBack();
+            }
+        }
+
+        private void abtnSearch_Click(object sender, EventArgs e)
+        {
+            DateTime valueFrom = adpFrom.Value; 
+            DateTime valueTo = adpTo.Value;
+            
+            if (valueFrom.Date > valueTo.Date)
+            {
+                AMessageBoxFrm ms = new AMessageBoxFrm("Ngày trước phải nhỏ hơn ngày sau", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                ms.ShowDialog();
+            }
+            else
+            {
+                _transactionDetails.Clear();
+
+                foreach (TransactionDetail td in __transactionDetails)
+                    if ((valueFrom.Date <= td.Created.Date && td.Created.Date <= valueTo.Date)) _transactionDetails.Add(td);
+
+                transactionDetails = new ObservableCollection<TransactionDetail>(_transactionDetails);
+
+                doDeactiveButton(currentButton);
+                doActiveButton(abtnAll);
+                currentButton = abtnAll;
+
+                loadPanelData();
             }
         }
     }
