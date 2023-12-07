@@ -28,22 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.aButton1 = new Banking.AControls.AButton();
+            this.abtnDone = new Banking.AControls.AButton();
             this.panel5 = new System.Windows.Forms.Panel();
             this.atxbNote = new Banking.AControls.ATextboxUC();
             this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
+            this.lbReName = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.atxbMoney = new Banking.AControls.ATextboxUC();
             this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.lbCurrentMoney = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.aTextboxUC3 = new Banking.AControls.ATextboxUC();
+            this.atxbReAccountNumber = new Banking.AControls.ATextboxUC();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.aTextboxUC1 = new Banking.AControls.ATextboxUC();
+            this.atxbAccountNumber = new Banking.AControls.ATextboxUC();
             this.label1 = new System.Windows.Forms.Label();
             this.pibReturn = new System.Windows.Forms.PictureBox();
             this.panel5.SuspendLayout();
@@ -53,27 +53,28 @@
             ((System.ComponentModel.ISupportInitialize)(this.pibReturn)).BeginInit();
             this.SuspendLayout();
             // 
-            // aButton1
+            // abtnDone
             // 
-            this.aButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(208)))), ((int)(((byte)(128)))));
-            this.aButton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(208)))), ((int)(((byte)(128)))));
-            this.aButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.aButton1.BorderRadius = 20;
-            this.aButton1.BorderSize = 0;
-            this.aButton1.FlatAppearance.BorderSize = 0;
-            this.aButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.aButton1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.aButton1.ForeColor = System.Drawing.Color.White;
-            this.aButton1.LineType = Banking.AControls.AButton.LineStyles.None;
-            this.aButton1.Location = new System.Drawing.Point(75, 521);
-            this.aButton1.Name = "aButton1";
-            this.aButton1.RoundType = Banking.AControls.AButton.RoundStyles.Full;
-            this.aButton1.Size = new System.Drawing.Size(446, 50);
-            this.aButton1.TabIndex = 21;
-            this.aButton1.Text = "Hoàn tất";
-            this.aButton1.TextColor = System.Drawing.Color.White;
-            this.aButton1.ThinknessLine = 0;
-            this.aButton1.UseVisualStyleBackColor = false;
+            this.abtnDone.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(208)))), ((int)(((byte)(128)))));
+            this.abtnDone.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(208)))), ((int)(((byte)(128)))));
+            this.abtnDone.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.abtnDone.BorderRadius = 20;
+            this.abtnDone.BorderSize = 0;
+            this.abtnDone.FlatAppearance.BorderSize = 0;
+            this.abtnDone.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.abtnDone.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.abtnDone.ForeColor = System.Drawing.Color.White;
+            this.abtnDone.LineType = Banking.AControls.AButton.LineStyles.None;
+            this.abtnDone.Location = new System.Drawing.Point(75, 521);
+            this.abtnDone.Name = "abtnDone";
+            this.abtnDone.RoundType = Banking.AControls.AButton.RoundStyles.Full;
+            this.abtnDone.Size = new System.Drawing.Size(446, 50);
+            this.abtnDone.TabIndex = 21;
+            this.abtnDone.Text = "Hoàn tất";
+            this.abtnDone.TextColor = System.Drawing.Color.White;
+            this.abtnDone.ThinknessLine = 0;
+            this.abtnDone.UseVisualStyleBackColor = false;
+            this.abtnDone.Click += new System.EventHandler(this.abtnDone_Click);
             // 
             // panel5
             // 
@@ -89,7 +90,7 @@
             this.atxbNote.BackColor = System.Drawing.Color.White;
             this.atxbNote.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(180)))), ((int)(((byte)(110)))));
             this.atxbNote.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(180)))), ((int)(((byte)(110)))));
-            this.atxbNote.BorderRadius = 0;
+            this.atxbNote.BorderRadius = 10;
             this.atxbNote.BorderSize = 2;
             this.atxbNote.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.atxbNote.ForeColor = System.Drawing.Color.Black;
@@ -120,16 +121,16 @@
             this.label9.TabIndex = 0;
             this.label9.Text = "Nội dung giao dịch";
             // 
-            // label8
+            // lbReName
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(38)))), ((int)(((byte)(30)))));
-            this.label8.Location = new System.Drawing.Point(510, 242);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(33, 20);
-            this.label8.TabIndex = 19;
-            this.label8.Text = "XX";
+            this.lbReName.AutoSize = true;
+            this.lbReName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.lbReName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(38)))), ((int)(((byte)(30)))));
+            this.lbReName.Location = new System.Drawing.Point(510, 242);
+            this.lbReName.Name = "lbReName";
+            this.lbReName.Size = new System.Drawing.Size(33, 20);
+            this.lbReName.TabIndex = 19;
+            this.lbReName.Text = "XX";
             // 
             // panel4
             // 
@@ -145,7 +146,7 @@
             this.atxbMoney.BackColor = System.Drawing.Color.White;
             this.atxbMoney.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(180)))), ((int)(((byte)(110)))));
             this.atxbMoney.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(180)))), ((int)(((byte)(110)))));
-            this.atxbMoney.BorderRadius = 0;
+            this.atxbMoney.BorderRadius = 10;
             this.atxbMoney.BorderSize = 2;
             this.atxbMoney.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.atxbMoney.ForeColor = System.Drawing.Color.Black;
@@ -176,16 +177,17 @@
             this.label7.TabIndex = 0;
             this.label7.Text = "Số tiền giao dịch";
             // 
-            // label6
+            // lbCurrentMoney
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label6.ForeColor = System.Drawing.Color.DimGray;
-            this.label6.Location = new System.Drawing.Point(485, 140);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(59, 20);
-            this.label6.TabIndex = 17;
-            this.label6.Text = "1000 đ";
+            this.lbCurrentMoney.AutoSize = true;
+            this.lbCurrentMoney.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lbCurrentMoney.ForeColor = System.Drawing.Color.DimGray;
+            this.lbCurrentMoney.Location = new System.Drawing.Point(485, 140);
+            this.lbCurrentMoney.MaximumSize = new System.Drawing.Size(160, 0);
+            this.lbCurrentMoney.Name = "lbCurrentMoney";
+            this.lbCurrentMoney.Size = new System.Drawing.Size(59, 20);
+            this.lbCurrentMoney.TabIndex = 17;
+            this.lbCurrentMoney.Text = "1000 đ";
             // 
             // label5
             // 
@@ -200,38 +202,39 @@
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.aTextboxUC3);
+            this.panel3.Controls.Add(this.atxbReAccountNumber);
             this.panel3.Controls.Add(this.label4);
             this.panel3.Location = new System.Drawing.Point(49, 192);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(496, 37);
             this.panel3.TabIndex = 15;
             // 
-            // aTextboxUC3
+            // atxbReAccountNumber
             // 
-            this.aTextboxUC3.BackColor = System.Drawing.Color.White;
-            this.aTextboxUC3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(180)))), ((int)(((byte)(110)))));
-            this.aTextboxUC3.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(180)))), ((int)(((byte)(110)))));
-            this.aTextboxUC3.BorderRadius = 0;
-            this.aTextboxUC3.BorderSize = 2;
-            this.aTextboxUC3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.aTextboxUC3.ForeColor = System.Drawing.Color.Black;
-            this.aTextboxUC3.isFocused = false;
-            this.aTextboxUC3.isPlaceholder = true;
-            this.aTextboxUC3.Location = new System.Drawing.Point(195, 0);
-            this.aTextboxUC3.Margin = new System.Windows.Forms.Padding(4);
-            this.aTextboxUC3.Multiline = false;
-            this.aTextboxUC3.Name = "aTextboxUC3";
-            this.aTextboxUC3.Padding = new System.Windows.Forms.Padding(7);
-            this.aTextboxUC3.PasswordChar = false;
-            this.aTextboxUC3.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.aTextboxUC3.PlaceholderText = "Nhập số tài khoản";
-            this.aTextboxUC3.RoundType = Banking.AControls.ATextboxUC.RoundStyles.Full;
-            this.aTextboxUC3.Size = new System.Drawing.Size(300, 35);
-            this.aTextboxUC3.TabIndex = 1;
-            this.aTextboxUC3.textAlign = Banking.AControls.ATextboxUC.TextAlign.Left;
-            this.aTextboxUC3.Texts = "";
-            this.aTextboxUC3.UnderlinedStyle = false;
+            this.atxbReAccountNumber.BackColor = System.Drawing.Color.White;
+            this.atxbReAccountNumber.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(180)))), ((int)(((byte)(110)))));
+            this.atxbReAccountNumber.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(180)))), ((int)(((byte)(110)))));
+            this.atxbReAccountNumber.BorderRadius = 10;
+            this.atxbReAccountNumber.BorderSize = 2;
+            this.atxbReAccountNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.atxbReAccountNumber.ForeColor = System.Drawing.Color.Black;
+            this.atxbReAccountNumber.isFocused = false;
+            this.atxbReAccountNumber.isPlaceholder = true;
+            this.atxbReAccountNumber.Location = new System.Drawing.Point(195, 0);
+            this.atxbReAccountNumber.Margin = new System.Windows.Forms.Padding(4);
+            this.atxbReAccountNumber.Multiline = false;
+            this.atxbReAccountNumber.Name = "atxbReAccountNumber";
+            this.atxbReAccountNumber.Padding = new System.Windows.Forms.Padding(7);
+            this.atxbReAccountNumber.PasswordChar = false;
+            this.atxbReAccountNumber.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.atxbReAccountNumber.PlaceholderText = "Nhập số tài khoản";
+            this.atxbReAccountNumber.RoundType = Banking.AControls.ATextboxUC.RoundStyles.Full;
+            this.atxbReAccountNumber.Size = new System.Drawing.Size(300, 35);
+            this.atxbReAccountNumber.TabIndex = 1;
+            this.atxbReAccountNumber.textAlign = Banking.AControls.ATextboxUC.TextAlign.Left;
+            this.atxbReAccountNumber.Texts = "";
+            this.atxbReAccountNumber.UnderlinedStyle = false;
+            this.atxbReAccountNumber._TextChanged += new System.EventHandler(this.atxbReAccountNumber__TextChanged);
             // 
             // label4
             // 
@@ -256,38 +259,38 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.aTextboxUC1);
+            this.panel1.Controls.Add(this.atxbAccountNumber);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(50, 100);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(496, 37);
             this.panel1.TabIndex = 12;
             // 
-            // aTextboxUC1
+            // atxbAccountNumber
             // 
-            this.aTextboxUC1.BackColor = System.Drawing.Color.White;
-            this.aTextboxUC1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(180)))), ((int)(((byte)(110)))));
-            this.aTextboxUC1.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(180)))), ((int)(((byte)(110)))));
-            this.aTextboxUC1.BorderRadius = 0;
-            this.aTextboxUC1.BorderSize = 2;
-            this.aTextboxUC1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.aTextboxUC1.ForeColor = System.Drawing.Color.Black;
-            this.aTextboxUC1.isFocused = false;
-            this.aTextboxUC1.isPlaceholder = false;
-            this.aTextboxUC1.Location = new System.Drawing.Point(195, 0);
-            this.aTextboxUC1.Margin = new System.Windows.Forms.Padding(4);
-            this.aTextboxUC1.Multiline = false;
-            this.aTextboxUC1.Name = "aTextboxUC1";
-            this.aTextboxUC1.Padding = new System.Windows.Forms.Padding(7);
-            this.aTextboxUC1.PasswordChar = false;
-            this.aTextboxUC1.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.aTextboxUC1.PlaceholderText = "";
-            this.aTextboxUC1.RoundType = Banking.AControls.ATextboxUC.RoundStyles.Full;
-            this.aTextboxUC1.Size = new System.Drawing.Size(300, 35);
-            this.aTextboxUC1.TabIndex = 1;
-            this.aTextboxUC1.textAlign = Banking.AControls.ATextboxUC.TextAlign.Left;
-            this.aTextboxUC1.Texts = "";
-            this.aTextboxUC1.UnderlinedStyle = false;
+            this.atxbAccountNumber.BackColor = System.Drawing.Color.White;
+            this.atxbAccountNumber.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(180)))), ((int)(((byte)(110)))));
+            this.atxbAccountNumber.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(180)))), ((int)(((byte)(110)))));
+            this.atxbAccountNumber.BorderRadius = 10;
+            this.atxbAccountNumber.BorderSize = 2;
+            this.atxbAccountNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.atxbAccountNumber.ForeColor = System.Drawing.Color.Black;
+            this.atxbAccountNumber.isFocused = false;
+            this.atxbAccountNumber.isPlaceholder = false;
+            this.atxbAccountNumber.Location = new System.Drawing.Point(195, 0);
+            this.atxbAccountNumber.Margin = new System.Windows.Forms.Padding(4);
+            this.atxbAccountNumber.Multiline = false;
+            this.atxbAccountNumber.Name = "atxbAccountNumber";
+            this.atxbAccountNumber.Padding = new System.Windows.Forms.Padding(7);
+            this.atxbAccountNumber.PasswordChar = false;
+            this.atxbAccountNumber.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.atxbAccountNumber.PlaceholderText = "";
+            this.atxbAccountNumber.RoundType = Banking.AControls.ATextboxUC.RoundStyles.Full;
+            this.atxbAccountNumber.Size = new System.Drawing.Size(300, 35);
+            this.atxbAccountNumber.TabIndex = 1;
+            this.atxbAccountNumber.textAlign = Banking.AControls.ATextboxUC.TextAlign.Left;
+            this.atxbAccountNumber.Texts = "";
+            this.atxbAccountNumber.UnderlinedStyle = false;
             // 
             // label1
             // 
@@ -316,11 +319,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.aButton1);
+            this.Controls.Add(this.abtnDone);
             this.Controls.Add(this.panel5);
-            this.Controls.Add(this.label8);
+            this.Controls.Add(this.lbReName);
             this.Controls.Add(this.panel4);
-            this.Controls.Add(this.label6);
+            this.Controls.Add(this.lbCurrentMoney);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.label2);
@@ -328,6 +331,7 @@
             this.Controls.Add(this.pibReturn);
             this.Name = "InTransferMoneyUC";
             this.Size = new System.Drawing.Size(596, 605);
+            this.Load += new System.EventHandler(this.InTransferMoneyUC_Load);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             this.panel4.ResumeLayout(false);
@@ -344,22 +348,22 @@
 
         #endregion
 
-        private AControls.AButton aButton1;
+        private AControls.AButton abtnDone;
         private System.Windows.Forms.Panel panel5;
         private AControls.ATextboxUC atxbNote;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label lbReName;
         private System.Windows.Forms.Panel panel4;
         private AControls.ATextboxUC atxbMoney;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lbCurrentMoney;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panel3;
-        private AControls.ATextboxUC aTextboxUC3;
+        private AControls.ATextboxUC atxbReAccountNumber;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
-        private AControls.ATextboxUC aTextboxUC1;
+        private AControls.ATextboxUC atxbAccountNumber;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pibReturn;
     }

@@ -1,5 +1,6 @@
 ﻿using Banking.Database;
 using Banking.Model;
+using Banking.Utils;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -55,6 +56,19 @@ namespace Banking.DALs
             catch (Exception ex)
             {
                 return null;
+            }
+        }
+
+        public bool createTransactionDetail(TransactionDetail transactionDetail)
+        {
+            try
+            {
+                transactionDetail.TransactionDetailID = Helper.nextCode(TransactionDetailDB.Ins.getMaxId(), "TD");
+                return TransactionDetailDB.Ins.createTransactionDetail(transactionDetail);
+            }
+            catch (Exception ex)
+            {
+                return false;
             }
         }
     }

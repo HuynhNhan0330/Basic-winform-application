@@ -28,24 +28,28 @@ namespace Banking.Database
             {
                 OtherCustomerID = "OC0001",
                 BankName = "Vietcomebank",
+                CustomerName = "Tri Nguyen",
                 accountNumber = "123123123"
             },
             new OtherCustomer()
             {
                 OtherCustomerID = "OC0002",
                 BankName = "Vietcomebank",
+                CustomerName = "Tri Do",
                 accountNumber = "124124124"
             },
             new OtherCustomer()
             {
                 OtherCustomerID = "OC0003",
                 BankName = "Viettinbank",
+                CustomerName = "Tri Hay",
                 accountNumber = "125125125"
             },
             new OtherCustomer()
             {
                 OtherCustomerID = "OC0004",
                 BankName = "Abbank",
+                CustomerName = "Tri Huyen",
                 accountNumber = "126126126"
             },
         };

@@ -71,5 +71,17 @@ namespace Banking.Database
         {
             return transactionDetails;
         }
+
+        public string getMaxId()
+        {
+            return transactionDetails.Max(td => td.TransactionDetailID);
+        }
+
+        public bool createTransactionDetail(TransactionDetail transactionDetail)
+        {
+            transactionDetails.Add(transactionDetail);
+
+            return true;
+        }
     }
 }

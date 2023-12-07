@@ -9,6 +9,7 @@ namespace Banking.Model
     public class OtherCustomer
     {
         public string OtherCustomerID { get; set; }
+        public string CustomerName { get; set; }
         public string BankName { get; set; }
         public string accountNumber { get; set; }
     }

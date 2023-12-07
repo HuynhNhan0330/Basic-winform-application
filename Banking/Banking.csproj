@@ -79,6 +79,7 @@
     </Compile>
     <Compile Include="DALs\CustomerDAL.cs" />
     <Compile Include="DALs\NotificationDAL.cs" />
+    <Compile Include="DALs\OtherCustomerDAL.cs" />
     <Compile Include="DALs\TransactionDetailDAL.cs" />
     <Compile Include="Database\CustomerDB.cs" />
     <Compile Include="Database\NotificationDB.cs" />

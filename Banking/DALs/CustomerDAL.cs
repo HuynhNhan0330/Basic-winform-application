@@ -60,5 +60,23 @@ namespace Banking.DALs
                 return false;
             }
         }
+
+        public Customer findCustomerByAccountNumber(string accountNumber)
+        {
+            try
+            {
+                ObservableCollection<Customer> customers = CustomerDB.Ins.getCustomer();
+
+                string currentID = Helper.getCurrentCustomer().CustomerID;
+
+                Customer customer = customers.FirstOrDefault(kh => kh.accountNumber == accountNumber && kh.CustomerID != currentID);
+
+                return customer;
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
+        }
     }
 }
