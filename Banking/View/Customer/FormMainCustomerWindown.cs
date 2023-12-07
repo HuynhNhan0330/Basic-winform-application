@@ -57,6 +57,17 @@ namespace Banking
             pnMain.Controls.Add(uc);
         }
 
+        public void addBody(UserControl uc)
+        {
+            pnMain.Controls.Add(uc);
+            uc.BringToFront();
+        }
+
+        public void removeBody(UserControl uc)
+        {
+            pnMain.Controls.Remove(uc);
+        }
+
         private void doActiveButton(AButton abtn)
         {
             abtn.BackColor = BaseColor.XanhLa;
@@ -136,6 +147,8 @@ namespace Banking
                 if (currentButton != null) doDeactiveButton(currentButton);
                 doActiveButton(abtnChoose);
                 currentButton = abtnChoose;
+
+                loadBody(new TransferMoneyUC());
             }
         }
 

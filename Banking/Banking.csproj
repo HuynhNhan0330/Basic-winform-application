@@ -83,9 +83,27 @@
     <Compile Include="Database\CustomerDB.cs" />
     <Compile Include="Database\NotificationDB.cs" />
     <Compile Include="Database\TransactionDetailDB.cs" />
+    <Compile Include="View\Customer\TransferMoney\InTransferMoneyUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Customer\TransferMoney\InTransferMoneyUC.Designer.cs">
+      <DependentUpon>InTransferMoneyUC.cs</DependentUpon>
+    </Compile>
     <Compile Include="Model\Customer.cs" />
     <Compile Include="Model\Notification.cs" />
     <Compile Include="Model\TransactionDetail.cs" />
+    <Compile Include="View\Customer\TransferMoney\OutTransferMoneyUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Customer\TransferMoney\OutTransferMoneyUC.Designer.cs">
+      <DependentUpon>OutTransferMoneyUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Customer\TransferMoney\TransferMoneyUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Customer\TransferMoney\TransferMoneyUC.Designer.cs">
+      <DependentUpon>TransferMoneyUC.cs</DependentUpon>
+    </Compile>
     <Compile Include="Usercontrols\NotificationItemUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -169,6 +187,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\Customer\StatementUC.resx">
       <DependentUpon>StatementUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Customer\TransferMoney\InTransferMoneyUC.resx">
+      <DependentUpon>InTransferMoneyUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Customer\TransferMoney\OutTransferMoneyUC.resx">
+      <DependentUpon>OutTransferMoneyUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Customer\TransferMoney\TransferMoneyUC.resx">
+      <DependentUpon>TransferMoneyUC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Login\FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
@@ -296,6 +323,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\down-arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Finance Customizable Isometric Illustrations _ Amico Style.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\return.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
