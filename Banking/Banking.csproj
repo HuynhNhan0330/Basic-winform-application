@@ -82,7 +82,9 @@
     <Compile Include="DALs\TransactionDetailDAL.cs" />
     <Compile Include="Database\CustomerDB.cs" />
     <Compile Include="Database\NotificationDB.cs" />
+    <Compile Include="Database\OtherCustomerDB.cs" />
     <Compile Include="Database\TransactionDetailDB.cs" />
+    <Compile Include="Model\OtherCustomer.cs" />
     <Compile Include="SaveUC.cs">
       <SubType>UserControl</SubType>
     </Compile>

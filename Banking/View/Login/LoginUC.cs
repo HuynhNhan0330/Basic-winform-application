@@ -94,9 +94,12 @@ namespace Banking
 
             string content = File.ReadAllText(filePath);
 
-            atxbUsername.Texts = content;
-            atxbUsername.isPlaceholder = false;
-            atxbUsername.setForeColor();
+            if (!string.IsNullOrEmpty(content))
+            {
+                atxbUsername.Texts = content;
+                atxbUsername.isPlaceholder = false;
+                atxbUsername.setForeColor();
+            }
         }
     }
 }
