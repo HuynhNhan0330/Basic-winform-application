@@ -1,6 +1,7 @@
 ﻿using Banking.DALs;
 using Banking.Model;
 using Banking.Usercontrols;
+using Banking.Utils;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -49,7 +50,7 @@ namespace Banking
             switch (type)
             {
                 case 0:
-                    notifications = new ObservableCollection<Notification>(NotificationDAL.Ins.getNotification());
+                    notifications = new ObservableCollection<Notification>(NotificationDAL.Ins.getNotification(Helper.getCurrentCustomer().CustomerID));
                     break;
             }
         }

@@ -28,42 +28,42 @@ namespace Banking.Database
             {
                 TransactionDetailID = "TD0001",
                 CustomerID = "KH0001",
-                TransactionDetailType = 1,
+                ReceiverID = "KH0002",
                 Note = "Tiền được cho từ nhà tài trợ hàng đầu Việt Nam - Ngân hàng hàng đầu thế giới - Ngân hàng bảo mật nhất thế giới - NBank",
                 Created = DateTime.Now,
                 Value = 10000000,
-                CurrentMoney = 10000000,
+                CurrentMoney = 0,
             },
             new TransactionDetail()
             {
                 TransactionDetailID = "TD0002",
                 CustomerID = "KH0001",
-                TransactionDetailType = 2,
+                ReceiverID = "KH0002",
                 Note = "Tiền học bổng",
                 Created = DateTime.Now,
                 Value = 1000000,
-                CurrentMoney = 9000000,
+                CurrentMoney = 0,
             },
             new TransactionDetail()
             {
                 TransactionDetailID = "TD0003",
-                CustomerID = "KH0001",
-                TransactionDetailType = 1,
+                CustomerID = "KH0002",
+                ReceiverID = "KH0001",
                 Note = "Tiền học phí",
                 Created = DateTime.Now,
                 Value = 1000000,
-                CurrentMoney = 10000000,
+                CurrentMoney = 0,
             },
             
             new TransactionDetail()
             {
                 TransactionDetailID = "TD0004",
                 CustomerID = "KH0001",
-                TransactionDetailType = 1,
+                ReceiverID = "KH0002",
                 Note = "Tiền được cho từ nhà tài trợ hàng đầu Việt Nam - Ngân hàng hàng đầu thế giới - Ngân hàng bảo mật nhất thế giới - NBank",
                 Created = DateTime.Now,
                 Value = 10000000,
-                CurrentMoney = 20000000,
+                CurrentMoney = 0,
             },
         };
 

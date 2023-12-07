@@ -27,5 +27,35 @@ namespace Banking.DALs
         {
             return TransactionDetailDB.Ins.getTransactionDetails();
         }
+
+        public ObservableCollection<TransactionDetail> getTransactionDetailsByCustomer(string customerID)
+        {
+            try
+            {
+                ObservableCollection<TransactionDetail> transactionDetails = TransactionDetailDB.Ins.getTransactionDetails();
+                ObservableCollection<TransactionDetail> transactionDetailsNew = new ObservableCollection<TransactionDetail>(transactionDetails.Where(td => td.CustomerID == customerID));
+
+                return transactionDetailsNew;
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
+        }
+
+        public ObservableCollection<TransactionDetail> getTransactionDetailsByReceiver(string customerID)
+        {
+            try
+            {
+                ObservableCollection<TransactionDetail> transactionDetails = TransactionDetailDB.Ins.getTransactionDetails();
+                ObservableCollection<TransactionDetail> transactionDetailsNew = new ObservableCollection<TransactionDetail>(transactionDetails.Where(td => td.ReceiverID == customerID));
+
+                return transactionDetailsNew;
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
+        }
     }
 }

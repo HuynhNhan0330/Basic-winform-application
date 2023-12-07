@@ -23,9 +23,19 @@ namespace Banking.DALs
             private set => _ins = value;
         }
 
-        public ObservableCollection<Notification> getNotification()
+        public ObservableCollection<Notification> getNotification(string customerID)
         {
-            return NotificationDB.Ins.getNotification();
+            try
+            {
+                ObservableCollection<Notification> notifications = NotificationDB.Ins.getNotification();
+                ObservableCollection<Notification> notificationsNew = new ObservableCollection <Notification>(notifications.Where(no => no.CustomerID == customerID));
+
+                return notificationsNew;
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
         }
     }
 }

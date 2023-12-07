@@ -10,6 +10,7 @@ namespace Banking.Model
     {
         public string TransactionDetailID { get; set; } 
         public string CustomerID { get; set; } 
+        public string ReceiverID { get; set; } 
         public int TransactionDetailType { get; set; }
         public string Note { get; set; }
         public DateTime Created { get; set; }

@@ -35,6 +35,17 @@ namespace Banking.Database
                 Password = "admin",
                 accountNumber = "123456789",
                 currentMoney = 999999999999
+            },
+            new Customer()
+            {
+                CustomerID = "KH0002",
+                CustomerName = "Huynh Mai Cao Nhan",
+                PhoneNumber = "0123456789",
+                Birthday = DateTime.Now,
+                Email = "tinhoctrevnnhan@gmail.com",
+                Password = "admin",
+                accountNumber = "111111111",
+                currentMoney = 10000000
             }
         };
 

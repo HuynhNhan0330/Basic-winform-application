@@ -55,6 +55,7 @@ namespace Banking
                     }
 
                     FormMainCustomerWindown frmHome = new FormMainCustomerWindown();
+                    frmHome.customer = customer;
                     frmHome.ShowDialog();
 
                     currentForm.Show();

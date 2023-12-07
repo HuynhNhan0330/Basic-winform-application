@@ -1,4 +1,5 @@
 ﻿using Banking.AControls;
+using Banking.Model;
 using Banking.Utils;
 using System;
 using System.Collections.Generic;
@@ -15,6 +16,12 @@ namespace Banking
     public partial class FormMainCustomerWindown : Form
     {
         private AButton currentButton = null;
+        private Customer _customer;
+        public Customer customer
+        {
+            get { return _customer; }
+            set { _customer = value; }
+        }
 
         public FormMainCustomerWindown()
         {

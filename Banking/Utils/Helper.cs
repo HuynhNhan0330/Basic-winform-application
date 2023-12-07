@@ -1,9 +1,11 @@
-﻿using System;
+﻿using Banking.Model;
+using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Banking.Utils
 {
@@ -26,6 +28,12 @@ namespace Banking.Utils
 
             string newCodeString = $"000{int.Parse(code.Substring(key.Length)) + 1}";
             return key + newCodeString.Substring(newCodeString.Length - 4, 4);
+        }
+
+        public static Customer getCurrentCustomer()
+        {
+            FormMainCustomerWindown form = Application.OpenForms.OfType<FormMainCustomerWindown>().FirstOrDefault();
+            return form.customer;
         }
     }
 }

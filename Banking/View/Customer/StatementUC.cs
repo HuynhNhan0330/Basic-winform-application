@@ -100,7 +100,26 @@ namespace Banking
             switch (type)
             {
                 case 0:
-                    __transactionDetails = TransactionDetailDAL.Ins.getTransactionDetails();
+                    // Mình là người nhận (in): 1
+                    // Mình là người chuyển (out): 2
+
+                    ObservableCollection<TransactionDetail> transactionDetailsOut = TransactionDetailDAL.Ins.getTransactionDetailsByCustomer(Helper.getCurrentCustomer().CustomerID);
+                    ObservableCollection<TransactionDetail> transactionDetailsIn = TransactionDetailDAL.Ins.getTransactionDetailsByReceiver(Helper.getCurrentCustomer().CustomerID);
+
+                    __transactionDetails = new ObservableCollection<TransactionDetail>();
+                    
+                    foreach (TransactionDetail td in transactionDetailsOut)
+                    {
+                        td.TransactionDetailType = 2;
+                        __transactionDetails.Add(td);
+                    }
+
+                    foreach (TransactionDetail td in transactionDetailsIn)
+                    {
+                        td.TransactionDetailType = 1;
+                        __transactionDetails.Add(td);
+                    }
+                    __transactionDetails = new ObservableCollection<TransactionDetail>(__transactionDetails.OrderBy(td => td.TransactionDetailID));
                     _transactionDetails = new ObservableCollection<TransactionDetail>(__transactionDetails);
                     transactionDetails = new ObservableCollection<TransactionDetail>(_transactionDetails);
                     break;
