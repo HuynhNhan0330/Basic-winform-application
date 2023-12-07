@@ -32,7 +32,9 @@ namespace Banking.Database
                 PhoneNumber = "0123456789",
                 Birthday = DateTime.Now,
                 Email = "admin",
-                Password = "admin"
+                Password = "admin",
+                accountNumber = "123456789",
+                currentMoney = 999999999999
             }
         };
 

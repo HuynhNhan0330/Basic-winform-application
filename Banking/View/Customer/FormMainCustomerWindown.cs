@@ -36,6 +36,18 @@ namespace Banking
         {
             this.Close();
         }
+
+        private void piNotification_Click(object sender, EventArgs e)
+        {
+            if (currentButton != null)
+            {
+                doDeactiveButton(currentButton);
+                currentButton = null;
+            }
+
+            loadBody(new NotificationUC());
+        }
+
         #endregion
 
         #region Menu
@@ -109,7 +121,7 @@ namespace Banking
 
             if (abtnChoose != currentButton)
             {
-                doDeactiveButton(currentButton);
+                if (currentButton != null) doDeactiveButton(currentButton);
                 doActiveButton(abtnChoose);
                 currentButton = abtnChoose;
             }
@@ -121,7 +133,7 @@ namespace Banking
 
             if (abtnChoose != currentButton)
             {
-                doDeactiveButton(currentButton);
+                if (currentButton != null) doDeactiveButton(currentButton);
                 doActiveButton(abtnChoose);
                 currentButton = abtnChoose;
             }
@@ -133,7 +145,7 @@ namespace Banking
 
             if (abtnChoose != currentButton)
             {
-                doDeactiveButton(currentButton);
+                if (currentButton != null) doDeactiveButton(currentButton);
                 doActiveButton(abtnChoose);
                 currentButton = abtnChoose;
             }
@@ -145,7 +157,7 @@ namespace Banking
 
             if (abtnChoose != currentButton)
             {
-                doDeactiveButton(currentButton);
+                if (currentButton != null) doDeactiveButton(currentButton);
                 doActiveButton(abtnChoose);
                 currentButton = abtnChoose;
             }
@@ -157,13 +169,14 @@ namespace Banking
 
             if (abtnChoose != currentButton)
             {
-                doDeactiveButton(currentButton);
+                if (currentButton != null) doDeactiveButton(currentButton);
                 doActiveButton(abtnChoose);
                 currentButton = abtnChoose;
 
                 loadBody(new StatementUC());
             }
         }
+
         #endregion
 
         
