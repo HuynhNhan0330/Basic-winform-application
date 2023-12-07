@@ -83,6 +83,12 @@
     <Compile Include="Database\CustomerDB.cs" />
     <Compile Include="Database\NotificationDB.cs" />
     <Compile Include="Database\TransactionDetailDB.cs" />
+    <Compile Include="SaveUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SaveUC.Designer.cs">
+      <DependentUpon>SaveUC.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\Customer\TransferMoney\InTransferMoneyUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -162,6 +168,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AControls\ATextboxUC.resx">
       <DependentUpon>ATextboxUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SaveUC.resx">
+      <DependentUpon>SaveUC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Usercontrols\NotificationItemUC.resx">
       <DependentUpon>NotificationItemUC.cs</DependentUpon>
