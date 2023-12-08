@@ -32,6 +32,8 @@ namespace Banking
 
         private void OutTransferMoneyUC_Load(object sender, EventArgs e)
         {
+            cbBankName.SelectedIndex = 0;
+
             atxbAccountNumber.Texts = Helper.getCurrentCustomer().accountNumber;
             atxbAccountNumber.Enabled = false;
 
@@ -125,6 +127,20 @@ namespace Banking
             notificationCus.NotificationType = 0;
 
             NotificationDAL.Ins.createNotification(notificationCus);
+        }
+
+        private void cbBankName_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            reCustomer = OtherCustomerDAL.Ins.findOtherCustomer(atxbReAccountNumber.Texts.Trim(), cbBankName.Text);
+
+            if (reCustomer == null)
+                lbReName.Visible = false;
+            else
+            {
+                lbReName.Visible = true;
+                lbReName.Text = reCustomer.CustomerName;
+                lbReName.Left = this.Width - lbReName.Width - 35;
+            }
         }
     }
 }

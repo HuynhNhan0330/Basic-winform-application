@@ -52,6 +52,20 @@ namespace Banking.Database
                 CustomerName = "Tri Huyen",
                 accountNumber = "126126126"
             },
+            new OtherCustomer()
+            {
+                OtherCustomerID = "OC0005",
+                BankName = "MBbank",
+                CustomerName = "Tri Pham",
+                accountNumber = "127127127"
+            },
+            new OtherCustomer()
+            {
+                OtherCustomerID = "OC0006",
+                BankName = "TPbank",
+                CustomerName = "Tri Phy",
+                accountNumber = "128128128"
+            },
         };
 
         public ObservableCollection<OtherCustomer> getOtherCustomer()

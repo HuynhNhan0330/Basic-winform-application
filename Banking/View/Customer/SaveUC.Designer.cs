@@ -31,21 +31,21 @@
             this.label7 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.atxbMoney = new Banking.AControls.ATextboxUC();
-            this.label6 = new System.Windows.Forms.Label();
+            this.lbCurrentMoney = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.aPanel1 = new Banking.AControls.APanel();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cbTern = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.aTextboxUC1 = new Banking.AControls.ATextboxUC();
+            this.atxbAccountNumber = new Banking.AControls.ATextboxUC();
             this.panel3 = new System.Windows.Forms.Panel();
             this.aPanel2 = new Banking.AControls.APanel();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cbType = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.aButton1 = new Banking.AControls.AButton();
+            this.abtnDone = new Banking.AControls.AButton();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
             this.aPanel1.SuspendLayout();
@@ -78,7 +78,7 @@
             this.atxbMoney.BackColor = System.Drawing.Color.White;
             this.atxbMoney.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(180)))), ((int)(((byte)(110)))));
             this.atxbMoney.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(180)))), ((int)(((byte)(110)))));
-            this.atxbMoney.BorderRadius = 0;
+            this.atxbMoney.BorderRadius = 10;
             this.atxbMoney.BorderSize = 2;
             this.atxbMoney.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.atxbMoney.ForeColor = System.Drawing.Color.Black;
@@ -99,16 +99,17 @@
             this.atxbMoney.Texts = "";
             this.atxbMoney.UnderlinedStyle = false;
             // 
-            // label6
+            // lbCurrentMoney
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label6.ForeColor = System.Drawing.Color.DimGray;
-            this.label6.Location = new System.Drawing.Point(485, 140);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(59, 20);
-            this.label6.TabIndex = 17;
-            this.label6.Text = "1000 đ";
+            this.lbCurrentMoney.AutoSize = true;
+            this.lbCurrentMoney.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lbCurrentMoney.ForeColor = System.Drawing.Color.DimGray;
+            this.lbCurrentMoney.Location = new System.Drawing.Point(485, 140);
+            this.lbCurrentMoney.MaximumSize = new System.Drawing.Size(170, 0);
+            this.lbCurrentMoney.Name = "lbCurrentMoney";
+            this.lbCurrentMoney.Size = new System.Drawing.Size(59, 20);
+            this.lbCurrentMoney.TabIndex = 17;
+            this.lbCurrentMoney.Text = "1000 đ";
             // 
             // label5
             // 
@@ -145,9 +146,9 @@
             this.aPanel1.BackColor = System.Drawing.Color.White;
             this.aPanel1.BackgroundColor = System.Drawing.Color.White;
             this.aPanel1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(180)))), ((int)(((byte)(110)))));
-            this.aPanel1.BorderRadius = 0;
+            this.aPanel1.BorderRadius = 10;
             this.aPanel1.BorderSize = 2;
-            this.aPanel1.Controls.Add(this.comboBox1);
+            this.aPanel1.Controls.Add(this.cbTern);
             this.aPanel1.ForeColor = System.Drawing.Color.White;
             this.aPanel1.Location = new System.Drawing.Point(195, 0);
             this.aPanel1.Name = "aPanel1";
@@ -156,9 +157,9 @@
             this.aPanel1.TabIndex = 1;
             this.aPanel1.TextColor = System.Drawing.Color.White;
             // 
-            // comboBox1
+            // cbTern
             // 
-            this.comboBox1.AutoCompleteCustomSource.AddRange(new string[] {
+            this.cbTern.AutoCompleteCustomSource.AddRange(new string[] {
             "Không kỳ hạn - 0.10%,",
             "7 ngày            - 0.20%",
             "14 ngày          - 0.20%",
@@ -172,29 +173,29 @@
             "36 tháng        - 5.50%",
             "48 tháng        - 5.50%",
             "60 tháng        - 5.50%"});
-            this.comboBox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Không kỳ hạn - 0.10%,",
-            "7 ngày            - 0.20%",
-            "14 ngày          - 0.20%",
-            "1 tháng          - 3.10%",
-            "2 tháng          - 3.10%",
-            "3 tháng          - 3.40%",
-            "6 tháng          - 4.00%",
-            "9 tháng          - 4.00%",
-            "12 tháng        - 5.50%",
-            "24 tháng        - 5.50%",
-            "36 tháng        - 5.50%",
-            "48 tháng        - 5.50%",
-            "60 tháng        - 5.50%"});
-            this.comboBox1.Location = new System.Drawing.Point(3, 3);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(290, 28);
-            this.comboBox1.TabIndex = 7;
+            this.cbTern.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
+            this.cbTern.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbTern.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbTern.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.cbTern.FormattingEnabled = true;
+            this.cbTern.Items.AddRange(new object[] {
+            "Không kỳ hạn - 0.10%",
+            "7 ngày - 0.20%",
+            "14 ngày - 0.20%",
+            "1 tháng - 3.10%",
+            "2 tháng - 3.10%",
+            "3 tháng - 3.40%",
+            "6 tháng - 4.00%",
+            "9 tháng - 4.00%",
+            "12 tháng - 5.50%",
+            "24 tháng - 5.50%",
+            "36 tháng - 5.50%",
+            "48 tháng - 5.50%",
+            "60 tháng - 5.50%"});
+            this.cbTern.Location = new System.Drawing.Point(16, 4);
+            this.cbTern.Name = "cbTern";
+            this.cbTern.Size = new System.Drawing.Size(277, 28);
+            this.cbTern.TabIndex = 7;
             // 
             // label2
             // 
@@ -219,38 +220,38 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.aTextboxUC1);
+            this.panel1.Controls.Add(this.atxbAccountNumber);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(50, 100);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(496, 37);
             this.panel1.TabIndex = 12;
             // 
-            // aTextboxUC1
+            // atxbAccountNumber
             // 
-            this.aTextboxUC1.BackColor = System.Drawing.Color.White;
-            this.aTextboxUC1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(180)))), ((int)(((byte)(110)))));
-            this.aTextboxUC1.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(180)))), ((int)(((byte)(110)))));
-            this.aTextboxUC1.BorderRadius = 0;
-            this.aTextboxUC1.BorderSize = 2;
-            this.aTextboxUC1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.aTextboxUC1.ForeColor = System.Drawing.Color.Black;
-            this.aTextboxUC1.isFocused = false;
-            this.aTextboxUC1.isPlaceholder = false;
-            this.aTextboxUC1.Location = new System.Drawing.Point(195, 0);
-            this.aTextboxUC1.Margin = new System.Windows.Forms.Padding(4);
-            this.aTextboxUC1.Multiline = false;
-            this.aTextboxUC1.Name = "aTextboxUC1";
-            this.aTextboxUC1.Padding = new System.Windows.Forms.Padding(7);
-            this.aTextboxUC1.PasswordChar = false;
-            this.aTextboxUC1.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.aTextboxUC1.PlaceholderText = "";
-            this.aTextboxUC1.RoundType = Banking.AControls.ATextboxUC.RoundStyles.Full;
-            this.aTextboxUC1.Size = new System.Drawing.Size(300, 35);
-            this.aTextboxUC1.TabIndex = 1;
-            this.aTextboxUC1.textAlign = Banking.AControls.ATextboxUC.TextAlign.Left;
-            this.aTextboxUC1.Texts = "";
-            this.aTextboxUC1.UnderlinedStyle = false;
+            this.atxbAccountNumber.BackColor = System.Drawing.Color.White;
+            this.atxbAccountNumber.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(180)))), ((int)(((byte)(110)))));
+            this.atxbAccountNumber.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(180)))), ((int)(((byte)(110)))));
+            this.atxbAccountNumber.BorderRadius = 10;
+            this.atxbAccountNumber.BorderSize = 2;
+            this.atxbAccountNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.atxbAccountNumber.ForeColor = System.Drawing.Color.Black;
+            this.atxbAccountNumber.isFocused = false;
+            this.atxbAccountNumber.isPlaceholder = false;
+            this.atxbAccountNumber.Location = new System.Drawing.Point(195, 0);
+            this.atxbAccountNumber.Margin = new System.Windows.Forms.Padding(4);
+            this.atxbAccountNumber.Multiline = false;
+            this.atxbAccountNumber.Name = "atxbAccountNumber";
+            this.atxbAccountNumber.Padding = new System.Windows.Forms.Padding(7);
+            this.atxbAccountNumber.PasswordChar = false;
+            this.atxbAccountNumber.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.atxbAccountNumber.PlaceholderText = "";
+            this.atxbAccountNumber.RoundType = Banking.AControls.ATextboxUC.RoundStyles.Full;
+            this.atxbAccountNumber.Size = new System.Drawing.Size(300, 35);
+            this.atxbAccountNumber.TabIndex = 1;
+            this.atxbAccountNumber.textAlign = Banking.AControls.ATextboxUC.TextAlign.Left;
+            this.atxbAccountNumber.Texts = "";
+            this.atxbAccountNumber.UnderlinedStyle = false;
             // 
             // panel3
             // 
@@ -266,9 +267,9 @@
             this.aPanel2.BackColor = System.Drawing.Color.White;
             this.aPanel2.BackgroundColor = System.Drawing.Color.White;
             this.aPanel2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(180)))), ((int)(((byte)(110)))));
-            this.aPanel2.BorderRadius = 0;
+            this.aPanel2.BorderRadius = 10;
             this.aPanel2.BorderSize = 2;
-            this.aPanel2.Controls.Add(this.comboBox2);
+            this.aPanel2.Controls.Add(this.cbType);
             this.aPanel2.ForeColor = System.Drawing.Color.White;
             this.aPanel2.Location = new System.Drawing.Point(195, 0);
             this.aPanel2.Name = "aPanel2";
@@ -277,15 +278,19 @@
             this.aPanel2.TabIndex = 1;
             this.aPanel2.TextColor = System.Drawing.Color.White;
             // 
-            // comboBox2
+            // cbType
             // 
-            this.comboBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(3, 3);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(290, 28);
-            this.comboBox2.TabIndex = 7;
+            this.cbType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbType.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbType.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.cbType.FormattingEnabled = true;
+            this.cbType.Items.AddRange(new object[] {
+            "Lãi vào tài khoản nguồn",
+            "Lãi vào sổ tiết kiệm"});
+            this.cbType.Location = new System.Drawing.Point(16, 4);
+            this.cbType.Name = "cbType";
+            this.cbType.Size = new System.Drawing.Size(277, 28);
+            this.cbType.TabIndex = 7;
             // 
             // label4
             // 
@@ -297,27 +302,28 @@
             this.label4.TabIndex = 0;
             this.label4.Text = "Chọn hình thức gửi";
             // 
-            // aButton1
+            // abtnDone
             // 
-            this.aButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(208)))), ((int)(((byte)(128)))));
-            this.aButton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(208)))), ((int)(((byte)(128)))));
-            this.aButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.aButton1.BorderRadius = 20;
-            this.aButton1.BorderSize = 0;
-            this.aButton1.FlatAppearance.BorderSize = 0;
-            this.aButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.aButton1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.aButton1.ForeColor = System.Drawing.Color.White;
-            this.aButton1.LineType = Banking.AControls.AButton.LineStyles.None;
-            this.aButton1.Location = new System.Drawing.Point(75, 521);
-            this.aButton1.Name = "aButton1";
-            this.aButton1.RoundType = Banking.AControls.AButton.RoundStyles.Full;
-            this.aButton1.Size = new System.Drawing.Size(446, 50);
-            this.aButton1.TabIndex = 21;
-            this.aButton1.Text = "Hoàn tất";
-            this.aButton1.TextColor = System.Drawing.Color.White;
-            this.aButton1.ThinknessLine = 0;
-            this.aButton1.UseVisualStyleBackColor = false;
+            this.abtnDone.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(208)))), ((int)(((byte)(128)))));
+            this.abtnDone.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(208)))), ((int)(((byte)(128)))));
+            this.abtnDone.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.abtnDone.BorderRadius = 20;
+            this.abtnDone.BorderSize = 0;
+            this.abtnDone.FlatAppearance.BorderSize = 0;
+            this.abtnDone.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.abtnDone.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.abtnDone.ForeColor = System.Drawing.Color.White;
+            this.abtnDone.LineType = Banking.AControls.AButton.LineStyles.None;
+            this.abtnDone.Location = new System.Drawing.Point(75, 521);
+            this.abtnDone.Name = "abtnDone";
+            this.abtnDone.RoundType = Banking.AControls.AButton.RoundStyles.Full;
+            this.abtnDone.Size = new System.Drawing.Size(446, 50);
+            this.abtnDone.TabIndex = 21;
+            this.abtnDone.Text = "Hoàn tất";
+            this.abtnDone.TextColor = System.Drawing.Color.White;
+            this.abtnDone.ThinknessLine = 0;
+            this.abtnDone.UseVisualStyleBackColor = false;
+            this.abtnDone.Click += new System.EventHandler(this.abtnDone_Click);
             // 
             // SaveUC
             // 
@@ -325,9 +331,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.panel3);
-            this.Controls.Add(this.aButton1);
+            this.Controls.Add(this.abtnDone);
             this.Controls.Add(this.panel4);
-            this.Controls.Add(this.label6);
+            this.Controls.Add(this.lbCurrentMoney);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.label2);
@@ -352,23 +358,23 @@
 
         #endregion
 
-        private AControls.AButton aButton1;
+        private AControls.AButton abtnDone;
         private AControls.ATextboxUC atxbMoney;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lbCurrentMoney;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbTern;
         private AControls.APanel aPanel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label2;
-        private AControls.ATextboxUC aTextboxUC1;
+        private AControls.ATextboxUC atxbAccountNumber;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel3;
         private AControls.APanel aPanel2;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cbType;
         private System.Windows.Forms.Label label4;
     }
 }

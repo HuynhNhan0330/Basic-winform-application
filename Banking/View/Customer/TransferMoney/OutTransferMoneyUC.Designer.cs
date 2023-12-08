@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pibReturn = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.atxbAccountNumber = new Banking.AControls.ATextboxUC();
             this.label1 = new System.Windows.Forms.Label();
@@ -50,26 +49,15 @@
             this.atxbNote = new Banking.AControls.ATextboxUC();
             this.label9 = new System.Windows.Forms.Label();
             this.abtnDone = new Banking.AControls.AButton();
-            ((System.ComponentModel.ISupportInitialize)(this.pibReturn)).BeginInit();
+            this.pibReturn = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.aPanel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pibReturn)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pibReturn
-            // 
-            this.pibReturn.BackgroundImage = global::Banking.Properties.Resources._return;
-            this.pibReturn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pibReturn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pibReturn.Location = new System.Drawing.Point(25, 25);
-            this.pibReturn.Name = "pibReturn";
-            this.pibReturn.Size = new System.Drawing.Size(32, 32);
-            this.pibReturn.TabIndex = 0;
-            this.pibReturn.TabStop = false;
-            this.pibReturn.Click += new System.EventHandler(this.pibReturn_Click);
             // 
             // panel1
             // 
@@ -154,17 +142,21 @@
             // 
             // cbBankName
             // 
+            this.cbBankName.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbBankName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbBankName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.cbBankName.FormattingEnabled = true;
             this.cbBankName.Items.AddRange(new object[] {
             "Vietcomebank",
             "Viettinbank",
-            "Abbank"});
+            "Abbank",
+            "MBbank",
+            "TPbank"});
             this.cbBankName.Location = new System.Drawing.Point(16, 4);
             this.cbBankName.Name = "cbBankName";
             this.cbBankName.Size = new System.Drawing.Size(277, 28);
             this.cbBankName.TabIndex = 7;
+            this.cbBankName.SelectedIndexChanged += new System.EventHandler(this.cbBankName_SelectedIndexChanged);
             // 
             // label3
             // 
@@ -239,6 +231,7 @@
             this.lbCurrentMoney.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.lbCurrentMoney.ForeColor = System.Drawing.Color.DimGray;
             this.lbCurrentMoney.Location = new System.Drawing.Point(485, 140);
+            this.lbCurrentMoney.MaximumSize = new System.Drawing.Size(170, 0);
             this.lbCurrentMoney.Name = "lbCurrentMoney";
             this.lbCurrentMoney.Size = new System.Drawing.Size(59, 20);
             this.lbCurrentMoney.TabIndex = 6;
@@ -368,6 +361,18 @@
             this.abtnDone.UseVisualStyleBackColor = false;
             this.abtnDone.Click += new System.EventHandler(this.abtnDone_Click);
             // 
+            // pibReturn
+            // 
+            this.pibReturn.BackgroundImage = global::Banking.Properties.Resources._return;
+            this.pibReturn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pibReturn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pibReturn.Location = new System.Drawing.Point(25, 25);
+            this.pibReturn.Name = "pibReturn";
+            this.pibReturn.Size = new System.Drawing.Size(32, 32);
+            this.pibReturn.TabIndex = 0;
+            this.pibReturn.TabStop = false;
+            this.pibReturn.Click += new System.EventHandler(this.pibReturn_Click);
+            // 
             // OutTransferMoneyUC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -387,7 +392,6 @@
             this.Name = "OutTransferMoneyUC";
             this.Size = new System.Drawing.Size(596, 605);
             this.Load += new System.EventHandler(this.OutTransferMoneyUC_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pibReturn)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -399,6 +403,7 @@
             this.panel4.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pibReturn)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -183,7 +183,7 @@
             this.lbCurrentMoney.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.lbCurrentMoney.ForeColor = System.Drawing.Color.DimGray;
             this.lbCurrentMoney.Location = new System.Drawing.Point(485, 140);
-            this.lbCurrentMoney.MaximumSize = new System.Drawing.Size(160, 0);
+            this.lbCurrentMoney.MaximumSize = new System.Drawing.Size(170, 0);
             this.lbCurrentMoney.Name = "lbCurrentMoney";
             this.lbCurrentMoney.Size = new System.Drawing.Size(59, 20);
             this.lbCurrentMoney.TabIndex = 17;

@@ -80,12 +80,27 @@
     <Compile Include="DALs\CustomerDAL.cs" />
     <Compile Include="DALs\NotificationDAL.cs" />
     <Compile Include="DALs\OtherCustomerDAL.cs" />
+    <Compile Include="DALs\SaveBookDAL.cs" />
     <Compile Include="DALs\TransactionDetailDAL.cs" />
     <Compile Include="Database\CustomerDB.cs" />
     <Compile Include="Database\NotificationDB.cs" />
     <Compile Include="Database\OtherCustomerDB.cs" />
+    <Compile Include="Database\SaveBookDB.cs" />
     <Compile Include="Database\TransactionDetailDB.cs" />
+    <Compile Include="Usercontrols\SaveBookItemUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Usercontrols\SaveBookItemUC.Designer.cs">
+      <DependentUpon>SaveBookItemUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Customer\Home\HomeUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Customer\Home\HomeUC.Designer.cs">
+      <DependentUpon>HomeUC.cs</DependentUpon>
+    </Compile>
     <Compile Include="Model\OtherCustomer.cs" />
+    <Compile Include="Model\SaveBook.cs" />
     <Compile Include="View\Customer\SaveUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -177,6 +192,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AControls\ATextboxUC.resx">
       <DependentUpon>ATextboxUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usercontrols\SaveBookItemUC.resx">
+      <DependentUpon>SaveBookItemUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Customer\Home\HomeUC.resx">
+      <DependentUpon>HomeUC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Customer\SaveUC.resx">
       <DependentUpon>SaveUC.cs</DependentUpon>
@@ -337,6 +358,7 @@
     <None Include="Resources\fileActive.png" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Image\" />
     <Folder Include="Service\" />
   </ItemGroup>
   <ItemGroup>
@@ -355,6 +377,8 @@
     <None Include="Resources\return.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Avatar.png" />
+    <None Include="Resources\wallet.png" />
     <Content Include="Utils\SaveUsername.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

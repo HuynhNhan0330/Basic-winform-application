@@ -43,6 +43,7 @@ namespace Banking
         private void FormMainCustomerWindown_Load(object sender, EventArgs e)
         {
             currentButton = abtnHome;
+            loadBody(new HomeUC());
             checkNotifinotion();
         }
         #endregion
@@ -153,6 +154,8 @@ namespace Banking
                 if (currentButton != null) doDeactiveButton(currentButton);
                 doActiveButton(abtnChoose);
                 currentButton = abtnChoose;
+
+                loadBody(new HomeUC());
             }
         }
 
