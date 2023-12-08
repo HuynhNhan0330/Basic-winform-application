@@ -56,5 +56,11 @@ namespace Banking
                 uc.SendToBack();
             }
         }
+
+        private void lbDetailaAccount_Click(object sender, EventArgs e)
+        {
+            FormMainCustomerWindown form = Application.OpenForms.OfType<FormMainCustomerWindown>().FirstOrDefault();
+            form.addBody(new AccountDetailUC());
+        }
     }
 }

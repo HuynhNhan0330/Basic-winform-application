@@ -78,6 +78,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="View\Customer\Home\AccountDetailUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Customer\Home\AccountDetailUC.Designer.cs">
+      <DependentUpon>AccountDetailUC.cs</DependentUpon>
+    </Compile>
     <Compile Include="AControls\AButton.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -233,6 +239,9 @@
     <Compile Include="View\Login\RegisterUC.Designer.cs">
       <DependentUpon>RegisterUC.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="View\Customer\Home\AccountDetailUC.resx">
+      <DependentUpon>AccountDetailUC.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AControls\AMessageBoxFrm.resx">
       <DependentUpon>AMessageBoxFrm.cs</DependentUpon>
     </EmbeddedResource>
@@ -439,6 +448,7 @@
     <None Include="Resources\checked.png" />
     <None Include="Resources\house-black-silhouette-without-door.png" />
     <None Include="Resources\house.png" />
+    <None Include="Resources\changes.png" />
     <Content Include="Utils\SaveUsername.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

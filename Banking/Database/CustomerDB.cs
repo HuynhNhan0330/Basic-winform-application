@@ -36,6 +36,7 @@ namespace Banking.Database
                 accountNumber = "123456789",
                 currentMoney = 999999999999,
                 Avatar = @"../../Image/Avatar.png",
+                Gender = true,
                 Created = DateTime.Now
             },
             new Customer()
@@ -49,6 +50,7 @@ namespace Banking.Database
                 accountNumber = "111111111",
                 currentMoney = 10000000,
                 Avatar = @"../../Image/Avatar.png",
+                Gender = true,
                 Created = DateTime.Now
             },
             new Customer()
@@ -62,6 +64,7 @@ namespace Banking.Database
                 accountNumber = "111111112",
                 currentMoney = 10000000,
                 Avatar = @"../../Image/Avatar.png",
+                Gender = true,
                 Created = DateTime.Now
             },
             new Customer()
@@ -75,6 +78,7 @@ namespace Banking.Database
                 accountNumber = "111111113",
                 currentMoney = 10000000,
                 Avatar = @"../../Image/Avatar.png",
+                Gender = true,
                 Created = DateTime.Now
             },
             new Customer()
@@ -88,6 +92,7 @@ namespace Banking.Database
                 accountNumber = "111111114",
                 currentMoney = 10000000,
                 Avatar = @"../../Image/Avatar.png",
+                Gender = true,
                 Created = DateTime.Now
             }
         };

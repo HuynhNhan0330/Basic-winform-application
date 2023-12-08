@@ -79,10 +79,10 @@
             // lbName
             // 
             this.lbName.AutoSize = true;
-            this.lbName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lbName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.lbName.Location = new System.Drawing.Point(498, 25);
             this.lbName.Name = "lbName";
-            this.lbName.Size = new System.Drawing.Size(66, 20);
+            this.lbName.Size = new System.Drawing.Size(79, 25);
             this.lbName.TabIndex = 1;
             this.lbName.Text = "lbName";
             // 
@@ -109,10 +109,10 @@
             // lbAccountNumber
             // 
             this.lbAccountNumber.AutoSize = true;
-            this.lbAccountNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lbAccountNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.lbAccountNumber.Location = new System.Drawing.Point(498, 15);
             this.lbAccountNumber.Name = "lbAccountNumber";
-            this.lbAccountNumber.Size = new System.Drawing.Size(53, 20);
+            this.lbAccountNumber.Size = new System.Drawing.Size(64, 25);
             this.lbAccountNumber.TabIndex = 1;
             this.lbAccountNumber.Text = "label5";
             // 
@@ -182,10 +182,10 @@
             // lbType
             // 
             this.lbType.AutoSize = true;
-            this.lbType.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lbType.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.lbType.Location = new System.Drawing.Point(498, 15);
             this.lbType.Name = "lbType";
-            this.lbType.Size = new System.Drawing.Size(53, 20);
+            this.lbType.Size = new System.Drawing.Size(64, 25);
             this.lbType.TabIndex = 1;
             this.lbType.Text = "label7";
             // 
@@ -212,10 +212,10 @@
             // lbTern
             // 
             this.lbTern.AutoSize = true;
-            this.lbTern.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lbTern.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.lbTern.Location = new System.Drawing.Point(498, 15);
             this.lbTern.Name = "lbTern";
-            this.lbTern.Size = new System.Drawing.Size(53, 20);
+            this.lbTern.Size = new System.Drawing.Size(64, 25);
             this.lbTern.TabIndex = 1;
             this.lbTern.Text = "label7";
             // 

@@ -71,6 +71,7 @@
             this.lbDetailaAccount.Size = new System.Drawing.Size(98, 20);
             this.lbDetailaAccount.TabIndex = 4;
             this.lbDetailaAccount.Text = "Xem chi tiết";
+            this.lbDetailaAccount.Click += new System.EventHandler(this.lbDetailaAccount_Click);
             // 
             // lbAccountName
             // 

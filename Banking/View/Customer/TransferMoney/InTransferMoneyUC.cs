@@ -33,7 +33,6 @@ namespace Banking
         private void pibReturn_Click(object sender, EventArgs e)
         {
             FormMainCustomerWindown form = Application.OpenForms.OfType<FormMainCustomerWindown>().FirstOrDefault();
-
             form.removeBody(this);
         }
 

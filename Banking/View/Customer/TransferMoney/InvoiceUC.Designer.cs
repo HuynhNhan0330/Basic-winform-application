@@ -111,11 +111,11 @@
             // lbNote
             // 
             this.lbNote.AutoSize = true;
-            this.lbNote.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lbNote.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.lbNote.Location = new System.Drawing.Point(498, 20);
             this.lbNote.MaximumSize = new System.Drawing.Size(250, 0);
             this.lbNote.Name = "lbNote";
-            this.lbNote.Size = new System.Drawing.Size(53, 20);
+            this.lbNote.Size = new System.Drawing.Size(64, 25);
             this.lbNote.TabIndex = 1;
             this.lbNote.Text = "label9";
             // 
@@ -142,10 +142,10 @@
             // lbBankName
             // 
             this.lbBankName.AutoSize = true;
-            this.lbBankName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lbBankName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.lbBankName.Location = new System.Drawing.Point(498, 15);
             this.lbBankName.Name = "lbBankName";
-            this.lbBankName.Size = new System.Drawing.Size(53, 20);
+            this.lbBankName.Size = new System.Drawing.Size(64, 25);
             this.lbBankName.TabIndex = 1;
             this.lbBankName.Text = "label7";
             // 
@@ -172,10 +172,10 @@
             // lbAccountNumber
             // 
             this.lbAccountNumber.AutoSize = true;
-            this.lbAccountNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lbAccountNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.lbAccountNumber.Location = new System.Drawing.Point(498, 15);
             this.lbAccountNumber.Name = "lbAccountNumber";
-            this.lbAccountNumber.Size = new System.Drawing.Size(53, 20);
+            this.lbAccountNumber.Size = new System.Drawing.Size(64, 25);
             this.lbAccountNumber.TabIndex = 1;
             this.lbAccountNumber.Text = "label5";
             // 
@@ -202,10 +202,10 @@
             // lbName
             // 
             this.lbName.AutoSize = true;
-            this.lbName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lbName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.lbName.Location = new System.Drawing.Point(498, 25);
             this.lbName.Name = "lbName";
-            this.lbName.Size = new System.Drawing.Size(66, 20);
+            this.lbName.Size = new System.Drawing.Size(79, 25);
             this.lbName.TabIndex = 1;
             this.lbName.Text = "lbName";
             // 
