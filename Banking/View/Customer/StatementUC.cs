@@ -14,6 +14,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.DataVisualization.Charting;
 
 namespace Banking
 {
@@ -91,12 +92,11 @@ namespace Banking
             currentButton = abtnAll;
             loadData();
             loadPanelData();
+            loadChart();
         }
 
         private void loadData(int type = 0)
         {
-            
-
             switch (type)
             {
                 case 0:
@@ -142,7 +142,6 @@ namespace Banking
                     break;
             }
 
-            
         }
 
         private void loadPanelData()
@@ -183,7 +182,34 @@ namespace Banking
                 currentButton = abtnAll;
 
                 loadPanelData();
+                loadChart();
             }
+        }
+
+        private void loadChart()
+        {
+            decimal inMoney = 0;
+            decimal outMoney = 0;
+
+            foreach (TransactionDetail td in transactionDetails)
+            {
+                if (td.TransactionDetailType == 1)
+                    inMoney += td.Value;
+                else
+                    outMoney += td.Value;
+            }
+
+            KeyValuePair<string, decimal>[] data = new KeyValuePair<string, decimal>[]
+            {
+                new KeyValuePair<string, decimal>("Tiền vào", inMoney),
+                new KeyValuePair<string, decimal>("Tiền ra", outMoney),
+            };
+
+            chart.DataSource = data;
+            chart.Series[0].XValueMember = "Key";
+            chart.Series[0].YValueMembers = "Value";
+            chart.DataBind();
+            chart.Update();
         }
     }
 }

@@ -28,6 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
             this.pnMain = new System.Windows.Forms.Panel();
             this.abtnIn = new Banking.AControls.AButton();
             this.abtnOut = new Banking.AControls.AButton();
@@ -35,14 +39,16 @@
             this.abtnSearch = new Banking.AControls.AButton();
             this.adpTo = new Banking.AControls.ADateTimePicker();
             this.adpFrom = new Banking.AControls.ADateTimePicker();
+            this.chart = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            ((System.ComponentModel.ISupportInitialize)(this.chart)).BeginInit();
             this.SuspendLayout();
             // 
             // pnMain
             // 
             this.pnMain.AutoScroll = true;
-            this.pnMain.Location = new System.Drawing.Point(50, 139);
+            this.pnMain.Location = new System.Drawing.Point(50, 380);
             this.pnMain.Name = "pnMain";
-            this.pnMain.Size = new System.Drawing.Size(496, 441);
+            this.pnMain.Size = new System.Drawing.Size(496, 200);
             this.pnMain.TabIndex = 2;
             // 
             // abtnIn
@@ -57,7 +63,7 @@
             this.abtnIn.Font = new System.Drawing.Font("Arial", 9.5F);
             this.abtnIn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
             this.abtnIn.LineType = Banking.AControls.AButton.LineStyles.None;
-            this.abtnIn.Location = new System.Drawing.Point(396, 80);
+            this.abtnIn.Location = new System.Drawing.Point(396, 320);
             this.abtnIn.Name = "abtnIn";
             this.abtnIn.RoundType = Banking.AControls.AButton.RoundStyles.Full;
             this.abtnIn.Size = new System.Drawing.Size(150, 35);
@@ -80,7 +86,7 @@
             this.abtnOut.Font = new System.Drawing.Font("Arial", 9.5F);
             this.abtnOut.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
             this.abtnOut.LineType = Banking.AControls.AButton.LineStyles.None;
-            this.abtnOut.Location = new System.Drawing.Point(225, 80);
+            this.abtnOut.Location = new System.Drawing.Point(225, 320);
             this.abtnOut.Name = "abtnOut";
             this.abtnOut.RoundType = Banking.AControls.AButton.RoundStyles.Full;
             this.abtnOut.Size = new System.Drawing.Size(150, 35);
@@ -103,7 +109,7 @@
             this.abtnAll.Font = new System.Drawing.Font("Arial", 9.5F);
             this.abtnAll.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(93)))), ((int)(((byte)(56)))));
             this.abtnAll.LineType = Banking.AControls.AButton.LineStyles.Bottom;
-            this.abtnAll.Location = new System.Drawing.Point(50, 80);
+            this.abtnAll.Location = new System.Drawing.Point(50, 320);
             this.abtnAll.Name = "abtnAll";
             this.abtnAll.RoundType = Banking.AControls.AButton.RoundStyles.Full;
             this.abtnAll.Size = new System.Drawing.Size(150, 35);
@@ -126,7 +132,7 @@
             this.abtnSearch.Font = new System.Drawing.Font("Arial", 9.5F);
             this.abtnSearch.ForeColor = System.Drawing.Color.White;
             this.abtnSearch.LineType = Banking.AControls.AButton.LineStyles.None;
-            this.abtnSearch.Location = new System.Drawing.Point(426, 25);
+            this.abtnSearch.Location = new System.Drawing.Point(426, 26);
             this.abtnSearch.Name = "abtnSearch";
             this.abtnSearch.RoundType = Banking.AControls.AButton.RoundStyles.Full;
             this.abtnSearch.Size = new System.Drawing.Size(120, 45);
@@ -144,7 +150,7 @@
             this.adpTo.CustomFormat = "dd/MM/yyyy";
             this.adpTo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F);
             this.adpTo.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.adpTo.Location = new System.Drawing.Point(225, 25);
+            this.adpTo.Location = new System.Drawing.Point(225, 26);
             this.adpTo.MinimumSize = new System.Drawing.Size(4, 35);
             this.adpTo.Name = "adpTo";
             this.adpTo.Size = new System.Drawing.Size(150, 35);
@@ -159,7 +165,7 @@
             this.adpFrom.CustomFormat = "dd/MM/yyyy";
             this.adpFrom.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F);
             this.adpFrom.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.adpFrom.Location = new System.Drawing.Point(50, 25);
+            this.adpFrom.Location = new System.Drawing.Point(50, 26);
             this.adpFrom.MinimumSize = new System.Drawing.Size(4, 35);
             this.adpFrom.Name = "adpFrom";
             this.adpFrom.Size = new System.Drawing.Size(150, 35);
@@ -167,11 +173,39 @@
             this.adpFrom.TabIndex = 0;
             this.adpFrom.TextColor = System.Drawing.Color.Black;
             // 
+            // chart
+            // 
+            chartArea1.Name = "ChartArea1";
+            this.chart.ChartAreas.Add(chartArea1);
+            legend1.BorderWidth = 5;
+            legend1.Name = "Legend1";
+            this.chart.Legends.Add(legend1);
+            this.chart.Location = new System.Drawing.Point(50, 90);
+            this.chart.Name = "chart";
+            series1.BackSecondaryColor = System.Drawing.Color.White;
+            series1.BorderColor = System.Drawing.Color.White;
+            series1.BorderWidth = 5;
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
+            series1.Color = System.Drawing.Color.White;
+            series1.IsValueShownAsLabel = true;
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chart.Series.Add(series1);
+            this.chart.Size = new System.Drawing.Size(496, 200);
+            this.chart.TabIndex = 8;
+            this.chart.Text = "chart";
+            title1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            title1.Name = "Title1";
+            title1.Text = "Biểu đồ tròn chi tiêu";
+            this.chart.Titles.Add(title1);
+            // 
             // StatementUC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.chart);
             this.Controls.Add(this.abtnIn);
             this.Controls.Add(this.abtnOut);
             this.Controls.Add(this.abtnAll);
@@ -182,6 +216,7 @@
             this.Name = "StatementUC";
             this.Size = new System.Drawing.Size(596, 605);
             this.Load += new System.EventHandler(this.StatementUC_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.chart)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -195,5 +230,6 @@
         private AControls.AButton abtnAll;
         private AControls.AButton abtnOut;
         private AControls.AButton abtnIn;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart;
     }
 }

@@ -74,6 +74,8 @@ namespace Banking
 
                     createNotification(saveBook);
                     form.checkNotifinotion();
+
+                    createTransactionDetail(saveBook);
                 }
             }
         }
@@ -89,6 +91,18 @@ namespace Banking
             notificationCus.NotificationType = 0;
 
             NotificationDAL.Ins.createNotification(notificationCus);
+        }
+
+        private void createTransactionDetail(SaveBook saveBook)
+        {
+            TransactionDetail transactionDetail = new TransactionDetail();
+            transactionDetail.CustomerID = Helper.getCurrentCustomer().CustomerID;
+            transactionDetail.Note = "Tạo ví tiết kiệm";
+            transactionDetail.Created = DateTime.Now;
+            transactionDetail.Value = saveBook.Money;
+            transactionDetail.CurrentMoney = Helper.getCurrentCustomer().currentMoney;
+
+            TransactionDetailDAL.Ins.createTransactionDetail(transactionDetail);
         }
     }
 }
