@@ -182,6 +182,8 @@ namespace Banking
                 if (currentButton != null) doDeactiveButton(currentButton);
                 doActiveButton(abtnChoose);
                 currentButton = abtnChoose;
+
+                loadBody(new QRcodeUC());
             }
         }
 

@@ -28,21 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pibQRcode = new System.Windows.Forms.PictureBox();
             this.abtnOut = new Banking.AControls.AButton();
             this.aButton1 = new Banking.AControls.AButton();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pibQRcode)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // pibQRcode
             // 
-            this.pictureBox1.BackgroundImage = global::Banking.Properties.Resources.Finance_Customizable_Isometric_Illustrations___Amico_Style;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(50, 219);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(496, 361);
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
+            this.pibQRcode.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pibQRcode.Location = new System.Drawing.Point(117, 219);
+            this.pibQRcode.Name = "pibQRcode";
+            this.pibQRcode.Size = new System.Drawing.Size(361, 361);
+            this.pibQRcode.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pibQRcode.TabIndex = 2;
+            this.pibQRcode.TabStop = false;
             // 
             // abtnOut
             // 
@@ -97,12 +97,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pibQRcode);
             this.Controls.Add(this.abtnOut);
             this.Controls.Add(this.aButton1);
             this.Name = "TransferMoneyUC";
             this.Size = new System.Drawing.Size(596, 605);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.Load += new System.EventHandler(this.TransferMoneyUC_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pibQRcode)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -111,6 +112,6 @@
 
         private AControls.AButton aButton1;
         private AControls.AButton abtnOut;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pibQRcode;
     }
 }

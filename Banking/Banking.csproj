@@ -33,8 +33,29 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AForge.Video">
+      <HintPath>C:\Users\tinho\Downloads\drive-download-20231208T013003Z-001\AForge.Video.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video.DirectShow">
+      <HintPath>C:\Users\tinho\Downloads\drive-download-20231208T013003Z-001\AForge.Video.DirectShow.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.CV">
+      <HintPath>C:\Users\tinho\Downloads\drive-download-20231208T013003Z-001\Emgu.CV.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.CV.ML">
+      <HintPath>C:\Users\tinho\Downloads\drive-download-20231208T013003Z-001\Emgu.CV.ML.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.CV.UI">
+      <HintPath>C:\Users\tinho\Downloads\drive-download-20231208T013003Z-001\Emgu.CV.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.Util">
+      <HintPath>C:\Users\tinho\Downloads\drive-download-20231208T013003Z-001\Emgu.Util.dll</HintPath>
+    </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
+    <Reference Include="QRCoder">
+      <HintPath>C:\Users\tinho\Downloads\drive-download-20231208T011439Z-001\QRCoder.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xaml" />
@@ -87,6 +108,12 @@
     <Compile Include="Database\OtherCustomerDB.cs" />
     <Compile Include="Database\SaveBookDB.cs" />
     <Compile Include="Database\TransactionDetailDB.cs" />
+    <Compile Include="QRcodeUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="QRcodeUC.Designer.cs">
+      <DependentUpon>QRcodeUC.cs</DependentUpon>
+    </Compile>
     <Compile Include="Usercontrols\SaveBookItemUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -192,6 +219,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AControls\ATextboxUC.resx">
       <DependentUpon>ATextboxUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QRcodeUC.resx">
+      <DependentUpon>QRcodeUC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Usercontrols\SaveBookItemUC.resx">
       <DependentUpon>SaveBookItemUC.cs</DependentUpon>
