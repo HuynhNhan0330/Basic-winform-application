@@ -215,8 +215,15 @@ namespace Banking
             }
         }
 
-        #endregion
+        public void loadHome()
+        {
+            if (currentButton != null) doDeactiveButton(currentButton);
+            doActiveButton(abtnHome);
+            currentButton = abtnHome;
 
-        
+            loadBody(new HomeUC());
+        }
+
+        #endregion
     }
 }

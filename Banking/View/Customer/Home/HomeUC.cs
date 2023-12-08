@@ -29,6 +29,7 @@ namespace Banking
             lbName.Text = customer.CustomerName;
             lbAccountName.Text = customer.accountNumber;
             lbMoney.Text = Helper.FormatVNMoney(customer.currentMoney);
+            pibAvatar.Image = Helper.loadImagePath(customer.Avatar);
 
             loadPanelSaveBook();
         }

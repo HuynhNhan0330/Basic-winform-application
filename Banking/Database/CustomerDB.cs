@@ -34,7 +34,9 @@ namespace Banking.Database
                 Email = "admin",
                 Password = "admin",
                 accountNumber = "123456789",
-                currentMoney = 999999999999
+                currentMoney = 999999999999,
+                Avatar = @"../../Image/Avatar.png",
+                Created = DateTime.Now
             },
             new Customer()
             {
@@ -45,7 +47,48 @@ namespace Banking.Database
                 Email = "tinhoctrevnnhan@gmail.com",
                 Password = "admin",
                 accountNumber = "111111111",
-                currentMoney = 10000000
+                currentMoney = 10000000,
+                Avatar = @"../../Image/Avatar.png",
+                Created = DateTime.Now
+            },
+            new Customer()
+            {
+                CustomerID = "KH0003",
+                CustomerName = "Huynh",
+                PhoneNumber = "0123456788",
+                Birthday = DateTime.Now,
+                Email = "a@gmail.com",
+                Password = "admin",
+                accountNumber = "111111112",
+                currentMoney = 10000000,
+                Avatar = @"../../Image/Avatar.png",
+                Created = DateTime.Now
+            },
+            new Customer()
+            {
+                CustomerID = "KH0004",
+                CustomerName = "Mai",
+                PhoneNumber = "0123456787",
+                Birthday = DateTime.Now,
+                Email = "b@gmail.com",
+                Password = "admin",
+                accountNumber = "111111113",
+                currentMoney = 10000000,
+                Avatar = @"../../Image/Avatar.png",
+                Created = DateTime.Now
+            },
+            new Customer()
+            {
+                CustomerID = "KH0005",
+                CustomerName = "Cao",
+                PhoneNumber = "0123456786",
+                Birthday = DateTime.Now,
+                Email = "c@gmail.com",
+                Password = "admin",
+                accountNumber = "111111114",
+                currentMoney = 10000000,
+                Avatar = @"../../Image/Avatar.png",
+                Created = DateTime.Now
             }
         };
 
@@ -61,15 +104,8 @@ namespace Banking.Database
 
         public Customer createCustomer(Customer customer)
         {
-            try
-            {
-                customers.Add(customer);
-                return customer;
-            }
-            catch (Exception ex)
-            {
-                return null;
-            }
+            customers.Add(customer);
+            return customer;
         }
     }
 }

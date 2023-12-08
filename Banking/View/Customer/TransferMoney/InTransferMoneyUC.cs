@@ -91,16 +91,20 @@ namespace Banking
                         customer.currentMoney = transactionDetail.CurrentMoney;
                         reCustomer.currentMoney = reCustomer.currentMoney + transactionDetail.Value;
 
-                        lbCurrentMoney.Text = Helper.FormatVNMoney(Helper.getCurrentCustomer().currentMoney);
-                        lbCurrentMoney.Left = this.Width - lbCurrentMoney.Width - 35;
+                        FormMainCustomerWindown form = Application.OpenForms.OfType<FormMainCustomerWindown>().FirstOrDefault();
+
+                        InvoiceUC ivUC = new InvoiceUC();
+                        
+                        transactionDetail.receiverName = reCustomer.CustomerName;
+                        transactionDetail.receiverAccountNumber = reCustomer.accountNumber;
+                        transactionDetail.receiverBankName = "NBank";
+                        ivUC.transactionDetail = transactionDetail;
+
+                        form.addBody(ivUC);
 
                         createNotification(transactionDetail);
-
-                        FormMainCustomerWindown form = Application.OpenForms.OfType<FormMainCustomerWindown>().FirstOrDefault();
                         form.checkNotifinotion();
-
-                        AMessageBoxFrm ms = new AMessageBoxFrm("Chuyển tiền thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        ms.ShowDialog();
+                        
                     }
                     else
                     {

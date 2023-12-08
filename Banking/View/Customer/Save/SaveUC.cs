@@ -62,10 +62,18 @@ namespace Banking
                     Customer customer = Helper.getCurrentCustomer();
                     customer.currentMoney -= saveBook.Money;
 
-                    lbCurrentMoney.Text = Helper.FormatVNMoney(customer.currentMoney);
-                    lbCurrentMoney.Left = this.Width - lbCurrentMoney.Width - 35;
+                    saveBook.CustomerName = customer.CustomerName;
+                    saveBook.CustomerAccountNumber = customer.accountNumber;
+
+                    FormMainCustomerWindown form = Application.OpenForms.OfType<FormMainCustomerWindown>().FirstOrDefault();
+                    
+                    InvoiceSaveBookUC insbUC = new InvoiceSaveBookUC();
+                    insbUC.saveBook = saveBook;
+
+                    form.addBody(insbUC);
 
                     createNotification(saveBook);
+                    form.checkNotifinotion();
                 }
             }
         }

@@ -16,5 +16,8 @@ namespace Banking.Model
         public DateTime Created { get; set; }
         public decimal Value { get; set; }
         public decimal CurrentMoney { get; set; }
+        public string receiverName {  get; set; }
+        public string receiverAccountNumber { get; set; }
+        public string receiverBankName { get; set; }
     }
 }

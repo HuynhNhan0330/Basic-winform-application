@@ -14,5 +14,7 @@ namespace Banking.Model
         public string Tern {  get; set; }
         public string Type {  get; set; }
         public DateTime Created { get; set; }
+        public string CustomerName { get; set; }
+        public string CustomerAccountNumber { get; set; }
     }
 }

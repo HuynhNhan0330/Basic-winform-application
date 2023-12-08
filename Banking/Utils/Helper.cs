@@ -8,6 +8,7 @@ using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Drawing;
 
 namespace Banking.Utils
 {
@@ -38,6 +39,18 @@ namespace Banking.Utils
             return form.customer;
         }
 
-        
+        public static Image loadImagePath(string path)
+        {
+            try
+            {
+                Image img = Image.FromFile(path);
+                return img;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Đã xảy ra lỗi: " + ex.Message);
+                return null;
+            }
+        }
     }
 }

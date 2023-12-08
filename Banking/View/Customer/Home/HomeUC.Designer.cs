@@ -91,7 +91,6 @@
             this.pibAvatar.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
             this.pibAvatar.BorderSize = 2;
             this.pibAvatar.GradientAngle = 50F;
-            this.pibAvatar.Image = global::Banking.Properties.Resources.Avatar;
             this.pibAvatar.Location = new System.Drawing.Point(366, 15);
             this.pibAvatar.Name = "pibAvatar";
             this.pibAvatar.Size = new System.Drawing.Size(100, 100);

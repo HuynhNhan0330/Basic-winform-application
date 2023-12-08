@@ -108,10 +108,22 @@
     <Compile Include="Database\OtherCustomerDB.cs" />
     <Compile Include="Database\SaveBookDB.cs" />
     <Compile Include="Database\TransactionDetailDB.cs" />
-    <Compile Include="QRcodeUC.cs">
+    <Compile Include="View\Customer\Save\InvoiceSaveBookUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="QRcodeUC.Designer.cs">
+    <Compile Include="View\Customer\Save\InvoiceSaveBookUC.Designer.cs">
+      <DependentUpon>InvoiceSaveBookUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Customer\TransferMoney\InvoiceUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Customer\TransferMoney\InvoiceUC.Designer.cs">
+      <DependentUpon>InvoiceUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Customer\QRcodeUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Customer\QRcodeUC.Designer.cs">
       <DependentUpon>QRcodeUC.cs</DependentUpon>
     </Compile>
     <Compile Include="Usercontrols\SaveBookItemUC.cs">
@@ -128,10 +140,10 @@
     </Compile>
     <Compile Include="Model\OtherCustomer.cs" />
     <Compile Include="Model\SaveBook.cs" />
-    <Compile Include="View\Customer\SaveUC.cs">
+    <Compile Include="View\Customer\Save\SaveUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="View\Customer\SaveUC.Designer.cs">
+    <Compile Include="View\Customer\Save\SaveUC.Designer.cs">
       <DependentUpon>SaveUC.cs</DependentUpon>
     </Compile>
     <Compile Include="View\Customer\TransferMoney\InTransferMoneyUC.cs">
@@ -220,7 +232,13 @@
     <EmbeddedResource Include="AControls\ATextboxUC.resx">
       <DependentUpon>ATextboxUC.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="QRcodeUC.resx">
+    <EmbeddedResource Include="View\Customer\Save\InvoiceSaveBookUC.resx">
+      <DependentUpon>InvoiceSaveBookUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Customer\TransferMoney\InvoiceUC.resx">
+      <DependentUpon>InvoiceUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Customer\QRcodeUC.resx">
       <DependentUpon>QRcodeUC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Usercontrols\SaveBookItemUC.resx">
@@ -229,7 +247,7 @@
     <EmbeddedResource Include="View\Customer\Home\HomeUC.resx">
       <DependentUpon>HomeUC.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\Customer\SaveUC.resx">
+    <EmbeddedResource Include="View\Customer\Save\SaveUC.resx">
       <DependentUpon>SaveUC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Usercontrols\NotificationItemUC.resx">
@@ -388,7 +406,6 @@
     <None Include="Resources\fileActive.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Image\" />
     <Folder Include="Service\" />
   </ItemGroup>
   <ItemGroup>
@@ -409,6 +426,11 @@
   <ItemGroup>
     <None Include="Resources\Avatar.png" />
     <None Include="Resources\wallet.png" />
+    <Content Include="Image\Avatar.png" />
+    <Content Include="Image\AvatarNotel.png" />
+    <None Include="Resources\checked.png" />
+    <None Include="Resources\house-black-silhouette-without-door.png" />
+    <None Include="Resources\house.png" />
     <Content Include="Utils\SaveUsername.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
