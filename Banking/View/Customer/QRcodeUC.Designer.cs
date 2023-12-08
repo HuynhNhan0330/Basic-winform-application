@@ -28,7 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.pibCam = new System.Windows.Forms.PictureBox();
+            this.timerQR = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pibCam)).BeginInit();
             this.SuspendLayout();
             // 
@@ -41,6 +43,11 @@
             this.pibCam.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pibCam.TabIndex = 0;
             this.pibCam.TabStop = false;
+            // 
+            // timerQR
+            // 
+            this.timerQR.Enabled = true;
+            this.timerQR.Tick += new System.EventHandler(this.timerQR_Tick);
             // 
             // QRcodeUC
             // 
@@ -58,5 +65,6 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pibCam;
+        private System.Windows.Forms.Timer timerQR;
     }
 }

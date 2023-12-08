@@ -6,9 +6,12 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net.NetworkInformation;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ZXing;
+using ZXing.QrCode.Internal;
 
 namespace Banking
 {
@@ -37,6 +40,45 @@ namespace Banking
         {
             Bitmap b = (Bitmap)eventArgs.Frame.Clone();
             pibCam.Image = b;
+        }
+
+        private void timerQR_Tick(object sender, EventArgs e)
+        {
+            deCode();
+        }
+
+        private void deCode()
+        {
+            Bitmap imgQRCode = (Bitmap)pibCam.Image;
+
+            if (imgQRCode != null)
+            {
+                try
+                {
+                    ZXing.BarcodeReader Reader = new ZXing.BarcodeReader();
+                    Result result = Reader.Decode(imgQRCode);
+
+                    if (result == null) return;
+
+                    string decoded = result.ToString().Trim();
+
+                    bool isChange = changePage(decoded);
+
+                    imgQRCode.Dispose();
+
+                    timerQR.Enabled = !isChange;
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message + "");
+                }
+            }
+        }
+
+        private bool changePage(string code)
+        {
+            FormMainCustomerWindown form = Application.OpenForms.OfType<FormMainCustomerWindown>().FirstOrDefault();
+            return form.loadTrasferMoney(code);
         }
     }
 }

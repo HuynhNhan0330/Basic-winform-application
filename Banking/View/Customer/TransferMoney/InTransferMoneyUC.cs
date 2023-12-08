@@ -23,6 +23,12 @@ namespace Banking
             InitializeComponent();
         }
 
+        public InTransferMoneyUC(string accountNumber)
+        {
+            InitializeComponent();
+
+            loadReAccount(accountNumber);
+        }
 
         private void pibReturn_Click(object sender, EventArgs e)
         {
@@ -39,8 +45,7 @@ namespace Banking
             lbCurrentMoney.Text = Helper.FormatVNMoney(Helper.getCurrentCustomer().currentMoney);
             lbCurrentMoney.Left = this.Width - lbCurrentMoney.Width - 35;
             
-            lbReName.Visible = false;
-
+            if (reCustomer == null) lbReName.Visible = false;
         }
 
         private void atxbReAccountNumber__TextChanged(object sender, EventArgs e)
@@ -142,6 +147,24 @@ namespace Banking
             notificationRe.NotificationType = 0;
 
             NotificationDAL.Ins.createNotification(notificationRe);
+        }
+
+        private void loadReAccount(string reAccountNumber)
+        {
+            atxbReAccountNumber.Texts = reAccountNumber;
+            atxbReAccountNumber.isPlaceholder = false;
+            atxbReAccountNumber.setForeColor();
+
+            reCustomer = CustomerDAL.Ins.findCustomerByAccountNumber(reAccountNumber);
+
+            if (reCustomer == null)
+                lbReName.Visible = false;
+            else
+            {
+                lbReName.Visible = true;
+                lbReName.Text = reCustomer.CustomerName;
+                lbReName.Left = this.Width - lbReName.Width - 35;
+            }
         }
     }
 }

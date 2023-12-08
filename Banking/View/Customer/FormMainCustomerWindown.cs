@@ -224,6 +224,42 @@ namespace Banking
             loadBody(new HomeUC());
         }
 
+        public bool loadTrasferMoney(string code)
+        {
+            try
+            {
+                string[] list = code.Split('-');
+
+                if (list.Length != 2)
+                    return false;
+
+                if (list[0] == "NBank")
+                {
+                    abtnTransferMoney_Click(abtnTransferMoney, EventArgs.Empty);
+
+                    InTransferMoneyUC uc = new InTransferMoneyUC(list[1]);
+
+                    pnMain.Controls.Add(uc);
+                    uc.BringToFront();
+                }
+                else
+                {
+                    abtnTransferMoney_Click(abtnTransferMoney, EventArgs.Empty);
+
+                    OutTransferMoneyUC uc = new OutTransferMoneyUC(list[0], list[1]);
+
+                    pnMain.Controls.Add(uc);
+                    uc.BringToFront();
+                }
+
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+        }
+
         #endregion
     }
 }

@@ -8,6 +8,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.AccessControl;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -21,6 +22,13 @@ namespace Banking
         public OutTransferMoneyUC()
         {
             InitializeComponent();
+        }
+
+        public OutTransferMoneyUC(string bankName, string accountNumber)
+        {
+            InitializeComponent();
+
+            loadReCustomer(bankName, accountNumber);
         }
 
         private void pibReturn_Click(object sender, EventArgs e)
@@ -40,7 +48,7 @@ namespace Banking
             lbCurrentMoney.Text = Helper.FormatVNMoney(Helper.getCurrentCustomer().currentMoney);
             lbCurrentMoney.Left = this.Width - lbCurrentMoney.Width - 35;
 
-            lbReName.Visible = false;
+            if (reCustomer == null) lbReName.Visible = false;
         }
 
         private void abtnDone_Click(object sender, EventArgs e)
@@ -135,6 +143,26 @@ namespace Banking
         private void cbBankName_SelectedIndexChanged(object sender, EventArgs e)
         {
             reCustomer = OtherCustomerDAL.Ins.findOtherCustomer(atxbReAccountNumber.Texts.Trim(), cbBankName.Text);
+
+            if (reCustomer == null)
+                lbReName.Visible = false;
+            else
+            {
+                lbReName.Visible = true;
+                lbReName.Text = reCustomer.CustomerName;
+                lbReName.Left = this.Width - lbReName.Width - 35;
+            }
+        }
+
+        private void loadReCustomer(string bankName, string accountNumber)
+        {
+            atxbReAccountNumber.Texts = accountNumber;
+            atxbReAccountNumber.isPlaceholder = false;
+            atxbReAccountNumber.setForeColor();
+
+            cbBankName.Text = bankName;
+
+            reCustomer = OtherCustomerDAL.Ins.findOtherCustomer(accountNumber, bankName);
 
             if (reCustomer == null)
                 lbReName.Visible = false;

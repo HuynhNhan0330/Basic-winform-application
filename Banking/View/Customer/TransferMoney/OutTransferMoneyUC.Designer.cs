@@ -147,7 +147,7 @@
             this.cbBankName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.cbBankName.FormattingEnabled = true;
             this.cbBankName.Items.AddRange(new object[] {
-            "Vietcomebank",
+            "Vietcombank",
             "Viettinbank",
             "Abbank",
             "MBbank",
