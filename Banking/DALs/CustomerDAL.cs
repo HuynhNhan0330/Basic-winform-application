@@ -78,5 +78,19 @@ namespace Banking.DALs
                 return null;
             }
         }
+
+        public void changePassword(string email, string password)
+        {
+            try
+            {
+                ObservableCollection<Customer> customers = CustomerDB.Ins.getCustomer();
+
+                Customer customer = customers.FirstOrDefault(kh => kh.Email == email);
+                customer.Password = password;
+            }
+            catch (Exception ex)
+            {
+            }
+        }
     }
 }

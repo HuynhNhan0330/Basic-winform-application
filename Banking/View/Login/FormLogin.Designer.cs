@@ -30,6 +30,7 @@
         {
             this.apnMain = new Banking.AControls.APanel();
             this.loginUC1 = new Banking.LoginUC();
+            this.lbNameBank = new System.Windows.Forms.Label();
             this.apnMain.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -60,12 +61,24 @@
             this.loginUC1.Size = new System.Drawing.Size(600, 600);
             this.loginUC1.TabIndex = 0;
             // 
+            // lbNameBank
+            // 
+            this.lbNameBank.AutoSize = true;
+            this.lbNameBank.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold);
+            this.lbNameBank.ForeColor = System.Drawing.Color.White;
+            this.lbNameBank.Location = new System.Drawing.Point(236, 80);
+            this.lbNameBank.Name = "lbNameBank";
+            this.lbNameBank.Size = new System.Drawing.Size(125, 39);
+            this.lbNameBank.TabIndex = 1;
+            this.lbNameBank.Text = "NBank";
+            // 
             // FormLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(93)))), ((int)(((byte)(56)))));
             this.ClientSize = new System.Drawing.Size(600, 800);
+            this.Controls.Add(this.lbNameBank);
             this.Controls.Add(this.apnMain);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormLogin";
@@ -73,6 +86,7 @@
             this.Text = "FormLogin";
             this.apnMain.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -80,5 +94,6 @@
 
         private AControls.APanel apnMain;
         private LoginUC loginUC1;
+        private System.Windows.Forms.Label lbNameBank;
     }
 }

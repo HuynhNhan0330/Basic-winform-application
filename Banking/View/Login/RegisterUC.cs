@@ -10,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Net.WebRequestMethods;
 
 namespace Banking
 {
@@ -94,6 +95,11 @@ namespace Banking
                 customer.Email = atxbEmail.Texts.Trim();
                 customer.PhoneNumber = atxbPhone.Texts.Trim();
                 customer.Password = atxbPassword.Texts.Trim();
+                customer.Gender = rdMan.Checked;
+                
+                Random random = new Random();
+                int rd = random.Next(100000000, 1000000000);
+                customer.accountNumber = rd.ToString();
 
                 bool isReg = CustomerDAL.Ins.register(customer);
 

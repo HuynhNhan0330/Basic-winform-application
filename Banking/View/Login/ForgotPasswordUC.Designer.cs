@@ -36,7 +36,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.aPanel1 = new Banking.AControls.APanel();
             this.atxbOTP = new Banking.AControls.ATextboxUC();
-            this.abtnLogin = new Banking.AControls.AButton();
+            this.abtnDone = new Banking.AControls.AButton();
             this.lbLogin = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.aPanel3 = new Banking.AControls.APanel();
@@ -184,29 +184,30 @@
             this.atxbOTP.Texts = "";
             this.atxbOTP.UnderlinedStyle = false;
             // 
-            // abtnLogin
+            // abtnDone
             // 
-            this.abtnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(208)))), ((int)(((byte)(128)))));
-            this.abtnLogin.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(208)))), ((int)(((byte)(128)))));
-            this.abtnLogin.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.abtnLogin.BorderRadius = 15;
-            this.abtnLogin.BorderSize = 0;
-            this.abtnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.abtnLogin.FlatAppearance.BorderSize = 0;
-            this.abtnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.abtnLogin.Font = new System.Drawing.Font("Arial", 10.8F);
-            this.abtnLogin.ForeColor = System.Drawing.Color.White;
-            this.abtnLogin.LineType = Banking.AControls.AButton.LineStyles.None;
-            this.abtnLogin.Location = new System.Drawing.Point(100, 350);
-            this.abtnLogin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.abtnLogin.Name = "abtnLogin";
-            this.abtnLogin.RoundType = Banking.AControls.AButton.RoundStyles.Full;
-            this.abtnLogin.Size = new System.Drawing.Size(400, 40);
-            this.abtnLogin.TabIndex = 36;
-            this.abtnLogin.Text = "Xác nhận";
-            this.abtnLogin.TextColor = System.Drawing.Color.White;
-            this.abtnLogin.ThinknessLine = 0;
-            this.abtnLogin.UseVisualStyleBackColor = false;
+            this.abtnDone.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(208)))), ((int)(((byte)(128)))));
+            this.abtnDone.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(208)))), ((int)(((byte)(128)))));
+            this.abtnDone.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.abtnDone.BorderRadius = 15;
+            this.abtnDone.BorderSize = 0;
+            this.abtnDone.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.abtnDone.FlatAppearance.BorderSize = 0;
+            this.abtnDone.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.abtnDone.Font = new System.Drawing.Font("Arial", 10.8F);
+            this.abtnDone.ForeColor = System.Drawing.Color.White;
+            this.abtnDone.LineType = Banking.AControls.AButton.LineStyles.None;
+            this.abtnDone.Location = new System.Drawing.Point(100, 350);
+            this.abtnDone.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.abtnDone.Name = "abtnDone";
+            this.abtnDone.RoundType = Banking.AControls.AButton.RoundStyles.Full;
+            this.abtnDone.Size = new System.Drawing.Size(400, 40);
+            this.abtnDone.TabIndex = 36;
+            this.abtnDone.Text = "Xác nhận";
+            this.abtnDone.TextColor = System.Drawing.Color.White;
+            this.abtnDone.ThinknessLine = 0;
+            this.abtnDone.UseVisualStyleBackColor = false;
+            this.abtnDone.Click += new System.EventHandler(this.abtnDone_Click);
             // 
             // lbLogin
             // 
@@ -288,7 +289,7 @@
             this.Controls.Add(this.lbSendOTP);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.aPanel1);
-            this.Controls.Add(this.abtnLogin);
+            this.Controls.Add(this.abtnDone);
             this.Name = "ForgotPasswordUC";
             this.Size = new System.Drawing.Size(600, 600);
             this.aPanel2.ResumeLayout(false);
@@ -309,7 +310,7 @@
         private System.Windows.Forms.Label label2;
         private AControls.APanel aPanel1;
         private AControls.ATextboxUC atxbOTP;
-        private AControls.AButton abtnLogin;
+        private AControls.AButton abtnDone;
         private System.Windows.Forms.Label lbLogin;
         private System.Windows.Forms.Label label3;
         private AControls.APanel aPanel3;
