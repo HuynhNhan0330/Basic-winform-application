@@ -1,4 +1,5 @@
-﻿using Banking.AControls;
+﻿using AForge.Video.DirectShow;
+using Banking.AControls;
 using Banking.DALs;
 using Banking.Model;
 using Banking.Utils;
@@ -89,6 +90,15 @@ namespace Banking
 
         private void doActiveButton(AButton abtn)
         {
+            foreach (Control c in pnMain.Controls)
+            {
+                if (c is QRcodeUC)
+                {
+                    QRcodeUC uc = c as QRcodeUC;
+                    if (uc.cam != null && uc.cam.IsRunning) uc.cam.Stop();
+                }
+            }
+
             abtn.BackColor = BaseColor.XanhLa;
             abtn.ForeColor = Color.White;
 
@@ -233,6 +243,15 @@ namespace Banking
                 if (list.Length != 2)
                     return false;
 
+                List<string> banks = new List<string>
+                {
+                    "Vietcombank",
+                    "Viettinbank",
+                    "Abbank",
+                    "MBbank",
+                    "TPbank"
+                };
+
                 if (list[0] == "NBank")
                 {
                     abtnTransferMoney_Click(abtnTransferMoney, EventArgs.Empty);
@@ -242,7 +261,7 @@ namespace Banking
                     pnMain.Controls.Add(uc);
                     uc.BringToFront();
                 }
-                else
+                else if (banks.Contains(list[0]))
                 {
                     abtnTransferMoney_Click(abtnTransferMoney, EventArgs.Empty);
 
@@ -251,6 +270,8 @@ namespace Banking
                     pnMain.Controls.Add(uc);
                     uc.BringToFront();
                 }
+                else
+                    return false;
 
                 return true;
             }
@@ -261,5 +282,22 @@ namespace Banking
         }
 
         #endregion
+
+        private void pnMain_ControlRemoved(object sender, ControlEventArgs e)
+        {
+            foreach (Control c in pnMain.Controls)
+            {
+                if (c is QRcodeUC)
+                {
+                    QRcodeUC uc = c as QRcodeUC;
+                    if (uc.cam != null && uc.cam.IsRunning) uc.cam.Stop();
+                }
+            }
+        }
+
+        private void pnMain_ControlAdded(object sender, ControlEventArgs e)
+        {
+            
+        }
     }
 }

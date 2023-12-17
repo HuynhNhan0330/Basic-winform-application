@@ -1,5 +1,6 @@
 ﻿using AForge.Video;
 using AForge.Video.DirectShow;
+using Banking.AControls;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -18,7 +19,7 @@ namespace Banking
     public partial class QRcodeUC : UserControl
     {
         FilterInfoCollection cameras;
-        VideoCaptureDevice cam;
+        public VideoCaptureDevice cam;
 
         public QRcodeUC()
         {
@@ -62,11 +63,18 @@ namespace Banking
 
                     string decoded = result.ToString().Trim();
 
+                    timerQR.Enabled = false;
                     bool isChange = changePage(decoded);
 
                     imgQRCode.Dispose();
 
-                    timerQR.Enabled = !isChange;
+                    if (!isChange)
+                    {
+                        AMessageBoxFrm ms = new AMessageBoxFrm("Mã QR không hợp lệ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        timerQR.Enabled = false;
+                        ms.ShowDialog();
+                        timerQR.Enabled = true;
+                    }
                 }
                 catch (Exception ex)
                 {

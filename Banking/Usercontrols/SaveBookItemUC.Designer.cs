@@ -32,14 +32,15 @@
             this.lbTern = new System.Windows.Forms.Label();
             this.lbCreate = new System.Windows.Forms.Label();
             this.lbType = new System.Windows.Forms.Label();
-            this.pibLogo = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pibLogo)).BeginInit();
+            this.lbNewMoney = new System.Windows.Forms.Label();
+            this.lbDuKien = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lbMoney
             // 
             this.lbMoney.AutoSize = true;
             this.lbMoney.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lbMoney.ForeColor = System.Drawing.Color.Black;
             this.lbMoney.Location = new System.Drawing.Point(25, 15);
             this.lbMoney.Name = "lbMoney";
             this.lbMoney.Size = new System.Drawing.Size(41, 20);
@@ -50,6 +51,7 @@
             // 
             this.lbTern.AutoSize = true;
             this.lbTern.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lbTern.ForeColor = System.Drawing.Color.Black;
             this.lbTern.Location = new System.Drawing.Point(25, 50);
             this.lbTern.Name = "lbTern";
             this.lbTern.Size = new System.Drawing.Size(81, 20);
@@ -60,45 +62,59 @@
             // 
             this.lbCreate.AutoSize = true;
             this.lbCreate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.lbCreate.Location = new System.Drawing.Point(388, 85);
+            this.lbCreate.ForeColor = System.Drawing.Color.Black;
+            this.lbCreate.Location = new System.Drawing.Point(304, 50);
             this.lbCreate.Name = "lbCreate";
-            this.lbCreate.Size = new System.Drawing.Size(75, 20);
+            this.lbCreate.Size = new System.Drawing.Size(85, 20);
             this.lbCreate.TabIndex = 2;
-            this.lbCreate.Text = "Ngày tạo";
+            this.lbCreate.Text = "Ngày tạo: ";
             // 
             // lbType
             // 
             this.lbType.AutoSize = true;
             this.lbType.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lbType.ForeColor = System.Drawing.Color.Black;
             this.lbType.Location = new System.Drawing.Point(25, 85);
             this.lbType.Name = "lbType";
             this.lbType.Size = new System.Drawing.Size(41, 20);
             this.lbType.TabIndex = 3;
             this.lbType.Text = "Loại";
             // 
-            // pibLogo
+            // lbNewMoney
             // 
-            this.pibLogo.Image = global::Banking.Properties.Resources.wallet;
-            this.pibLogo.Location = new System.Drawing.Point(413, 15);
-            this.pibLogo.Name = "pibLogo";
-            this.pibLogo.Size = new System.Drawing.Size(50, 50);
-            this.pibLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pibLogo.TabIndex = 4;
-            this.pibLogo.TabStop = false;
+            this.lbNewMoney.AutoSize = true;
+            this.lbNewMoney.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lbNewMoney.ForeColor = System.Drawing.Color.Black;
+            this.lbNewMoney.Location = new System.Drawing.Point(304, 15);
+            this.lbNewMoney.Name = "lbNewMoney";
+            this.lbNewMoney.Size = new System.Drawing.Size(133, 20);
+            this.lbNewMoney.TabIndex = 4;
+            this.lbNewMoney.Text = "Tiền nhận được: ";
+            // 
+            // lbDuKien
+            // 
+            this.lbDuKien.AutoSize = true;
+            this.lbDuKien.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lbDuKien.ForeColor = System.Drawing.Color.Black;
+            this.lbDuKien.Location = new System.Drawing.Point(304, 85);
+            this.lbDuKien.Name = "lbDuKien";
+            this.lbDuKien.Size = new System.Drawing.Size(115, 20);
+            this.lbDuKien.TabIndex = 5;
+            this.lbDuKien.Text = "Ngày dự kiến: ";
             // 
             // SaveBookItemUC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.pibLogo);
+            this.Controls.Add(this.lbDuKien);
+            this.Controls.Add(this.lbNewMoney);
             this.Controls.Add(this.lbType);
             this.Controls.Add(this.lbCreate);
             this.Controls.Add(this.lbTern);
             this.Controls.Add(this.lbMoney);
             this.Name = "SaveBookItemUC";
             this.Size = new System.Drawing.Size(496, 120);
-            ((System.ComponentModel.ISupportInitialize)(this.pibLogo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -110,6 +126,7 @@
         private System.Windows.Forms.Label lbTern;
         private System.Windows.Forms.Label lbCreate;
         private System.Windows.Forms.Label lbType;
-        private System.Windows.Forms.PictureBox pibLogo;
+        private System.Windows.Forms.Label lbNewMoney;
+        private System.Windows.Forms.Label lbDuKien;
     }
 }

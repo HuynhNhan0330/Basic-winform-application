@@ -50,6 +50,7 @@ namespace Banking.DALs
             {
                 customer.CustomerID = Helper.nextCode(CustomerDB.Ins.getMaxId(), "KH");
                 customer.Avatar = @"../../Image/Avatar.png";
+                customer.Created = DateTime.Now;
                 Customer customerNew = CustomerDB.Ins.createCustomer(customer);
                 if (customerNew != null)
                     return true;

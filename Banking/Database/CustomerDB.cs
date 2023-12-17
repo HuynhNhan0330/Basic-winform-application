@@ -34,7 +34,7 @@ namespace Banking.Database
                 Email = "admin",
                 Password = "admin",
                 accountNumber = "123456789",
-                currentMoney = 999999999999,
+                currentMoney = 100000000,
                 Avatar = @"../../Image/Avatar.png",
                 Gender = true,
                 Created = DateTime.Now

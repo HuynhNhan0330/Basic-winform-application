@@ -179,19 +179,11 @@
             this.cbTern.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.cbTern.FormattingEnabled = true;
             this.cbTern.Items.AddRange(new object[] {
-            "Không kỳ hạn - 0.10%",
-            "7 ngày - 0.20%",
-            "14 ngày - 0.20%",
-            "1 tháng - 3.10%",
-            "2 tháng - 3.10%",
-            "3 tháng - 3.40%",
-            "6 tháng - 4.00%",
-            "9 tháng - 4.00%",
-            "12 tháng - 5.50%",
-            "24 tháng - 5.50%",
-            "36 tháng - 5.50%",
-            "48 tháng - 5.50%",
-            "60 tháng - 5.50%"});
+            "1 tháng - 12.00%",
+            "2 tháng - 24.00%",
+            "3 tháng - 36.00%",
+            "4 tháng - 48.00%",
+            "5 tháng - 60.00%"});
             this.cbTern.Location = new System.Drawing.Point(16, 4);
             this.cbTern.Name = "cbTern";
             this.cbTern.Size = new System.Drawing.Size(277, 28);

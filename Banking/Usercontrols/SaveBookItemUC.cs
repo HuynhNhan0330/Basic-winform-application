@@ -36,10 +36,22 @@ namespace Banking.Usercontrols
             lbTern.Text = saveBook.Tern;
             lbType.Text = saveBook.Type;
             
-            lbCreate.Text = saveBook.Created.ToString("dd/MM/yyyy");
-            lbCreate.Left = this.Width - 50 - lbCreate.Width;
+            lbCreate.Text = lbCreate.Text + saveBook.Created.ToString("dd/MM/yyyy");
+            lbCreate.Left = this.Width - 20 - lbCreate.Width;
 
-            pibLogo.Left = lbCreate.Left + lbCreate.Width / 2 - pibLogo.Width / 2;
+            string[] parts = saveBook.Tern.Split(new[] { " tháng - " }, StringSplitOptions.RemoveEmptyEntries);
+            string monthString = parts[0];
+            string percentageString = parts[1].TrimEnd('%');
+
+            // Chuyển đổi giá trị thành số nguyên và số thập phân
+            int month = int.Parse(monthString);
+            decimal percentage = decimal.Parse(percentageString);
+
+            lbDuKien.Text = lbDuKien.Text + saveBook.Created.AddMonths(month).ToString("dd/MM/yyyy");
+            lbDuKien.Left = this.Width - 20 - lbDuKien.Width;
+
+            lbNewMoney.Text = lbNewMoney.Text + Helper.FormatVNMoney(saveBook.Money * percentage / 12 / 100 + saveBook.Money);
+            lbNewMoney.Left = this.Width - 20 - lbNewMoney.Width;
         }
     }
 }

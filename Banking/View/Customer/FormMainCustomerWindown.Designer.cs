@@ -255,6 +255,8 @@
             this.pnMain.Name = "pnMain";
             this.pnMain.Size = new System.Drawing.Size(596, 605);
             this.pnMain.TabIndex = 2;
+            this.pnMain.ControlAdded += new System.Windows.Forms.ControlEventHandler(this.pnMain_ControlAdded);
+            this.pnMain.ControlRemoved += new System.Windows.Forms.ControlEventHandler(this.pnMain_ControlRemoved);
             // 
             // FormMainCustomerWindown
             // 

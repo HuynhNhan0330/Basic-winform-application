@@ -29,7 +29,7 @@ namespace Banking.Database
                 SaveBookID = "SB0001",
                 CustomerID = "KH0001",
                 Money = 100000,
-                Tern = "Không kỳ hạn - 0.10%",
+                Tern = "1 tháng - 12.00%",
                 Type = "Lãi vào tài khoản nguồn",
                 Created = DateTime.Now
             },
@@ -38,7 +38,7 @@ namespace Banking.Database
                 SaveBookID = "SB0002",
                 CustomerID = "KH0001",
                 Money = 110000,
-                Tern = "7 ngày - 0.20%",
+                Tern = "1 tháng - 12.00%",
                 Type = "Lãi vào tài khoản nguồn",
                 Created = DateTime.Now
             },
@@ -47,7 +47,7 @@ namespace Banking.Database
                 SaveBookID = "SB0003",
                 CustomerID = "KH0001",
                 Money = 120000,
-                Tern = "1 tháng - 3.10%",
+                Tern = "2 tháng - 24.00%",
                 Type = "Lãi vào tài khoản nguồn",
                 Created = DateTime.Now
             },
@@ -56,7 +56,7 @@ namespace Banking.Database
                 SaveBookID = "SB0004",
                 CustomerID = "KH0001",
                 Money = 130000,
-                Tern = "9 tháng - 4.00%",
+                Tern = "3 tháng - 36.00%",
                 Type = "Lãi vào sổ tiết kiệm",
                 Created = DateTime.Now
             },
@@ -65,7 +65,7 @@ namespace Banking.Database
                 SaveBookID = "SB0005",
                 CustomerID = "KH0001",
                 Money = 140000,
-                Tern = "60 tháng - 5.50%",
+                Tern = "4 tháng - 48.00%",
                 Type = "Lãi vào sổ tiết kiệm",
                 Created = DateTime.Now
             },
